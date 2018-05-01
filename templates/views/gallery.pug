@@ -1,0 +1,60 @@
+extends ../layouts/default
+
+block intro
+	.container
+		h1 Gallery
+	
+block js
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js')
+	script.
+		var i = 0;
+
+		var imageCaptions = ["Mt. Everest (Qomolangama) Base Camp, Tibet",
+							 "Shamanka Rock, Olkhon Island, Russia",
+							 "Saviour on the Spilled Blood, St. Petersburg, Russia",
+							 "Luzui Rocks, YangMeiKeng, Dapeng, Shenzhen, China",
+							 "Bokor Mountain Top, Kampot, Cambodia",
+							 "Naga Guest House, Kampot, Cambodia",
+							 "Sunset Cruise, Kampot, Cambodia",
+							 "Bokor Hill Station, Kampot, Cambodia",
+							 "Victoria Peak, Hong Kong, China",
+							 "LianHuaShan, Futian, Shenzhen, China",
+							 "Sheremetyevo International Airport, Moscow, Russia",
+							 "St. Basil's Cathedral, Moscow, Russia",
+							 "Savior on the Spilled Blood, St. Petersburg, Russia",
+							 "Street Coffee Shop, Moscow, Russia",
+							 "Ob Beach, Novosibirisk, Russia",
+							 "Bugrinsky Bridge, Novosibirsk, Russia",
+							 "Railway Station, Irkutsk, Russia",
+							 "Lake Baikal, Listvyanka, Russia",
+							 "Railway Station, Ulan Bator, Mongolia",
+							 "Ugii Lake, KharKhorin, Mongolia",
+							 "Lake Turkana, Loyangalani, Kenya",
+							 "Pangani, Tanzania",
+							 "Gurudwara Bangla Sahib, New Delhi, India",
+							 "Chail, India"];
+
+		baguetteBox.run('.tz-gallery', {
+			captions: function(element) {
+			var id = element.getElementsByTagName('img')[0].id;
+			return imageCaptions[id]; 
+			}
+		});
+
+block css
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css")
+	link(href="/styles/fluid-gallery.css", rel="stylesheet")
+
+block content
+	.container
+		if galleries.length
+			each gallery in galleries
+				h2= gallery.name
+					if gallery.publishedDate
+						.pull-right.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
+				
+				.tz-gallery.row.gallery-images
+					each image in gallery.flickrImages
+						.col-xs-6.col-sm-4.col-md-3.gallery-image: a(href=image).lightbox #[img(id=gallery.flickrImages.indexOf(image) src=image).img-thumbnail]
+		else
+			h3.text-muted There are no image galleries yet.

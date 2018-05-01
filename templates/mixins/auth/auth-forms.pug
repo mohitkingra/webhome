@@ -1,0 +1,17 @@
+include form-join
+include form-signin
+include form-password
+
+mixin auth-forms(args)
+	if args.modal
+		+form-signin(args)
+		+form-join(args)
+		+form-password(args)
+			
+	else
+		if args.initial == 'join'
+			+form-join(args)
+		else if args.initial == 'password'
+			+form-password(args)
+		else if args.initial == 'reset'
+			+form-reset(args)

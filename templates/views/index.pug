@@ -1,0 +1,192 @@
+extends ../layouts/default
+
+block css
+	link(rel="stylesheet" href="styles/ol.css")
+	
+	link(href="/styles/style.css", rel="stylesheet")
+	
+	link(href="/styles/pushy.css", rel="stylesheet")
+	link(href="/styles/masonry.css", rel="stylesheet")
+	link(href="/styles/animate.css", rel="stylesheet")
+	link(href="/styles/magnific-popup.css", rel="stylesheet")
+
+
+block js
+	script(src="http://masonry.desandro.com/masonry.pkgd.js")
+	script(src="js/common/masonry.js")
+	script(src="js/common/pushy.min.js")
+	script(src="js/jquery/jquery.magnific-popup.min.js")
+	script(src="js/common/wow.min.js")
+	script(src="js/common/scripts.js")
+
+
+	script(src="js/maps/ol.js")
+	script(src="js/maps/travelsOSM.js")
+	script(src="js/maps/osmMap.js")
+
+	script.	
+		initOpenMap();
+
+	script(async src="https://www.googletagmanager.com/gtag/js?id=UA-116421007-1")
+	script.
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-116421007-1');
+
+
+block content
+
+	nav.pushy.pushy-left
+		ul.list-unstyled
+			li: a(href='#home') Home
+			li: a(href='#browchakra') About me
+			li: a(href='#throatchakra') My Blog
+			li: a(href='#heartchakra') My Travels
+			li: a(href='#solarchakra') My Photos
+			li: a(href='#sacralchakra') Get in Touch!
+
+	div.site-overlay 
+
+	header(id="home")
+		.container-fluid
+			.container
+				.row
+					.col-md-12.col-xs-12
+						a(href="#")
+							img(src="images/571457.png" style="float:left").img-responsive
+						.menu-btn
+							span.hamburger(style="float:right; line-height:165%") &#9776;
+				.jumbotron
+					.row.text-center
+						.col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-5.col-md-2.col-md-offset-5
+							img(src='images/7th-Chakra-Lotus-Flower-Transparent1-300x300.png').img-responsive
+					h1 Namaste!
+					h2.strong स्वागत | 欢迎光临迎 | Добро пожаловать
+					p(style="font-family:stayoutside; font-size:48px") Welcome to my home on the web, a portal to my world.
+
+	section(id="browchakra" style="margin-top:50px; margin-bottom:50px")
+		.container-fluid
+			.container
+				.row 
+					.col-xs-4.col-xs-offset-4.col-md-2.col-md-offset-5
+						img(src='images/Chakra_ThirdEye.png').img-responsive
+
+	section(id="aboutme").number.wow.fadeInUp
+		.container-fluid
+			.container
+				.row
+					.col-md-6.opaline.col-md-offset-6
+						.row
+							.col-md-offset-1.col-md-10
+								h2 This is Mohit. I am an adventurer from India, presently living in China.
+								p(style="font-size:16px") Born in the magical land of India, travel came naturally to me and gradually became my passion. It led me to places far and wide in India till 2014, and to 14 countries by 2018.
+								p(style="font-size:16px") Besides travel, I love to cook ( shawarma is my current favourite ), read fiction and code philosophy, experiment with various music genres, and theorize geography, language, culture, code and universe.
+								p(style="font-size:16px") I'm building this website because I love to code on web and partly because I want to share the content I create or love, which would be articles, photos, music, video etc.
+								p(style="font-size:16px") I'm looking forward to interact with like minded people here and explore possibilites to work together on code / travel / video projects etc.
+								p(style="font-size:16px") Join me to share comments and receive updates from my blog.
+
+	section(id="throatchakra" style="margin-top:50px; margin-bottom:50px")
+		.container-fluid
+			.container
+				.row 
+					.col-xs-4.col-xs-offset-4.col-md-2.col-md-offset-5
+						img(src='images/blue-throat-chakra-symbol-image.png').img-responsive
+
+	section(id="myblog")
+		.container
+			.row.features
+				.col-md-4.text-center.wow.fadeInUp
+					.span(style="font-size:66px; color:#2980b9").typcn.typcn-notes-outline.x3
+					.span &nbsp
+					a(href='http://www.mohitkingra.com/blog/music').btn.btn-primary Checkout the Music I love
+
+				.col-md-4.text-center.wow.fadeInUp
+					.span(style="font-size:66px; color:#2980b9").typcn.typcn-pencil.x3
+					.span &nbsp
+					a(href='http://www.mohitkingra.com/blog/story').btn.btn-primary Checkout the Stories I write
+
+				.col-md-4.text-center.wow.fadeInUp
+					.span(style="font-size:66px; color:#2980b9").typcn.typcn-video-outline.x3
+					.span &nbsp 
+					a(href='http://www.mohitkingra.com/blog/video').btn.btn-primary Checkout the Videos I made
+
+	section(id="heartchakra" style="margin-top:50px; margin-bottom:50px")
+		.container-fluid
+			.container
+				.row 
+					.col-xs-4.col-xs-offset-4.col-md-2.col-md-offset-5
+						img(src='images/green-heart-chakra-symbol-image.png').img-responsive
+
+	section(id="mytravels")
+		.container-fluid
+			.container
+				div(id = "popbanner" style="min-width:500px")
+				div(id = "map", tabindex="0", style = "width: auto;height: 480px;")
+				div(id = "popup")
+
+	section(id="solarchakra" style="margin-top:50px; margin-bottom:50px")
+		.container-fluid
+			.container
+				.row 
+					.col-xs-4.col-xs-offset-4.col-md-2.col-md-offset-5
+						img(src='images/th.jpeg').img-responsive
+
+	section(id="myphotos").gallery.wow.fadeInUp
+		.container
+			.row
+				.masonry.image-gallery
+					.grid-sizer
+					.gutter-sizer
+					.item
+							a(href="https://farm1.staticflickr.com/872/41451901841_14427a5da2_z_d.jpg")
+								img(src="https://farm1.staticflickr.com/872/41451901841_14427a5da2_z_d.jpg" alt="").img-thumbnail
+					.item
+							a(href="https://farm1.staticflickr.com/804/41409775102_fc7e18a658_z_d.jpg") 
+								img(src="https://farm1.staticflickr.com/804/41409775102_fc7e18a658_z_d.jpg" alt="").img-thumbnail
+					.item
+							a(href="https://farm1.staticflickr.com/791/39643833490_b91dde4169_z_d.jpg") 	
+								img(src="https://farm1.staticflickr.com/791/39643833490_b91dde4169_z_d.jpg" alt="").img-thumbnail
+					.item
+							a(href="https://farm1.staticflickr.com/887/39643835640_e4a7d23fa7_z_d.jpg") 
+								img(src="https://farm1.staticflickr.com/887/39643835640_e4a7d23fa7_z_d.jpg" alt="").img-thumbnail
+					.item
+							a(href="https://farm1.staticflickr.com/783/41409781662_4ba26304be_z_d.jpg") 
+								img(src="https://farm1.staticflickr.com/783/41409781662_4ba26304be_z_d.jpg" alt="").img-thumbnail
+					.item
+							a(href="https://farm1.staticflickr.com/885/27580758348_a6ee32b0af_z_d.jpg") 
+								img(src="https://farm1.staticflickr.com/885/27580758348_a6ee32b0af_z_d.jpg" alt="").img-thumbnail
+
+		.container-fluid
+			.container
+				.row
+					.col-md-4.col-md-offset-4.text-center
+						a(href='http://www.mohitkingra.com/gallery').btn.btn-primary Checkout more Photos
+
+	section(id="sacralchakra" style="margin-top:50px; margin-bottom:50px")
+		.container-fluid
+			.container
+				.row 
+					.col-xs-4.col-xs-offset-4.col-md-2.col-md-offset-5
+						img(src='images/symbol-jumbo-sacral-chakra.png').img-responsive
+
+	section(id="contact").wow.fadeInUp
+		.container-fluid
+			.container
+				.row
+					.col-md-4.col-md-offset-4.text-center
+						a(href='http://www.mohitkingra.com/join').btn.btn-primary Join me to Subscribe
+
+				.row
+					.col-md-4.col-md-offset-4.text-center
+						h3 Or	
+				.row
+					.col-md-4.col-md-offset-4.text-center
+						a(href='http://www.mohitkingra.com/contact').btn.btn-primary Contact me via Email
+				
+	section(id="rootchakra" style="margin-top:50px")
+		.container-fluid
+			.container
+				.row
+					.col-xs-4.col-xs-offset-4.col-md-2.col-md-offset-5
+						img(src='images/symbol-jumbo-root-chakra.png').img-responsive
