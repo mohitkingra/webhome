@@ -44,7 +44,7 @@ exports = module.exports = function(req, res) {
 
 					new Email("email.pug", { 
 						transport: 'mailgun', }).send({}, {
-							apiKey: 'key-c125f7bd3a2ffc62873214f91db6307f',
+							apiKey: MAILGUN_APIKEY,
 							domain: 'www.mohitkingra.com',
 							to: subscriberEmail,
 							from: {
