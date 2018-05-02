@@ -39,19 +39,17 @@ exports = module.exports = function(req, res) {
 			return next();
 			} else {
 				async.each(locals.subscribers, function(subscriber, doneSubscriber) {
-
 					var subscriberEmail = subscriber.email;
-
 					new Email("email.pug", { 
 						transport: 'mailgun', }).send({}, {
-							apiKey: MAILGUN_APIKEY,
-							domain: 'www.mohitkingra.com',
+							apiKey: process.env.MAILGUN_API_KEY,
+							domain: process.env.MAILGUN_DOMAIN,
+							subject:'Notification from mohitkingra.com', 
 							to: subscriberEmail,
 							from: {
 								name: 'Mohit Kingra',
 								email: 'mohit@mohitkingra.com'
 							},
-							subject: 'Notification from www.mohitkingra.com', 
 					}, function(err) {
 						if (err) {
 							next();
