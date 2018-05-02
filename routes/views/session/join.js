@@ -66,7 +66,26 @@ exports = module.exports = function(req, res) {
 			if (err) return next();
 			
 			var onSuccess = function() {
-					res.redirect('/');
+
+				new Email("templates/emails/subscriber.pug", { 
+						transport: 'mailgun', }).send({}, {
+							apiKey: process.env.MAILGUN_API_KEY,
+							domain: process.env.MAILGUN_DOMAIN,
+							subject:'Notification from mohitkingra.com', 
+							to: req.body.email,
+							from: {
+								name: 'Mohit Kingra',
+								email: 'mohit@mohitkingra.com'
+							},
+						}, function(err) {
+							if (err) {
+								next();
+							} else {
+								req.flash('success', 'Email sent to ' + req.body.firstname) 
+							}
+				});
+
+				res.redirect('/');
 			}
 			
 			var onFail = function(e) {

@@ -38,9 +38,13 @@ exports = module.exports = function(req, res) {
 			req.flash('warning', 'There aren\'t any subscribers at the moment' );
 			return next();
 			} else {
+
+				var template = req.body._email_type;
+				var templatePath = "templates/emails/" + template + ".pug";
+
 				async.each(locals.subscribers, function(subscriber, doneSubscriber) {
 					var subscriberEmail = subscriber.email;
-					new Email("email.pug", { 
+					new Email(templatePath, { 
 						transport: 'mailgun', }).send({}, {
 							apiKey: process.env.MAILGUN_API_KEY,
 							domain: process.env.MAILGUN_DOMAIN,
