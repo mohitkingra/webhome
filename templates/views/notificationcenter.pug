@@ -10,8 +10,8 @@ mixin notification-form(args)
 				form(method='post', autocomplete='off', novalidate)
 					input(type='hidden', name='action', value='notify.' + args.fieldnameprefix)
 					.form-group
-						label.sr-only Email Subject
-						input(name=args.fieldnameprefix + '_email_type', type='text', placeholder='Email Type').form-control
+						label.sr-only Email Type
+						input(name='_email_type', type='text', placeholder='Email Type').form-control
 					button(type='submit').js-confirm.btn.btn-primary Send to #{plural(args.sendtocount, '* ' + args.singular, '* ' + args.plural)}
 
 doctype html

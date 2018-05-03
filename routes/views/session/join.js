@@ -1,4 +1,5 @@
 var keystone = require('keystone'),
+	Email = require('keystone-email');
 	async = require('async');
 
 exports = module.exports = function(req, res) {
