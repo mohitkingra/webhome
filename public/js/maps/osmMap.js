@@ -83,8 +83,12 @@ function initOpenMap(){
           center: ol.proj.fromLonLat([35.2253, 31.7772]),
           zoom: 2,
           minZoom: 2
+        }),
+        interactions: ol.interaction.defaults({
+          mouseWheelZoom:false
         })
   });
+
 
   openMap.addOverlay(popbanner);
   openMap.addOverlay(popup);
