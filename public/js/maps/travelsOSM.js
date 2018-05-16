@@ -277,3 +277,12 @@ var travelsOSM = [
 			["Kampot", 10.620, 104.175]
 	];
 
+var locationsM = [[travelsOSM[100][2], travelsOSM[100][1]], [travelsOSM[101][2], travelsOSM[101][1]], [travelsOSM[102][2], travelsOSM[102][1]], [travelsOSM[103][2], travelsOSM[103][1]], [travelsOSM[104][2], travelsOSM[104][1]], [travelsOSM[107][2], travelsOSM[107][1]], [travelsOSM[93][2], travelsOSM[93][1]], [travelsOSM[86][2], travelsOSM[86][1]]];
+//var locationsT =
+//var locationsY =
+//var locationsE =
+//var locationsA =
+//var locationsH =
+//var locationsL =
+//var locationsR =
+
