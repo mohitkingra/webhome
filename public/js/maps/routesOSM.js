@@ -90,6 +90,12 @@ var moveFeature = function(event) {
       openMap.getView().setZoom(4);
     else if(id === 'everest-basecamp') 
       openMap.getView().setZoom(10);
+    else if(id === 'himachal') 
+      openMap.getView().setZoom(9);
+    else if(id === 'leh-ladakh') 
+      openMap.getView().setZoom(6);
+    else if(id === 'rajasthan') 
+      openMap.getView().setZoom(6);
    
     var elapsedTime = frameState.time - now;
     var index = Math.round(1 * elapsedTime / 1000);
