@@ -83,14 +83,14 @@ var moveFeature = function(event) {
   if (animating) {
 
     openMap.getView().setCenter(center);
-
-    if(id === 'tibet-railway')
+ 
+    if(id === 'trans-mongolian')
+      openMap.getView().setZoom(3);
+    else if(id === 'tibet-railway')
       openMap.getView().setZoom(4);
     else if(id === 'everest-basecamp') 
       openMap.getView().setZoom(10);
-    else 
-      openMap.getView().setZoom(3);
-
+   
     var elapsedTime = frameState.time - now;
     var index = Math.round(1 * elapsedTime / 1000);
 
