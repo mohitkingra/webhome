@@ -1,6 +1,9 @@
 function initOpenMap(){
 
   var routeDataM = initRoutes(locationsM);
+  var routeDataT = initRoutes(locationsT);
+  var routeDataE = initRoutes(locationsE);
+  //var routeDataA = initRoutes(locationsA);
 
   var aelement = document.getElementById('popbanner');
   var bannerpos0 = ol.proj.fromLonLat([75.2253, 72.00]);
@@ -73,7 +76,7 @@ function initOpenMap(){
         layers: [ 
           new ol.layer.Tile({
             source: new ol.source.Stamen({layer: 'watercolor'})
-          }), vectorLayer, routeDataM[3]/*, routeDataT[3], routeDataY[3], routeDataE[3], routeDataA[3], routeDataH[3], routeDataL[3], routeDataR[3]*/
+          }), vectorLayer, routeDataM[3], routeDataT[3], routeDataE[3]/*, routeDataA[3], routeDataH[3], routeDataL[3], routeDataR[3]*/
         ],
         target: 'map',
         controls: ol.control.defaults({
@@ -157,7 +160,12 @@ function initOpenMap(){
 
 
   var centerM = new ol.proj.fromLonLat([45.95, 45.39]);
+  var centerT = new ol.proj.fromLonLat([103.97, 35.82]);
+  var centerE = new ol.proj.fromLonLat([86.81045, 27.94815]);
+  //var centerA = new ol.proj.fromLonLat([86.81045, 27.94815]);
 
-  animateRoutes('trans-mongolian', centerM, routeDataM[0], routeDataM[1], routeDataM[2], openMap);
-
+  animateRoutes('trans-mongolian', centerM, routeDataM, openMap);
+  animateRoutes('tibet-railway', centerT, routeDataT, openMap); 
+  animateRoutes('everest-basecamp', centerE, routeDataE, openMap);
+  //animateRoutes('east-africa', centerA, routeDataA, openMap);
 }

@@ -8,6 +8,7 @@ var route = new ol.geom.LineString(locations)
 var routeCoords = route.getCoordinates();
 
 var routeFeature = new ol.Feature({
+  type: 'route',
   geometry: route
 });
 
@@ -25,6 +26,11 @@ var endMarker = new ol.Feature({
 });
 
 var styles = {
+  'route': new ol.style.Style({
+          stroke: new ol.style.Stroke({
+            width: 6, color: [225, 229, 204, 0.8]
+          })
+  }),
   'geoMarker': new ol.style.Style({
     image: new ol.style.Circle({
       radius: 7,
@@ -45,19 +51,27 @@ var vectorLayerN = new ol.layer.Vector({
     features: [routeFeature, geoMarker, startMarker, endMarker]
   }),
   style: function(feature) {
+
+    //hide route if not animating
+    if(!animating && feature.get('type') === 'route') {
+      return null;
+    }
+
     // hide geoMarker if animation is active
     if (animating && feature.get('type') === 'geoMarker') {
       return null;
     }
+
     return styles[feature.get('type')];
-  }
+  },
+  visible: false
 });
 
 return [geoMarker, routeCoords, styles, vectorLayerN];
 
 }
 
-function animateRoutes(id, center, geoMarker,routeCoords, styles, openMap) {
+function animateRoutes(id, center, routeData, openMap) {
 
 var now;
 var startButton = document.getElementById(id);
@@ -69,19 +83,25 @@ var moveFeature = function(event) {
   if (animating) {
 
     openMap.getView().setCenter(center);
-    openMap.getView().setZoom(3);
+
+    if(id === 'tibet-railway')
+      openMap.getView().setZoom(4);
+    else if(id === 'everest-basecamp') 
+      openMap.getView().setZoom(10);
+    else 
+      openMap.getView().setZoom(3);
 
     var elapsedTime = frameState.time - now;
     var index = Math.round(1 * elapsedTime / 1000);
 
-    if (index >= routeCoords.length) {
+    if (index >= routeData[1].length) {
       stopAnimation(true);
       return;
     }
 
-    var currentPoint = new ol.geom.Point(routeCoords[index]);
+    var currentPoint = new ol.geom.Point(routeData[1][index]);
     var feature = new ol.Feature(currentPoint);
-    vectorContext.drawFeature(feature, styles.geoMarker);
+    vectorContext.drawFeature(feature, routeData[2].geoMarker);
   }
   // tell OL3 to continue the postcompose animation
   openMap.render();
@@ -93,9 +113,10 @@ var startAnimation = function() {
     stopAnimation(false);
   } else {
     animating = true;
+    routeData[3].setVisible(true);
     now = new Date().getTime();
     // hide geoMarker
-    geoMarker.setStyle(null);
+    routeData[0].setStyle(null);
     // just in case you pan somewhere else
     openMap.on('postcompose', moveFeature);
     openMap.render();
@@ -104,11 +125,12 @@ var startAnimation = function() {
 
 var stopAnimation = function(ended) {
   animating = false;
+  routeData[3].setVisible(false);
 
   // if animation cancelled set the marker at the beginning
-  var coord = ended ? routeCoords[routeCoords.length - 1] : routeCoords[0];
+  var coord = ended ? routeData[1][routeData[1].length - 1] : routeData[1];
   
-  (geoMarker.getGeometry())
+  (routeData[0].getGeometry())
   .setCoordinates(coord);
   //remove listener
   openMap.un('postcompose', moveFeature);
