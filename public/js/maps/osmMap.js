@@ -166,8 +166,8 @@ function initOpenMap(){
   var centerT = new ol.proj.fromLonLat([103.97, 35.82]);
   var centerE = new ol.proj.fromLonLat([86.81045, 27.94815]);
   //var centerA = new ol.proj.fromLonLat([86.81045, 27.94815]);
-  var centerH = new ol.proj.fromLonLat([77.316, 32.010]);
-  var centerL = new ol.proj.fromLonLat([76.763, 30.721]);
+  var centerH = new ol.proj.fromLonLat([77.7199, 31.9975]);
+  var centerL = new ol.proj.fromLonLat([76.3261, 32.2455]);
   var centerR = new ol.proj.fromLonLat([73.314, 28.010]);
 
   animateRoutes('trans-mongolian', centerM, routeDataM, openMap);
