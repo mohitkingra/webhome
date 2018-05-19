@@ -53,21 +53,21 @@ function initOpenMap(){
       markers[i].setStyle(iconStyleTanzania);
 	  else if(i>=74 && i<76)
       markers[i].setStyle(iconStyleMalawi);
-	  else if(i>=76 && i<78)
+	  else if(i>=76 && i<79)
       markers[i].setStyle(iconStyleMozambique);
-	  else if(i>=78 && i<86)
+	  else if(i>=79 && i<87)
       markers[i].setStyle(iconStyleNepal);
-	  else if(i>=86 && i<96)
+	  else if(i>=87 && i<98)
       markers[i].setStyle(iconStyleChina);
-	  else if(i===96)
+	  else if(i===98)
       markers[i].setStyle(iconStyleHongKong);
-	  else if(i>96 && i<100)
+	  else if(i>98 && i<102)
       markers[i].setStyle(iconStyleTibet);
-	  else if(i>=100 && i<107)
+	  else if(i>=102 && i<109)
       markers[i].setStyle(iconStyleRussia);
-	  else if(i>=107 && i<109)
+	  else if(i>=109 && i<111)
       markers[i].setStyle(iconStyleMongolia);
-	  else if(i>=109 && i<=112)
+	  else if(i>=111 && i<=114)
       markers[i].setStyle(iconStyleCambodia);
   }
 
