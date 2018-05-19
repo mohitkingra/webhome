@@ -9,6 +9,7 @@ function initOpenMap(){
   var routeDataH = initRoutes(locationsH);
   var routeDataL = initRoutes(locationsL);
   var routeDataR = initRoutes(locationsR);
+  var routeDataY = initRoutes(locationsY);
 
   var aelement = document.getElementById('popbanner');
   var bannerpos0 = ol.proj.fromLonLat([75.2253, 72.00]);
@@ -81,7 +82,7 @@ function initOpenMap(){
         layers: [ 
           new ol.layer.Tile({
             source: new ol.source.Stamen({layer: 'watercolor'})
-          }), vectorLayer, routeDataM[3], routeDataT[3], routeDataE[3], routeDataH[3], routeDataL[3], routeDataR[3]
+          }), vectorLayer, routeDataM[3], routeDataT[3], routeDataE[3], routeDataN[3], routeDataP[3], routeDataD[3], routeDataH[3], routeDataL[3], routeDataR[3], routeDataY[3]
         ],
         target: 'map',
         controls: ol.control.defaults({
@@ -167,12 +168,13 @@ function initOpenMap(){
   var centerM = new ol.proj.fromLonLat([45.95, 45.39]);
   var centerT = new ol.proj.fromLonLat([103.97, 35.82]);
   var centerE = new ol.proj.fromLonLat([86.81045, 27.94815]);
-  var centerN = new ol.proj.fromLonLat([37.639, -0.101]);
-  var centerP = new ol.proj.fromLonLat([39.211, -6.874]);
+  var centerN = new ol.proj.fromLonLat([36.6986, 1.1092]);
+  var centerP = new ol.proj.fromLonLat([36.6888, -2.948]);
   var centerD = new ol.proj.fromLonLat([34.016, -11.462]);
   var centerH = new ol.proj.fromLonLat([77.7199, 31.9975]);
   var centerL = new ol.proj.fromLonLat([76.3261, 32.2455]);
   var centerR = new ol.proj.fromLonLat([73.314, 28.010]);
+  var centerY = new ol.proj.fromLonLat([102.349, 28.845]);
 
   animateRoutes('trans-mongolian', centerM, routeDataM, openMap);
   animateRoutes('tibet-railway', centerT, routeDataT, openMap); 
@@ -183,5 +185,6 @@ function initOpenMap(){
   animateRoutes('himachal', centerH, routeDataH, openMap);
   animateRoutes('leh-ladakh', centerL, routeDataL, openMap);
   animateRoutes('rajasthan', centerR, routeDataR, openMap);
+  animateRoutes('yunnan', centerY, routeDataY, openMap);
 
 }
