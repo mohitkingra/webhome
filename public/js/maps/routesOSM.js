@@ -87,7 +87,7 @@ var moveFeature = function(event) {
     if(id === 'trans-mongolian')
       openMap.getView().setZoom(3);
     else if(id === 'tibet-railway')
-      openMap.getView().setZoom(4);
+      openMap.getView().setZoom(5);
     else if(id === 'everest-basecamp') 
       openMap.getView().setZoom(10);
     else if(id === 'himachal') 
@@ -95,7 +95,7 @@ var moveFeature = function(event) {
     else if(id === 'leh-ladakh') 
       openMap.getView().setZoom(6);
     else if(id === 'rajasthan') 
-      openMap.getView().setZoom(6);
+      openMap.getView().setZoom(7);
     else if(id === 'northkenya') 
       openMap.getView().setZoom(7);
     else if(id === 'pangani') 
@@ -103,7 +103,7 @@ var moveFeature = function(event) {
     else if(id === 'malawi') 
       openMap.getView().setZoom(5);
     else if(id === 'yunnan') 
-      openMap.getView().setZoom(5);
+      openMap.getView().setZoom(6);
    
     var elapsedTime = frameState.time - now;
     var index = Math.round(1 * elapsedTime / 1000);

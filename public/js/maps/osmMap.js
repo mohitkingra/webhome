@@ -166,7 +166,7 @@ function initOpenMap(){
 
 
   var centerM = new ol.proj.fromLonLat([45.95, 45.39]);
-  var centerT = new ol.proj.fromLonLat([103.97, 35.82]);
+  var centerT = new ol.proj.fromLonLat([104.066, 30.679]);
   var centerE = new ol.proj.fromLonLat([86.81045, 27.94815]);
   var centerN = new ol.proj.fromLonLat([36.6986, 1.1092]);
   var centerP = new ol.proj.fromLonLat([36.6888, -2.948]);
