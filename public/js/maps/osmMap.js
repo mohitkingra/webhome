@@ -3,7 +3,9 @@ function initOpenMap(){
   var routeDataM = initRoutes(locationsM);
   var routeDataT = initRoutes(locationsT);
   var routeDataE = initRoutes(locationsE);
-  //var routeDataA = initRoutes(locationsA);
+  var routeDataN = initRoutes(locationsN);
+  var routeDataP = initRoutes(locationsP);
+  var routeDataD = initRoutes(locationsD);
   var routeDataH = initRoutes(locationsH);
   var routeDataL = initRoutes(locationsL);
   var routeDataR = initRoutes(locationsR);
@@ -165,7 +167,9 @@ function initOpenMap(){
   var centerM = new ol.proj.fromLonLat([45.95, 45.39]);
   var centerT = new ol.proj.fromLonLat([103.97, 35.82]);
   var centerE = new ol.proj.fromLonLat([86.81045, 27.94815]);
-  //var centerA = new ol.proj.fromLonLat([86.81045, 27.94815]);
+  var centerN = new ol.proj.fromLonLat([37.639, -0.101]);
+  var centerP = new ol.proj.fromLonLat([39.211, -6.874]);
+  var centerD = new ol.proj.fromLonLat([34.016, -11.462]);
   var centerH = new ol.proj.fromLonLat([77.7199, 31.9975]);
   var centerL = new ol.proj.fromLonLat([76.3261, 32.2455]);
   var centerR = new ol.proj.fromLonLat([73.314, 28.010]);
@@ -173,7 +177,9 @@ function initOpenMap(){
   animateRoutes('trans-mongolian', centerM, routeDataM, openMap);
   animateRoutes('tibet-railway', centerT, routeDataT, openMap); 
   animateRoutes('everest-basecamp', centerE, routeDataE, openMap);
-  //animateRoutes('east-africa', centerA, routeDataA, openMap);
+  animateRoutes('northkenya', centerN, routeDataN, openMap);
+  animateRoutes('pangani', centerP, routeDataP, openMap);
+  animateRoutes('malawi', centerD, routeDataD, openMap);
   animateRoutes('himachal', centerH, routeDataH, openMap);
   animateRoutes('leh-ladakh', centerL, routeDataL, openMap);
   animateRoutes('rajasthan', centerR, routeDataR, openMap);

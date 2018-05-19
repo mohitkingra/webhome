@@ -96,6 +96,12 @@ var moveFeature = function(event) {
       openMap.getView().setZoom(6);
     else if(id === 'rajasthan') 
       openMap.getView().setZoom(6);
+    else if(id === 'northkenya') 
+      openMap.getView().setZoom(6);
+    else if(id === 'pangani') 
+      openMap.getView().setZoom(6);
+    else if(id === 'malawi') 
+      openMap.getView().setZoom(5);
    
     var elapsedTime = frameState.time - now;
     var index = Math.round(1 * elapsedTime / 1000);
