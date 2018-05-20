@@ -5,6 +5,15 @@ block intro
 		h1 Gallery
 	
 block js
+	script.
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-116421007-1', {
+			'page_title' : 'gallerypage',
+			'page_path': '/gallery'
+		});
+	
 	script(src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js')
 	script.
 		var i = 0;

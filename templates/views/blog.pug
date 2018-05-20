@@ -26,6 +26,16 @@ block intro
 	.container
 		h1= data.category ? data.category.name : 'Blog'
 
+block js
+	script.
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-116421007-1', {
+			'page_title' : 'blogpage',
+			'page_path': '/blog'
+		});
+
 block content
 	.container: .row
 		.col-sm-8.col-md-9
