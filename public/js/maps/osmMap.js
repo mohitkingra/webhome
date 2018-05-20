@@ -10,6 +10,9 @@ function initOpenMap(){
   var routeDataL = initRoutes(locationsL);
   var routeDataR = initRoutes(locationsR);
   var routeDataY = initRoutes(locationsY);
+  var routeDataC = initRoutes(locationsC);
+
+  var flightsData = initFlights();
 
   var aelement = document.getElementById('popbanner');
   var bannerpos0 = ol.proj.fromLonLat([75.2253, 72.00]);
@@ -82,7 +85,7 @@ function initOpenMap(){
         layers: [ 
           new ol.layer.Tile({
             source: new ol.source.Stamen({layer: 'watercolor'})
-          }), vectorLayer, routeDataM[3], routeDataT[3], routeDataE[3], routeDataN[3], routeDataP[3], routeDataD[3], routeDataH[3], routeDataL[3], routeDataR[3], routeDataY[3]
+          }), vectorLayer, routeDataM[3], routeDataT[3], routeDataE[3], routeDataN[3], routeDataP[3], routeDataD[3], routeDataH[3], routeDataL[3], routeDataR[3], routeDataY[3], routeDataC[3], flightsData[1]
         ],
         target: 'map',
         controls: ol.control.defaults({
@@ -147,10 +150,12 @@ function initOpenMap(){
       'content': "This is an interactive map of the places I have been"
     });
 
-     if(openMap.getView().getZoom()<=2)
+     if(openMap.getView().getZoom()<=2) {
         $(aelement).popover('show');
-      else
+     }
+      else {
         $(aelement).popover('destroy');
+      }
 
   });
 
@@ -175,6 +180,7 @@ function initOpenMap(){
   var centerL = new ol.proj.fromLonLat([76.3261, 32.2455]);
   var centerR = new ol.proj.fromLonLat([73.314, 28.010]);
   var centerY = new ol.proj.fromLonLat([102.349, 28.845]);
+  var centerC = new ol.proj.fromLonLat([104.175, 10.620]);
 
   animateRoutes('trans-mongolian', centerM, routeDataM, openMap);
   animateRoutes('tibet-railway', centerT, routeDataT, openMap); 
@@ -186,5 +192,12 @@ function initOpenMap(){
   animateRoutes('leh-ladakh', centerL, routeDataL, openMap);
   animateRoutes('rajasthan', centerR, routeDataR, openMap);
   animateRoutes('yunnan', centerY, routeDataY, openMap);
+  animateRoutes('cambodia', centerC, routeDataC, openMap);
 
+  animateFlights(flightsData[0], openMap);
 }
+
+
+
+
+

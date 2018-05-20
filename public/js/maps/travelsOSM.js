@@ -289,4 +289,9 @@ var locationsH = [[travelsOSM[18][2], travelsOSM[18][1]], [travelsOSM[19][2], tr
 var locationsL = [[travelsOSM[0][2], travelsOSM[0][1]], [travelsOSM[30][2], travelsOSM[30][1]], [travelsOSM[31][2], travelsOSM[31][1]], [travelsOSM[33][2], travelsOSM[33][1]], [travelsOSM[32][2], travelsOSM[32][1]], [travelsOSM[29][2], travelsOSM[29][1]], [travelsOSM[34][2], travelsOSM[34][1]], [travelsOSM[25][2], travelsOSM[25][1]], [travelsOSM[0][2], travelsOSM[0][1]]];
 var locationsR = [[travelsOSM[0][2], travelsOSM[0][1]], [travelsOSM[14][2], travelsOSM[14][1]], [travelsOSM[15][2], travelsOSM[15][1]], [travelsOSM[35][2], travelsOSM[35][1]], [travelsOSM[15][2], travelsOSM[15][1]], [travelsOSM[16][2], travelsOSM[16][1]], [travelsOSM[17][2], travelsOSM[17][1]], [travelsOSM[0][2], travelsOSM[0][1]]];
 var locationsY = [[travelsOSM[91][2], travelsOSM[91][1]], [travelsOSM[92][2], travelsOSM[92][1]], [travelsOSM[93][2], travelsOSM[93][1]]];
+var locationsC = [[travelsOSM[111][2], travelsOSM[111][1]], [travelsOSM[112][2], travelsOSM[112][1]], [travelsOSM[113][2], travelsOSM[113][1]], [travelsOSM[114][2], travelsOSM[114][1]], [travelsOSM[111][2], travelsOSM[111][1]]];
+
+var flightsData = [ 
+                    [[114.467, 22.596], [104.923, 11.579]]
+                  ];
 
