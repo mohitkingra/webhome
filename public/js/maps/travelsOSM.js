@@ -279,7 +279,7 @@ var travelsOSM = [
 			["Kampot", 10.620, 104.175]
 	];
 
-var locationsM = [[travelsOSM[102][2], travelsOSM[102][1]], [travelsOSM[103][2], travelsOSM[103][1]], [travelsOSM[104][2], travelsOSM[104][1]], [travelsOSM[105][2], travelsOSM[105][1]], [travelsOSM[106][2], travelsOSM[106][1]], [travelsOSM[107][2], travelsOSM[107][1]], [travelsOSM[108][2], travelsOSM[108][1]], [travelsOSM[95][2], travelsOSM[95][1]], [travelsOSM[87][2], travelsOSM[87][1]]];
+var locationsM = [[travelsOSM[102][2], travelsOSM[102][1]], [travelsOSM[103][2], travelsOSM[103][1]], [travelsOSM[104][2], travelsOSM[104][1]], [travelsOSM[105][2], travelsOSM[105][1]], [travelsOSM[106][2], travelsOSM[106][1]], [travelsOSM[109][2], travelsOSM[109][1]], [travelsOSM[95][2], travelsOSM[95][1]], [travelsOSM[87][2], travelsOSM[87][1]]];
 var locationsT = [[113.264, 23.095], [108.9439, 34.2663], [103.8304, 36.048], [101.7719, 36.6177], [94.9109, 36.3959], [travelsOSM[99][2], travelsOSM[99][1]], [travelsOSM[101][2], travelsOSM[101][1]], [travelsOSM[100][2], travelsOSM[100][1]]];
 var locationsE = [[travelsOSM[80][2], travelsOSM[80][1]], [travelsOSM[81][2], travelsOSM[81][1]], [travelsOSM[82][2], travelsOSM[82][1]], [travelsOSM[83][2], travelsOSM[83][1]], [travelsOSM[84][2], travelsOSM[84][1]], [travelsOSM[85][2], travelsOSM[85][1]], [travelsOSM[86][2], travelsOSM[86][1]]];
 var locationsN = [[travelsOSM[63][2], travelsOSM[63][1]], [travelsOSM[64][2], travelsOSM[64][1]], [travelsOSM[65][2], travelsOSM[65][1]], [travelsOSM[66][2], travelsOSM[66][1]], [travelsOSM[67][2], travelsOSM[67][1]]];
