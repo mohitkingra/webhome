@@ -292,6 +292,26 @@ var locationsY = [[travelsOSM[91][2], travelsOSM[91][1]], [travelsOSM[92][2], tr
 var locationsC = [[travelsOSM[111][2], travelsOSM[111][1]], [travelsOSM[112][2], travelsOSM[112][1]], [travelsOSM[113][2], travelsOSM[113][1]], [travelsOSM[114][2], travelsOSM[114][1]], [travelsOSM[111][2], travelsOSM[111][1]]];
 
 var flightsData = [ 
-                    [[114.467, 22.596], [104.923, 11.579]]
+                    [[travelsOSM[0][1], travelsOSM[0][2]], [travelsOSM[55][1], travelsOSM[55][2]]], //Delhi to Paris
+                    [[travelsOSM[55][1], travelsOSM[55][2]], [travelsOSM[52][1], travelsOSM[52][2]]], //Paris to San Sebastian
+                    [[travelsOSM[0][1], travelsOSM[0][2]], [travelsOSM[57][1], travelsOSM[57][2]]], //Delhi to Seoul
+                    [[travelsOSM[10][1], travelsOSM[10][2]], [13.8941,100.6073]], //Kolkata to Bangkok
+                    [[13.8941,100.6073], [travelsOSM[59][1], travelsOSM[59][2]]], //Bangkok to Krabi
+                    [[13.8941,100.6073], [travelsOSM[0][1], travelsOSM[0][2]]], //Bangkok to Delhi
+                    [[travelsOSM[0][1], travelsOSM[0][2]], [25.3564,55.3876]], //Delhi to Sharjah
+                    [[25.3564,55.3876], [travelsOSM[63][1], travelsOSM[63][2]]], //Sharjah to Nairobi
+                    [[travelsOSM[76][1], travelsOSM[76][2]], [travelsOSM[77][1], travelsOSM[77][2]]], //Tete to Maputo
+                    [[travelsOSM[77][1], travelsOSM[77][2]], [travelsOSM[11][1], travelsOSM[11][2]]], //Maputo to Mumbai
+                    [[travelsOSM[0][1], travelsOSM[0][2]], [travelsOSM[39][1], travelsOSM[39][2]]], //Delhi to Bangalore
+                    [[travelsOSM[0][1], travelsOSM[0][2]], [travelsOSM[98][1], travelsOSM[98][2]]], //Delhi to HK
+                    [[travelsOSM[87][1], travelsOSM[87][2]], [travelsOSM[90][1], travelsOSM[90][2]]], //Shenzhen to Shanghai
+                    [[travelsOSM[87][1], travelsOSM[87][2]], [travelsOSM[91][1], travelsOSM[91][2]]], //Shenzhen to Kumming
+                    [[travelsOSM[92][1], travelsOSM[92][2]], [travelsOSM[87][1], travelsOSM[87][2]]], //Lijiang to Shenzhen
+                    [[travelsOSM[99][1], travelsOSM[99][2]], [30.6745,104.0598]], //Lhasa to Chengdu
+                    [[30.6745,104.0598], [travelsOSM[87][1], travelsOSM[87][2]]], //Chengdu to Shenzhen
+                    [[travelsOSM[87][1], travelsOSM[87][2]], [travelsOSM[96][1], travelsOSM[96][2]]], //Shenzhen to Nanjing
+                    [[23.1202,113.2745], [travelsOSM[103][1], travelsOSM[103][2]]], //Guangzhou to Moscow
+                    [[travelsOSM[103][1], travelsOSM[103][2]], [travelsOSM[102][1], travelsOSM[102][2]]], //Moscow to St. Petersburg
+                    [[travelsOSM[87][1], travelsOSM[87][2]], [travelsOSM[111][1], travelsOSM[111][2]]], //Shenzhen to Phnom Penh
                   ];
 
