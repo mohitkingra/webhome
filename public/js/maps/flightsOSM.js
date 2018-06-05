@@ -1,4 +1,5 @@
 var pointsPerMs = 0.1;
+var animating = false;
 var flightsSource;
    var style = new ol.style.Style({
         stroke: new ol.style.Stroke({
@@ -14,9 +15,6 @@ var flightsSource;
         }, timeout);
       };
 
-var arccheck;
-var arcline;
-
 function initFlights() {
       flightsSource = new ol.source.Vector({
         wrapX: false,
@@ -31,11 +29,7 @@ function initFlights() {
                   {x: from[1], y: from[0]},
                   {x: to[1], y: to[0]});
 
-              arccheck = arcGenerator;
-
               var arcLine = arcGenerator.Arc(100, {offset: 10});
-
-              arcline = arcLine;
 
               if (arcLine.geometries.length === 1) {
                 var line = new ol.geom.LineString(arcLine.geometries[0].coords);
@@ -58,6 +52,10 @@ function initFlights() {
         style: function(feature) {
           // if the animation is still active for a feature, do not
           // render the feature with the layer style
+
+          if(!animating)
+            return null;
+
           if (feature.get('finished')) {
             return style;
           } else {
@@ -69,7 +67,9 @@ function initFlights() {
     return [flightsSource, flightsLayer];
 }
 
-function animateFlights(flightsSource, openMap) {
+function animateFlights(id, flightsData, openMap) {
+
+  var startButton = document.getElementById(id);
 
   var renderFlights = function(event) {
 
@@ -77,7 +77,7 @@ function animateFlights(flightsSource, openMap) {
         var frameState = event.frameState;
         vectorContext.setStyle(style);
 
-        var features = flightsSource.getFeatures();
+        var features = flightsData[0].getFeatures();
         for (var i = 0; i < features.length; i++) {
           var feature = features[i];
           if (!feature.get('finished')) {
@@ -101,5 +101,24 @@ function animateFlights(flightsSource, openMap) {
         openMap.render();
   };
 
-  openMap.on('postcompose', renderFlights);
+var startAnimation = function() {
+
+    if(animating) {
+      stopAnimation();
+    }
+    else {
+      animating = true;
+      flightsData[1].setVisible(true);
+      openMap.on('postcompose', renderFlights);
+      openMap.render();
+    }
+}
+
+var stopAnimation = function() {
+  animating = false;
+  flightsData[1].setVisible(false);
+  openMap.un('postcompose', renderFlights);
+}
+
+  startButton.addEventListener('click', startAnimation, false);
 }

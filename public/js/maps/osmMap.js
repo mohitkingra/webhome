@@ -194,7 +194,7 @@ function initOpenMap(){
   animateRoutes('yunnan', centerY, routeDataY, openMap);
   animateRoutes('cambodia', centerC, routeDataC, openMap);
 
-  animateFlights(flightsData[0], openMap);
+  animateFlights('flight-animation', flightsData, openMap);
 }
 
 
