@@ -27,6 +27,12 @@ block js
 	script(src="js/maps/flightsOSM.js")
 	script(src="js/maps/osmMap.js")
 
+	script(src="http://d3js.org/d3.v3.min.js")
+	script(src="http://d3js.org/topojson.v1.min.js")
+	script(src="js/maps/planetaryjs.min.js")
+
+	script(src="js/maps/globe.js")
+
 	script.	
 		initOpenMap();
 
@@ -79,7 +85,9 @@ block content
 		.container-fluid
 			.container
 				.row
-					.col-md-6.opaline.col-md-offset-6
+					.col-md-6.col-sm-6.col-xs-4
+						canvas(id='rotatingGlobe' width='400' height='400' style='width: 80%; height: 100%; cursor:move; display:block; margin:auto;')
+					.opaline.col-md-offset-6.col-sm-offset-8.col-xs-offset-4
 						.row
 							.col-md-offset-1.col-md-10
 								h2 This is Mohit. I am an adventurer from India, presently living in China.
