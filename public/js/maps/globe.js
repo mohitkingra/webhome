@@ -39,12 +39,21 @@
 
   // Every few hundred milliseconds, we'll draw another random ping.
   var colors = ['red', 'yellow', 'white', 'orange', 'green', 'cyan', 'pink'];
+
+  var i=0;
   setInterval(function() {
-    var lat = Math.random() * 170 - 85;
-    var lng = Math.random() * 360 - 180;
-    var color = colors[Math.floor(Math.random() * colors.length)];
-    globe.plugins.pings.add(lng, lat, { color: color, ttl: 2000, angle: Math.random() * 10 });
-  }, 150);
+
+    if(i<114) {
+      var lat = travelsOSM[i++][1];
+      var lng = travelsOSM[i++][2];
+      var color = colors[Math.floor(Math.random() * colors.length)];
+      globe.plugins.pings.add(parseInt(lng), parseInt(lat), { color: color, ttl: 2000, angle: Math.random() * 10 });
+    }
+    else {
+      i=0;
+    }
+
+  }, 100);
 
   var canvas = document.getElementById('rotatingGlobe');
   // Special code to handle high-density displays (e.g. retina, some phones)
