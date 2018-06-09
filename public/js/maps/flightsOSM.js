@@ -2,19 +2,14 @@ var pointsPerMs = 0.1;
 var animating = false;
 var flightsSource;
 
-   var style = new ol.style.Style({
-        stroke: new ol.style.Stroke({
-          color: '#EAE911',
-          width: 2
-        })
-      });
+var now = 0;
 
-      var addLater = function(feature, timeout) {
-        window.setTimeout(function() {
-          feature.set('start', new Date().getTime());
-          flightsSource.addFeature(feature);
-        }, timeout);
-      };
+var style = new ol.style.Style({
+  stroke: new ol.style.Stroke({
+    color: '#EAE911',
+    width: 2
+  })
+});
 
 function initFlights() {
        flightsSource = new ol.source.Vector({
@@ -42,7 +37,7 @@ function initFlights() {
                 });
                 // add the feature with a delay so that the animation
                 // for all features does not start at the same time
-                addLater(feature, i * 500);
+              flightsSource.addFeature(feature);
               }
             }
           }
@@ -81,12 +76,13 @@ var startButton = document.getElementById(id);
         var features = flightsData[0].getFeatures();
         for (var i = 0; i < features.length; i++) {
           var feature = features[i];
+
           if (!feature.get('finished')) {
 
             // only draw the lines for which the animation has not finished yet
             var coords = feature.getGeometry().getCoordinates();
-            var elapsedTime = frameState.time - feature.get('start');
-            var elapsedPoints = elapsedTime * pointsPerMs;
+            var elapsedTime = frameState.time - now;
+            var elapsedPoints =  elapsedTime * pointsPerMs;
 
             if (elapsedPoints >= coords.length) {
               feature.set('finished', true);
@@ -109,6 +105,8 @@ var startAnimation = function() {
   } else {
     animating = true;
     flightsData[1].setVisible(true);
+
+    now = new Date().getTime();
     openMap.on('postcompose', renderFlights);
     openMap.render();
   }
@@ -116,6 +114,13 @@ var startAnimation = function() {
 
 var stopAnimation = function(ended) {
   animating = false;
+
+  var features = flightsData[0].getFeatures();
+  var p;
+  for(p=0; p< features.length; p++) {
+    features[p].set('finished', false);
+  }
+
   flightsData[1].setVisible(false);
   openMap.un('postcompose', renderFlights);
 }
