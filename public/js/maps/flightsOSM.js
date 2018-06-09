@@ -53,6 +53,10 @@ function initFlights() {
         style: function(feature) {
           // if the animation is still active for a feature, do not
           // render the feature with the layer style
+
+          if(!animating)
+            return null;
+
           if (feature.get('finished')) {
             return style;
           } else {
@@ -99,7 +103,6 @@ var startButton = document.getElementById(id);
         openMap.render();
   };
 
-
 var startAnimation = function() {
   if (animating) {
     stopAnimation(false);
@@ -116,6 +119,6 @@ var stopAnimation = function(ended) {
   flightsData[1].setVisible(false);
   openMap.un('postcompose', renderFlights);
 }
-
 startButton.addEventListener('click', startAnimation, false);
+
 }

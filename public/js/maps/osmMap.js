@@ -193,8 +193,7 @@ function initOpenMap(){
   animateRoutes('rajasthan', centerR, routeDataR, openMap);
   animateRoutes('yunnan', centerY, routeDataY, openMap);
   animateRoutes('cambodia', centerC, routeDataC, openMap);
-
-  animateFlights('flights',flightsData, openMap);
+  animateFlights('flight-animation', flightsData, openMap);
 }
 
 
