@@ -33,7 +33,8 @@ var routes = {
 };
 
 // Setup Route Bindings
-exports = module.exports = function (app) {
+exports = module.exports = nextApp => keystoneApp => {
+	/*function (app) {
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/blog/:category?', routes.views.blog);
@@ -50,8 +51,14 @@ exports = module.exports = function (app) {
 	app.all('/auth/:service', routes.auth.service);
 
 	app.all('/notification-center', routes.views.notificationcenter);
-
+	*/
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
+
+	const handle = nextApp.getRequestHandler();
+
+	keystoneApp.get('*', (req, res) => {
+		return handle(req, res);
+	});
 
 };
