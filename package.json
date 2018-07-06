@@ -5,12 +5,14 @@
   "dependencies": {
     "async": "2.1.4",
     "axios": "^0.18.0",
+    "babel-preset-es2016": "^6.24.1",
+    "d3-geo": "^1.10.0",
     "dotenv": "4.0.0",
+    "file-loader": "^1.1.11",
     "keystone": "4.0.0-beta.5",
     "keystone-email": "^1.0.5",
     "keystone-social-login": "github:JohnnyEstilles/keystone-social-login",
     "lodash": "^4.13.1",
-    "next": "^6.0.3",
     "next-redux-wrapper": "^2.0.0-beta.6",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
@@ -19,20 +21,30 @@
     "passport-google-oauth20": "^1.0.0",
     "passport-twitter": "^1.0.4",
     "pug": "2.0.0-beta11",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.3.3",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
-    "webpack": "^4.12.0"
+    "topojson-client": "^3.0.0",
+    "url-loader": "^1.0.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "eslint": "3.15.0",
     "eslint-config-keystone": "3.0.0",
-    "eslint-plugin-react": "^5.1.1"
+    "eslint-plugin-react": "^5.1.1",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node keystone.js"
+    "start": "node keystone.js",
+    "compile": "webpack --config webpack.config.js"
   }
 }

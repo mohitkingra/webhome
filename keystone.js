@@ -6,10 +6,6 @@ require('dotenv').config();
 var keystone = require('keystone');
 //var social = require('keystone-social-login');
 
-
-const next = require('next');
-const dev = process.env.NODE_ENV !== 'production';
-const app = next({dev});
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
@@ -18,13 +14,18 @@ keystone.init({
 	'name': 'Mohit Kingra',
 	'brand': 'Mohit Kingra',
 
-	//'less': 'public',
-	//'static': 'public',
-	//'favicon': 'public/favicon.ico',
-	//'views': 'templates/views',
-	//'view engine': 'pug',
+	'less': 'public',
+	'static': [
+		'public',
+		'server/public/js/',
+		'server/public/img/',
+		'server/public/data/'
+		],
+	'favicon': 'public/favicon.ico',
+	'views': 'templates/views',
+	'view engine': 'pug',
 
-	//'emails': 'templates/emails',
+	'emails': 'templates/emails',
 
 	'auto update': true,
 	'session': true,
@@ -63,9 +64,6 @@ keystone.import('./models');
 // bundled templates and layouts. Any runtime locals (that should be set uniquely
 // for each request) should be added to ./routes/middleware.js
 
-app.prepare()
-	.then(() => {
-
 keystone.set('locals', {
 	_: require('lodash'),
 	env: keystone.get('env'),
@@ -75,7 +73,7 @@ keystone.set('locals', {
 });
 
 // Load your project's Routes
-keystone.set('routes', require('./routes')(app));
+keystone.set('routes', require('./routes'));
 
 
 // Configure the navigation bar in Keystone's Admin UI
@@ -103,4 +101,3 @@ if (!process.env.MAILGUN_API_KEY || !process.env.MAILGUN_DOMAIN) {
 //social.start();
 
 keystone.start();
-});

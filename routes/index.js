@@ -19,9 +19,6 @@
  */
 
 var keystone = require('keystone');
-const { parse } = require('url');
-
-/*
 var middleware = require('./middleware');
 var importRoutes = keystone.importer(__dirname);
 
@@ -34,18 +31,19 @@ var routes = {
 	views: importRoutes('./views'),
 	auth: importRoutes('./auth'),
 };
-*/
+
 
 // Setup Route Bindings
-exports = module.exports = nextApp => keystoneApp => {
+exports = module.exports = function(app) {
 	
-	/*
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/blog/:category?', routes.views.blog);
 	app.all('/blog/post/:post', routes.views.post);
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
+
+	app.all('/yourtravelmap', routes.views.travelmap); //react
 	
 	app.all('/join', routes.views.session.join);
 	app.all('/signin', routes.views.session.signin);
@@ -56,45 +54,8 @@ exports = module.exports = nextApp => keystoneApp => {
 	app.all('/auth/:service', routes.auth.service);
 
 	app.all('/notification-center', routes.views.notificationcenter);
-	*/
+
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
-
-	const handle = nextApp.getRequestHandler();
-
-	keystoneApp.get('*', (req, res) => {
-
-		const parsedUrl = parse(req.url, true);
-		const { pathname, query } =  parsedUrl;
-		
-		if(pathname === '/blog/:category?') {
-			nextApp.render(req, res, '/blog', query);
-		}
-		else if(pathname === '/blog/post/:post') {
-			nextApp.render(req, res, '/post', query);
-		}
-		else if(pathname === '/gallery') {
-			nextApp.render(req, res, '/gallery', query);
-		}
-		else if(pathname === '/contact') {
-			nextApp.render(req, res, '/contact', query);
-		}
-		else if(pathname === '/join') {
-			nextApp.render(req, res, '/join', query);
-		}
-		else if(pathname === '/signin') {
-			nextApp.render(req, res, '/signin', query);
-		}
-		else if(pathname === '/signout') {
-			nextApp.render(req, res, '/signout', query);
-		}
-		else if(pathname === '/notification-center') {
-			nextApp.render(req, res, '/notificationcenter', query);
-		}
-		else {
-			return handle(req, res);		
-		}
-	
-	});
 
 };
