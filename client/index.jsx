@@ -10,6 +10,7 @@ let store = createStore(combineReducers({continentReducer}));
 import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 
+import indiadata from './../server/public/data/india-states.json';
 import countrydata from './../server/public/data/country.json';
 import worlddata from './../server/public/data/world-110m.json';
 
@@ -38,6 +39,39 @@ let styles = {
     height:50,
   },
 };
+
+class IndiaMap extends React.Component {
+  constructor() {
+    super();
+    this.state={
+      indiadata: feature(indiadata, indiadata.objects.states).features,
+    }
+  }
+
+  projection() {
+    return geoMercator()
+      .scale(800)
+      .translate([-450, 650])
+  }
+
+  render(){
+    return(
+      <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
+            {
+              this.state.indiadata.map((d,i) => (
+                <path
+                  stroke="gray"
+                  strokeWidth="0.5"
+                  key={ `path-${ i }` }
+                  fill={'none'}
+                  d={ geoPath().projection(this.projection())(d) }
+                />
+              ))
+            }
+      </svg>
+    );
+  }
+}
 
 class WorldMap extends React.Component {
   constructor() {
