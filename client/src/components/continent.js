@@ -5,26 +5,36 @@ import PropTypes from 'prop-types'
 import Item from './item.js';
 
 let styles = {
-  continents: {
-   flex: 1,
-   alignItems: 'center',
-   justifyContent: 'center',
-   flexDirection: 'row',
-   width: 400,
-   flexWrap: 'wrap'
-  },
-  countries: {
-    flex:1,
-    alignItems: 'center',
+  container: {
+    display: 'flex',
+    flex: 1,
+    alignItems: 'flex-start',
     justifyContent: 'center',
     flexDirection: 'row',
     flexWrap: 'wrap'
   },
-  cities: {
-    flex:1,
-    alignItems: 'center',
+  continents: {
+    display: 'flex',
+    flex: 1,
+    alignItems: 'flex-start',
     justifyContent: 'center',
-    flexDirection: 'row',
+    flexDirection: 'column',
+    flexWrap: 'wrap'
+  },
+  countries: {
+    display: 'flex',
+    flex:1,
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    flexWrap: 'wrap',
+  },
+  cities: {
+    display: 'flex',
+    flex:1,
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    flexDirection: 'column',
     flexWrap: 'wrap'
   },
   button: {
@@ -77,11 +87,17 @@ export default class ContinentList extends React.Component {
       }
 
       return(
-          <React.Fragment>
-              {cities}
-              {countries}
-              {continents}
-          </React.Fragment>
+          <div style={styles.container}>
+              <div style={styles.continents}>
+                {continents}
+              </div>
+              <div style={styles.countries}>
+                {countries}
+              </div>
+              <div style={styles.cities}>
+                {cities}
+              </div>
+          </div>
       );        
     }  
 }

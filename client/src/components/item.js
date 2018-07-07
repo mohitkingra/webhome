@@ -3,20 +3,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 let styles = {
-  button: {
+  buttonDefault: {
+    width: 100,
+    height: 50,
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 10,
+    backgroundColor: 'transparent',
+  },
+  buttonClicked: {
+    width: 100,
+    height: 50,
+    borderColor: 'gray',
+    borderWidth: 1,
+    borderRadius: 10,
+    backgroundColor: 'gray',
   },
 };
 
 export default class Item extends React.Component {
   constructor(props) {
       super(props);
-
-      this.state = {
-        color: 'transparent'
-      }
   }
   
   onButtonPress = () => {
@@ -32,28 +39,13 @@ export default class Item extends React.Component {
 
       if(this.props.id.substring(0,4) === "City"){
           this.props.toggleCity(this.props.name);
-      
-          if(this.state.color === 'transparent'){
-            this.setState({
-              color:'gray'
-            })
-          }
-          else{
-            this.setState({
-              color:'transparent'
-            })
-          }
       }
 
   }
 
 	render(){
 		return(
-        <button 
-          style={styles.button}
-          title={this.props.name}
-          onClick={this.onButtonPress}
-        />
+        <button style={this.props.highlight ? styles.buttonClicked : styles.buttonDefault} onClick={this.onButtonPress}>{this.props.name}</button>
     );
 	}
 }

@@ -9,7 +9,7 @@
     "d3-geo": "^1.10.0",
     "dotenv": "4.0.0",
     "file-loader": "^1.1.11",
-    "keystone": "4.0.0-beta.5",
+    "keystone": "^4.0.0-rc.1",
     "keystone-email": "^1.0.5",
     "keystone-social-login": "github:JohnnyEstilles/keystone-social-login",
     "lodash": "^4.13.1",
