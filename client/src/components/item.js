@@ -31,13 +31,10 @@ export default class Item extends React.Component {
       if(this.props.id.substring(0,9) === "Continent"){
           this.props.toggleContinent(this.props.name);
       }
-
-
-      if(this.props.id.substring(0,7) === "Country"){
+      else if(this.props.id.substring(0,7) === "Country"){
           this.props.toggleCountry(this.props.name);
       }
-
-      if(this.props.id.substring(0,4) === "City"){
+      else if(this.props.id.substring(0,4) === "City"){
           this.props.toggleCity(this.props.name);
       }
 

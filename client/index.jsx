@@ -39,32 +39,33 @@ let styles = {
   },
 };
 
-var travelState= [];
-
 class WorldMap extends React.Component {
   constructor() {
       super()
       this.state ={
         worlddata: feature(worlddata, worlddata.objects.countries).features,
-        traveldata: [],
-        renderdata: [],
+        renderState: [],
       }
     }
   
   projection() {
       return geoMercator()
-        .scale(60)
-        .translate([800/2, 450/2])
+        .scale(120)
+        .translate([1280/2, 720/2])
     }
-
-
 
   componentDidMount() {
 
-      var arr = [];
-      
-      travelState.forEach((continent, index) => {
+      var travelState = [];
+
+      store.subscribe(() => {
+        travelState = store.getState().continentReducer.continents; 
+
+        var renderData = [];
+
+        travelState.forEach((continent, index) => {
         continent.countries.forEach((country, index) => {
+
 
           //get selected countries name
           if(country.cities.some(city => city.select === 1)){
@@ -80,27 +81,29 @@ class WorldMap extends React.Component {
                   if(geometry.id == countryData["country-code"]) {
  
                     // Update fillstyle
-                    arr[index]=1;
+                    renderData[index]=1;
                   }
- 
                 });
               }
             })
           }
         
         })
-      })
-      
-      this.setState({
-        traveldata: travelState,
-        renderdata : arr,
-      })
 
+        this.setState({
+          renderState: renderData,
+        })
+      })
+    })  
+  }
+
+  componentWillUnmount(){
+    store.unsubsribe();
   }
 
   render() {
     return (
-     <svg width={ 1200 } height={ 720 } viewBox="0 0 1280 720">
+     <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
           <g className="countries">
             {
               this.state.worlddata.map((d,i) => (
@@ -108,7 +111,7 @@ class WorldMap extends React.Component {
                   className="country"
                   stroke="gray" 
                   strokeWidth="2"
-                  fill={ this.state.renderdata[i] ? 'gray' : 'none' }
+                  fill={ this.state.renderState[i] ? 'gray' : 'none' }
                   key={ `path-${ i }` }
                   d={ geoPath().projection(this.projection())(d) }
                 />
@@ -123,49 +126,16 @@ class WorldMap extends React.Component {
 class Home extends React.Component {
   constructor(props) {
     super(props);
-  
-    this.state = {
-      map: false,
-    }
   }
   
-  componentDidMount(){
-    store.subscribe(() => {
-      
-      travelState = store.getState().continentReducer.continents; 
-
-    })  
-  }
-
-  componentWillUnmount(){
-    store.unsubsribe();
-  }
-
-  onButtonPress = () => {
-    this.setState({
-      map: !this.state.map,
-    })
-  }
-
   render() {
-
-    if(this.state.map){
-      return(
-        <div>
-          <WorldMap />
-          <button style={styles.button} onClick={this.onButtonPress}>Back!</button>
-        </div>
-      );
-    }
-    else {
       return(
         <div>
           <ContinentList />
-          <button style={styles.button} onClick={this.onButtonPress}>See your travel Map!</button>
+          <WorldMap />
         </div>
       );
     }
-  }
 }
 
 const App = () => {
