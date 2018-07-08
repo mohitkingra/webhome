@@ -67,7 +67,7 @@ export const initialState = {
                   countries:[
                   {
                     select: 0,
-                    name: "Oceania",
+                    name: "Australia",
                     cities: [
                       {
                         select: 0,
@@ -142,7 +142,7 @@ export const initialState = {
                   }, 
                   {
                     select: 0,
-                    name: "United States",
+                    name: "United States of America",
                     cities: [
                       {
                         select: 0,
@@ -187,14 +187,14 @@ export const initialState = {
                 }, 
                 {
                   select: 0, 
-                  name: "Antartica",
+                  name: "Antarctica",
                   countries:[
                   {
                     select: 0,
-                    name: "Antartica",
+                    name: "Antarctica",
                     cities: [{
                       select: 0,
-                      name: "Antartica"
+                      name: "Antarctica"
                     }]
                   }]
                 }
