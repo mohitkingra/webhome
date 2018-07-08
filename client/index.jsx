@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 
-import continentReducer from './src/reducers/index.js';
-let store = createStore(combineReducers({continentReducer}));
+import continentReducer from './src/reducers/indexWorld.js';
+import countryReducer from './src/reducers/indexCountry.js';
+
+let store = createStore(combineReducers({continentReducer, countryReducer}));
 
 import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
@@ -14,12 +16,51 @@ import indiadata from './../server/public/data/india-states.json';
 import countrydata from './../server/public/data/country.json';
 import worlddata from './../server/public/data/world-110m.json';
 
-let imgUrl = './../server/public/img/background.jpg';
+import {
+  FacebookShareButton,
+  GooglePlusShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  PinterestShareButton,
+  VKShareButton,
+  RedditShareButton,
+  TumblrShareButton,
+  LivejournalShareButton,
+} from 'react-share';
+
+import {
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  GooglePlusIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  VKIcon,
+  RedditIcon,
+  TumblrIcon,
+} from 'react-share';
+
+import {
+  FacebookShareCount,
+  GooglePlusShareCount,
+  LinkedinShareCount,
+  PinterestShareCount,
+  VKShareCount,
+  RedditShareCount,
+  TumblrShareCount,
+} from 'react-share';
 
 import ContinentList  from './src/containers/continent.js';
+import CountryList  from './src/containers/country.js';
+
+let imgUrl = './../server/public/img/background.jpg';
 
 let continentCount = 0;
 let countryCount = 0;
+let stateCount = 0;
 let cityCount = 0;
 
 let styles = {
@@ -42,13 +83,61 @@ let styles = {
     width:100,
     height:50,
   },
+  sharebutton:{
+    display: 'flex',
+    flex: 1,
+    flexDirection: "column",
+    width:50,
+    height:50,
+  }
 };
+
+class SocialMediaShare extends React.Component {
+  constructor() {
+    super();
+  }
+
+  render(){
+    return(
+    <div style={styles.sharebutton}>
+      <FacebookShareButton url={'http://mohitkingra.com/yourtravelmap'} quote={"My travels in India!"}> 
+        <FacebookIcon size={32} round={true} />
+          <FacebookShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </FacebookShareCount>
+        </FacebookShareButton>
+        <GooglePlusShareButton url={'http://mohitkingra.com/yourtravelmap'} quote={"My travels in India!"}> 
+          <GooglePlusIcon size={32} round={true} />
+          <GooglePlusShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </GooglePlusShareCount>
+        </GooglePlusShareButton>
+        <LinkedinShareButton url={'http://mohitkingra.com/yourtravelmap'} quote={"My travels in India!"}> 
+          <LinkedinIcon size={32} round={true} />
+          <LinkedinShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </LinkedinShareCount>
+        </LinkedinShareButton>
+        <TwitterShareButton url={'http://mohitkingra.com/yourtravelmap'} quote={"My travels in India!"}> 
+          <TwitterIcon size={32} round={true} />
+        </TwitterShareButton>
+    </div>
+    );
+  }
+}
 
 class IndiaMap extends React.Component {
   constructor() {
     super();
     this.state={
       indiadata: feature(indiadata, indiadata.objects.states).features,
+      renderState: [],
     }
   }
 
@@ -58,21 +147,74 @@ class IndiaMap extends React.Component {
       .translate([-450, 650])
   }
 
+ componentDidMount() {
+
+      var travelState = [];
+
+      store.subscribe(() => {
+        travelState = store.getState().countryReducer.states; 
+
+        var renderData = [];
+
+        stateCount = 0;
+        cityCount = 0;
+
+        travelState.forEach((state, index) => {
+
+          if(state.cities.some((city => city.select === 1))){
+            stateCount++;
+          
+            state.cities.forEach((city, index) => {
+              if(city.select ===1)
+                cityCount++;
+            })
+
+            //get country id from name    
+            
+            indiadata.objects.states.geometries.forEach(function(geometry, index) {
+              if(geometry.properties["NAME_1"] === state.name ) {
+                // Update fillstyle
+                console.log(state.name);
+                renderData[index]=1;
+              }
+            });
+          }
+        })
+
+        this.setState({
+          renderState: renderData,
+          url: this.refs.india.toDataURL("image/png"),
+        })
+      })
+  }
+
+  componentWillUnmount(){
+    store.unsubsribe();
+  }
+
   render(){
     return(
-      <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
+      <div>
+        <svg ref="india" width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
             {
               this.state.indiadata.map((d,i) => (
                 <path
                   stroke="gray"
                   strokeWidth="0.5"
                   key={ `path-${ i }` }
-                  fill={'none'}
+                  fill={ this.state.renderState[i] ? 'forestgreen' : 'honeydew' }
                   d={ geoPath().projection(this.projection())(d) }
                 />
               ))
             }
-      </svg>
+        </svg>
+        <div style={{"textAlign" : "center"}}>
+          <h1>You have traveled : {(stateCount/32)*100}% of India!</h1>
+          <h3> {stateCount} out of total 32 states!</h3>
+          <h3> {cityCount} out of total cities listed!</h3>
+        </div>
+        <SocialMediaShare />
+      </div>
     );
   }
 }
@@ -193,8 +335,8 @@ class Home extends React.Component {
   render() {
       return(
         <div>
-          <ContinentList />
-          <WorldMap />
+          <CountryList />
+          <IndiaMap />
         </div>
       );
     }

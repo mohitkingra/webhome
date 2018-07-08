@@ -37,7 +37,12 @@ export default class Item extends React.Component {
       else if(this.props.id.substring(0,4) === "City"){
           this.props.toggleCity(this.props.name);
       }
-
+      else if(this.props.id.substring(0,5) === "State"){
+          this.props.toggleState(this.props.name);
+      }
+      else if(this.props.id.substring(0,5) === "Ciity"){
+          this.props.toggleCiity(this.props.name);
+      }
   }
 
 	render(){

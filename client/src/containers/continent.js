@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { toggleContinent, toggleCountry, toggleCity } from '../actions/index.js';
+import { toggleContinent, toggleCountry, toggleCity } from '../actions/indexWorld.js';
 import ContinentList  from '../components/continent.js';
 
 function mapStateToProps(state) {

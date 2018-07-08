@@ -1,6 +1,6 @@
-import { TOGGLE_CONTINENT, TOGGLE_COUNTRY, TOGGLE_CITY } from '../actions/index.js';
+import { TOGGLE_CONTINENT, TOGGLE_COUNTRY, TOGGLE_CITY } from '../actions/indexWorld.js';
 
-import { initialState } from './state.js';
+import { initialState } from './stateWorld.js';
 
 export default function continentReducer(state = initialState, action) {
   switch (action.type) {
