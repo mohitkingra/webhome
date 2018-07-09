@@ -56,7 +56,7 @@ import {
 import ContinentList  from './src/containers/continent.js';
 import CountryList  from './src/containers/country.js';
 
-let imgUrl = './../server/public/img/background.jpg';
+import imgWorldUrl from './../server/public/img/world-whale.jpg';
 
 let continentCount = 0;
 let countryCount = 0;
@@ -68,13 +68,6 @@ let styles = {
    flex: 1,
    alignItems: 'center',
    justifyContent: 'center',
-  },
-  root: {
-    backgroundImage: 'url(' + imgUrl + ')',
-    backgroundImage: {
-      flex:1,
-      resizeMode: 'cover',
-    }
   },
   button: {
     borderColor: 'gray',
@@ -183,13 +176,12 @@ class IndiaMap extends React.Component {
 
         this.setState({
           renderState: renderData,
-          url: this.refs.india.toDataURL("image/png"),
         })
       })
   }
 
   componentWillUnmount(){
-    store.unsubsribe();
+    //store.unsubsribe();
   }
 
   render(){
@@ -294,7 +286,7 @@ class WorldMap extends React.Component {
   }
 
   componentWillUnmount(){
-    store.unsubsribe();
+    //store.unsubsribe();
   }
 
   render() {
@@ -316,12 +308,13 @@ class WorldMap extends React.Component {
             }
           </g>
       </svg>
-      <div style={{"text-align" : "center"}}>
+      <div style={{"textAlign" : "center"}}>
         <h1>You have traveled : {(countryCount/206)*100}% of the World! </h1>
         <h3>{continentCount} out of total 7 Continents!</h3>
         <h3>{countryCount} out of total 206 Countries!</h3>
         <h3>{cityCount} out of total Cities listed!</h3>
       </div>
+      <SocialMediaShare />
     </div>
     );
   }
@@ -330,14 +323,36 @@ class WorldMap extends React.Component {
 class Home extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {value: 'india'};
+
+    this.handleChange = this.handleChange.bind(this);
+
   }
-  
-  render() {
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  render() {      
       return(
-        <div>
-          <CountryList />
-          <IndiaMap />
-        </div>
+          <div style={{background: 'url(' + imgWorldUrl + ') no-repeat center', backgroundSize : "100% 100%"}}>
+            <label style={{"display" : "block", "textAlign" : "center"}}>
+              Create Travel Map for:
+              <select value={this.state.value} onChange={this.handleChange}>
+                <option value="india">India</option>
+                <option value="world">World</option>
+              </select>
+            </label>
+            <div style={this.state.value === 'india' ? {"display": "block"} : {"display": "none"}} >
+              <CountryList />
+              <IndiaMap />
+            </div>
+            <div style={this.state.value === 'world' ? {"display": "block"} : {"display": "none"}} >
+              <ContinentList />
+              <WorldMap />
+            </div>
+          </div>
       );
     }
 }

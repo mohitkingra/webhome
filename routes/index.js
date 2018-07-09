@@ -43,7 +43,7 @@ exports = module.exports = function(app) {
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
 
-	app.all('/yourtravelmap', routes.views.travelmap); //react
+	app.all('/mytravelmap', routes.views.travelmap); //react
 	
 	app.all('/join', routes.views.session.join);
 	app.all('/signin', routes.views.session.signin);
