@@ -16,7 +16,7 @@ import indiadata from './../server/public/data/india-states.json';
 import countrydata from './../server/public/data/country.json';
 import worlddata from './../server/public/data/world-110m.json';
 
-let svgtopng = require('../node_modules/save-svg-as-png/lib/saveSvgAsPng.js');
+import domtoimage from 'dom-to-image';
 
 import {
   FacebookShareButton,
@@ -57,6 +57,9 @@ let continentCount = 0;
 let countryCount = 0;
 let stateCount = 0;
 let cityCount = 0;
+let ciityCount = 0;
+
+let indiaMap = new Image();
 
 let styles = {
   container: {
@@ -83,27 +86,13 @@ let styles = {
 class SocialMediaShare extends React.Component {
   constructor() {
     super();
+  }
   
-    this.state = {
-      url: null,
-    }
-  }
-
-  componentDidMount(){
-    console.log("mount");
-  }
-
-
-
-  componentDidUpdate(){
-    console.log("update");
-  }
-
   render(){
     return(
-    <div style={styles.sharebutton}>
-      <FacebookShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
-        <FacebookIcon size={32} round={true} />
+      <div style={styles.sharebutton}>
+        <FacebookShareButton url={indiaMap}> 
+          <FacebookIcon size={32} round={true} />
           <FacebookShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
             {shareCount => (
               <span className="myShareCountWrapper">{shareCount}</span>
@@ -162,6 +151,7 @@ class SocialMediaShare extends React.Component {
 class IndiaMap extends React.Component {
   constructor() {
     super();
+    
     this.state={
       indiadata: feature(indiadata, indiadata.objects.states).features,
       renderState: [],
@@ -170,8 +160,8 @@ class IndiaMap extends React.Component {
 
   projection() {
     return geoMercator()
-      .scale(800)
-      .translate([-450, 650])
+      .scale(1000)
+      .translate([-650, 800])
   }
 
  componentDidMount() {
@@ -184,16 +174,16 @@ class IndiaMap extends React.Component {
         var renderData = [];
 
         stateCount = 0;
-        cityCount = 0;
+        ciityCount = 0;
 
         travelState.forEach((state, index) => {
 
           if(state.cities.some((city => city.select === 1))){
             stateCount++;
-          
+
             state.cities.forEach((city, index) => {
-              if(city.select ===1)
-                cityCount++;
+              if(city.select === 1)
+                ciityCount++;
             })
 
             //get country id from name    
@@ -216,9 +206,9 @@ class IndiaMap extends React.Component {
   }
 
   componentDidUpdate(){
-    svgtopng.svgAsPngUri(this.svg,{}, function(uri){
-      console.log("uri"+uri);
-    });
+    domtoimage.toPng(this.dom).then(function(dataUrl){
+      indiaMap.src = dataUrl;
+    })
   }
 
   componentWillUnmount(){
@@ -227,8 +217,9 @@ class IndiaMap extends React.Component {
 
   render(){
     return(
-      <div>
-        <svg ref = { el => this.svg = el} width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
+    <div>
+      <div ref = { el => this.dom = el}>
+        <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
             {
               this.state.indiadata.map((d,i) => (
                 <path
@@ -242,12 +233,13 @@ class IndiaMap extends React.Component {
             }
         </svg>
         <div style={{"textAlign" : "center"}}>
-          <h1>You have traveled : {(stateCount/32)*100}% of India!</h1>
-          <h3> {stateCount} out of total 32 states!</h3>
-          <h3> {cityCount} out of total cities listed!</h3>
+          <h1>You have traveled : {(stateCount/36)*100}% of India!</h1>
+          <h3> {stateCount} out of total 29 states and 7 Union Territories!</h3>
+          <h3> {ciityCount} out of total 65 cities listed!</h3>
         </div>
-        <SocialMediaShare />
       </div>
+      <SocialMediaShare />
+    </div>
     );
   }
 }

@@ -17,7 +17,7 @@ let styles = {
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 10,
-    backgroundColor: 'gray',
+    backgroundColor: 'azure',
   },
 };
 

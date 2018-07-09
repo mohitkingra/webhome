@@ -14,7 +14,7 @@ export const initialState = {
             },
             {
                   select: 0, 
-                  name: "Arunanchal Pradesh", 
+                  name: "Arunachal Pradesh", 
                   cities:[
                     {
                       select: 0,
@@ -28,6 +28,19 @@ export const initialState = {
             {
                   select: 0, 
                   name: "Andaman and Nicobar", 
+                  cities:[
+                    {
+                      select: 0,
+                      name: "Guwahati",
+                    },
+                    {
+                      select: 0,
+                      name: "Dibrugarh",
+                    }]
+            },
+            {
+                  select: 0, 
+                  name: "Andhra Pradesh", 
                   cities:[
                     {
                       select: 0,
@@ -63,6 +76,32 @@ export const initialState = {
             {
                   select: 0, 
                   name: "Chhattisgarh", 
+                  cities:[
+                    {
+                      select: 0,
+                      name: "Mumbai",
+                    },
+                    {
+                      select: 0,
+                      name: "Pune"
+                    }]
+            },
+            {
+                  select: 0, 
+                  name: "Daman and Diu", 
+                  cities:[
+                    {
+                      select: 0,
+                      name: "Mumbai",
+                    },
+                    {
+                      select: 0,
+                      name: "Pune"
+                    }]
+            },
+            {
+                  select: 0, 
+                  name: "Dadra and Nagar Haveli", 
                   cities:[
                     {
                       select: 0,
@@ -176,6 +215,19 @@ export const initialState = {
             {
                   select: 0, 
                   name: "Kerala", 
+                  cities:[
+                    {
+                      select: 0,
+                      name: "Kochi",
+                    },
+                    {
+                      select: 0,
+                      name: "Ka",
+                    }]
+            },
+            {
+                  select: 0, 
+                  name: "Lakshwadeep", 
                   cities:[
                     {
                       select: 0,
