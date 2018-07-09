@@ -16,6 +16,8 @@ import indiadata from './../server/public/data/india-states.json';
 import countrydata from './../server/public/data/country.json';
 import worlddata from './../server/public/data/world-110m.json';
 
+let svgtopng = require('../node_modules/save-svg-as-png/lib/saveSvgAsPng.js');
+
 import {
   FacebookShareButton,
   GooglePlusShareButton,
@@ -81,6 +83,20 @@ let styles = {
 class SocialMediaShare extends React.Component {
   constructor() {
     super();
+  
+    this.state = {
+      url: null,
+    }
+  }
+
+  componentDidMount(){
+    console.log("mount");
+  }
+
+
+
+  componentDidUpdate(){
+    console.log("update");
   }
 
   render(){
@@ -149,7 +165,6 @@ class IndiaMap extends React.Component {
     this.state={
       indiadata: feature(indiadata, indiadata.objects.states).features,
       renderState: [],
-      imageURL: null,
     }
   }
 
@@ -195,11 +210,15 @@ class IndiaMap extends React.Component {
 
         this.setState({
           renderState: renderData,
-          //imageURL: this.svg.toDataURL("image/png"),
         })
       })
 
-      console.log(this.state.imageURL);
+  }
+
+  componentDidUpdate(){
+    svgtopng.svgAsPngUri(this.svg,{}, function(uri){
+      console.log("uri"+uri);
+    });
   }
 
   componentWillUnmount(){
@@ -368,6 +387,7 @@ class Home extends React.Component {
                 <option value="world">World</option>
               </select>
             </label>
+            <span />
             <div style={this.state.value === 'india' ? {"display": "block"} : {"display": "none"}} >
               <CountryList />
               <IndiaMap />

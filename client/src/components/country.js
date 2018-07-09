@@ -19,12 +19,13 @@ let styles = {
     alignItems: 'flex-start',
     justifyContent: 'center',
     flexDirection: 'column',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    height: 250,
   },
   cities: {
     display: 'flex',
     flex:1,
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
     flexWrap: 'wrap'
