@@ -23,11 +23,8 @@ import {
   TwitterShareButton,
   TelegramShareButton,
   WhatsappShareButton,
-  PinterestShareButton,
   VKShareButton,
   RedditShareButton,
-  TumblrShareButton,
-  LivejournalShareButton,
 } from 'react-share';
 
 import {
@@ -37,20 +34,16 @@ import {
   WhatsappIcon,
   GooglePlusIcon,
   LinkedinIcon,
-  PinterestIcon,
   VKIcon,
   RedditIcon,
-  TumblrIcon,
 } from 'react-share';
 
 import {
   FacebookShareCount,
   GooglePlusShareCount,
   LinkedinShareCount,
-  PinterestShareCount,
   VKShareCount,
   RedditShareCount,
-  TumblrShareCount,
 } from 'react-share';
 
 import ContinentList  from './src/containers/continent.js';
@@ -79,9 +72,9 @@ let styles = {
   sharebutton:{
     display: 'flex',
     flex: 1,
-    flexDirection: "column",
-    width:50,
-    height:50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: "row",
   }
 };
 
@@ -93,7 +86,7 @@ class SocialMediaShare extends React.Component {
   render(){
     return(
     <div style={styles.sharebutton}>
-      <FacebookShareButton url={'http://mohitkingra.com/yourtravelmap'} quote={"My travels in India!"}> 
+      <FacebookShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
         <FacebookIcon size={32} round={true} />
           <FacebookShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
             {shareCount => (
@@ -101,7 +94,7 @@ class SocialMediaShare extends React.Component {
             )}
           </FacebookShareCount>
         </FacebookShareButton>
-        <GooglePlusShareButton url={'http://mohitkingra.com/yourtravelmap'} quote={"My travels in India!"}> 
+        <GooglePlusShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
           <GooglePlusIcon size={32} round={true} />
           <GooglePlusShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
             {shareCount => (
@@ -109,7 +102,7 @@ class SocialMediaShare extends React.Component {
             )}
           </GooglePlusShareCount>
         </GooglePlusShareButton>
-        <LinkedinShareButton url={'http://mohitkingra.com/yourtravelmap'} quote={"My travels in India!"}> 
+        <LinkedinShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
           <LinkedinIcon size={32} round={true} />
           <LinkedinShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
             {shareCount => (
@@ -117,9 +110,34 @@ class SocialMediaShare extends React.Component {
             )}
           </LinkedinShareCount>
         </LinkedinShareButton>
-        <TwitterShareButton url={'http://mohitkingra.com/yourtravelmap'} quote={"My travels in India!"}> 
+        <TwitterShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
           <TwitterIcon size={32} round={true} />
+          <span className="myShareCountWrapper">{0}</span>
         </TwitterShareButton>
+        <VKShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
+        <VKIcon size={32} round={true} />
+          <VKShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </VKShareCount>
+        </VKShareButton>
+        <RedditShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
+        <RedditIcon size={32} round={true} />
+          <RedditShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </RedditShareCount>
+        </RedditShareButton>
+        <WhatsappShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
+          <WhatsappIcon size={32} round={true} />
+          <span className="myShareCountWrapper">{0}</span>  
+        </WhatsappShareButton> 
+        <TelegramShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
+          <TelegramIcon size={32} round={true} />
+          <span className="myShareCountWrapper">{0}</span>
+        </TelegramShareButton>  
     </div>
     );
   }
@@ -131,6 +149,7 @@ class IndiaMap extends React.Component {
     this.state={
       indiadata: feature(indiadata, indiadata.objects.states).features,
       renderState: [],
+      imageURL: null,
     }
   }
 
@@ -176,8 +195,11 @@ class IndiaMap extends React.Component {
 
         this.setState({
           renderState: renderData,
+          //imageURL: this.svg.toDataURL("image/png"),
         })
       })
+
+      console.log(this.state.imageURL);
   }
 
   componentWillUnmount(){
@@ -187,7 +209,7 @@ class IndiaMap extends React.Component {
   render(){
     return(
       <div>
-        <svg ref="india" width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
+        <svg ref = { el => this.svg = el} width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
             {
               this.state.indiadata.map((d,i) => (
                 <path
@@ -219,6 +241,7 @@ class WorldMap extends React.Component {
       this.state ={
         worlddata: feature(worlddata, worlddata.objects.countries).features,
         renderState: [],
+        imageURL: null,
       }
     }
   
@@ -280,6 +303,7 @@ class WorldMap extends React.Component {
 
         this.setState({
           renderState: renderData,
+          //imageURL: this.svg.toDataURL("image/png"),
         })
       })
     })  
