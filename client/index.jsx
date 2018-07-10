@@ -163,7 +163,7 @@ class IndiaMap extends React.Component {
   projection() {
     return geoMercator()
       .scale(1000)
-      .translate([-750, 800])
+      .translate([-700, 800])
   }
 
  componentDidMount() {
@@ -191,7 +191,7 @@ class IndiaMap extends React.Component {
             //get country id from name    
             
             indiadata.objects.states.geometries.forEach(function(geometry, index) {
-              if(geometry.properties["NAME_1"] === state.name ) {
+              if(geometry.properties["NAME_1"] === state.name || ( geometry.properties["NAME_1"] === "Andhra Pradesh" && state.name === "Telangana")) {
                 // Update fillstyle
                 renderData[index]=1;
               }
@@ -236,7 +236,7 @@ class IndiaMap extends React.Component {
           </svg>
           <div style={{"textAlign" : "center"}}>
             <h1> You have traveled to... </h1>
-            <h3> {ciityCount} out of total 66 cities listed!</h3>
+            <h3> {ciityCount} out of total 184 cities listed!</h3>
             <h3> {stateCount} out of total 29 states and 7 Union Territories!</h3>
             <h1> Congratulations!, that is {Number((stateCount/36)*100).toFixed(2)}% of India!</h1>
           </div>
@@ -375,16 +375,12 @@ class Home extends React.Component {
   render() {      
       return(
           <div style={{background: 'url(' + imgWorldUrl + ') no-repeat center', backgroundSize : "100% 100%"}}>
-            <label style={{"display" : "block", "textAlign" : "center"}}>
-              Create Travel Map for
-              <select value={this.state.value} onChange={this.handleChange}>
-                <option value="india">India</option>
-                <option value="world">World</option>
-              </select>
+            <label style={{"display" : "block", "textAlign" : "center", "fontSize" : 24}}>
+              Create Travel Map for INDIA
             </label>
             <div style={this.state.value === 'india' ? {"display": "block"} : {"display": "none"}} >
               <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>
-                Select the State/City you have been...
+                Select the State/City you have been/slept a night...
               </label>
               <CountryList />
               <IndiaMap />
