@@ -32,14 +32,18 @@ var routes = {
 	auth: importRoutes('./auth'),
 };
 
+
 // Setup Route Bindings
-exports = module.exports = function (app) {
+exports = module.exports = function(app) {
+	
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/blog/:category?', routes.views.blog);
 	app.all('/blog/post/:post', routes.views.post);
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
+
+	app.all('/mytravelmap', routes.views.travelmap); //react
 	
 	app.all('/join', routes.views.session.join);
 	app.all('/signin', routes.views.session.signin);
