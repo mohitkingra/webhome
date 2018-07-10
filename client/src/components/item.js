@@ -4,20 +4,22 @@ import PropTypes from 'prop-types';
 
 let styles = {
   buttonDefault: {
-    width: 100,
+    width: 120,
     height: 50,
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 10,
     backgroundColor: 'transparent',
+    margin: 1,
   },
   buttonClicked: {
-    width: 100,
+    width: 120,
     height: 50,
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 10,
     backgroundColor: 'azure',
+    margin: 1,
   },
 };
 

@@ -17,6 +17,7 @@ import countrydata from './../server/public/data/country.json';
 import worlddata from './../server/public/data/world-110m.json';
 
 import domtoimage from 'dom-to-image';
+import fileSaver from 'file-saver';
 
 import {
   FacebookShareButton,
@@ -71,7 +72,7 @@ let styles = {
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 10,
-    width:100,
+    width:200,
     height:50,
   },
   sharebutton:{
@@ -161,7 +162,7 @@ class IndiaMap extends React.Component {
   projection() {
     return geoMercator()
       .scale(1000)
-      .translate([-650, 800])
+      .translate([-750, 800])
   }
 
  componentDidMount() {
@@ -191,7 +192,6 @@ class IndiaMap extends React.Component {
             indiadata.objects.states.geometries.forEach(function(geometry, index) {
               if(geometry.properties["NAME_1"] === state.name ) {
                 // Update fillstyle
-                console.log(state.name);
                 renderData[index]=1;
               }
             });
@@ -205,21 +205,22 @@ class IndiaMap extends React.Component {
 
   }
 
-  componentDidUpdate(){
-    domtoimage.toPng(this.dom).then(function(dataUrl){
-      indiaMap.src = dataUrl;
-    })
-  }
-
   componentWillUnmount(){
     //store.unsubsribe();
   }
 
+  onSaveMap = () => {
+    domtoimage.toBlob(this.refs.saveImage)
+    .then(function (blob) {
+        fileSaver.saveAs(blob, 'my-node.png');
+    });
+  }
+
   render(){
     return(
-    <div>
-      <div ref = { el => this.dom = el}>
-        <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
+      <div>
+        <div ref="saveImage">
+          <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
             {
               this.state.indiadata.map((d,i) => (
                 <path
@@ -231,15 +232,18 @@ class IndiaMap extends React.Component {
                 />
               ))
             }
-        </svg>
+          </svg>
+          <div style={{"textAlign" : "center"}}>
+            <h1> You have traveled: </h1>
+            <h3> {ciityCount} out of total 65 cities listed!</h3>
+            <h3> {stateCount} out of total 29 states and 7 Union Territories!</h3>
+            <h1> Congratulations!, that is {Number((stateCount/36)*100).toFixed(2)}% of India!</h1>
+          </div>
+        </div>
         <div style={{"textAlign" : "center"}}>
-          <h1>You have traveled : {(stateCount/36)*100}% of India!</h1>
-          <h3> {stateCount} out of total 29 states and 7 Union Territories!</h3>
-          <h3> {ciityCount} out of total 65 cities listed!</h3>
+          <button style={styles.button} onClick={this.onSaveMap}>Download your Map</button>
         </div>
       </div>
-      <SocialMediaShare />
-    </div>
     );
   }
 }
@@ -349,7 +353,6 @@ class WorldMap extends React.Component {
         <h3>{countryCount} out of total 206 Countries!</h3>
         <h3>{cityCount} out of total Cities listed!</h3>
       </div>
-      <SocialMediaShare />
     </div>
     );
   }
@@ -379,12 +382,17 @@ class Home extends React.Component {
                 <option value="world">World</option>
               </select>
             </label>
-            <span />
             <div style={this.state.value === 'india' ? {"display": "block"} : {"display": "none"}} >
+              <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>
+                Select the State/City you have been...
+              </label>
               <CountryList />
               <IndiaMap />
             </div>
             <div style={this.state.value === 'world' ? {"display": "block"} : {"display": "none"}} >
+              <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>
+                Select the Continent/Country/City you have been...
+              </label>
               <ContinentList />
               <WorldMap />
             </div>

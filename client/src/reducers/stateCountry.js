@@ -18,11 +18,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Guwahati",
+                      name: "Itanagar",
                     },
                     {
                       select: 0,
-                      name: "Dibrugarh",
+                      name: "Tawang",
                     }]
             },
             {
@@ -31,11 +31,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Guwahati",
+                      name: "Port Blair",
                     },
                     {
                       select: 0,
-                      name: "Dibrugarh",
+                      name: "Havelock",
                     }]
             },
             {
@@ -44,11 +44,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Guwahati",
+                      name: "Vijayawada",
                     },
                     {
                       select: 0,
-                      name: "Dibrugarh",
+                      name: "Visakhapatnam",
                     }]
             },
             {
@@ -79,11 +79,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Raipur",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Bilaspur"
                     }]
             },
             {
@@ -92,11 +92,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Daman",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Diu"
                     }]
             },
             {
@@ -105,11 +105,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Silvassa",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Amli"
                     }]
             },
             {
@@ -179,11 +179,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Srinagar",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Leh"
                     }]
             },
             {
@@ -192,11 +192,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Raipur",
+                      name: "Ranchi",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Jamshedpur"
                     }]
             },
             {
@@ -222,7 +222,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Ka",
+                      name: "Kozhikode",
                     }]
             },
             {
@@ -231,11 +231,7 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Kochi",
-                    },
-                    {
-                      select: 0,
-                      name: "Ka",
+                      name: "Kavaratti",
                     }]
             },
             {
@@ -244,11 +240,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Bhopal",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Gwalior"
                     }]
             },
             {
@@ -270,11 +266,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Imphal",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Ukhrul"
                     }]
             },
             {
@@ -283,11 +279,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Shillong",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Tura"
                     }]
             },
             {
@@ -296,11 +292,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Aizwal",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Serchhip"
                     }]
             },
             {
@@ -309,11 +305,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Kohima",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Dimapur"
                     }]
             },
             {
@@ -326,7 +322,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Bhatinda"
+                      name: "Cuttack"
                     }]
             },
             {
@@ -335,11 +331,7 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
-                    },
-                    {
-                      select: 0,
-                      name: "Pune"
+                      name: "Pondicherry",
                     }]
             },
             {
@@ -378,7 +370,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Rangpo"
                     }]
             },
             {
@@ -387,11 +379,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Chennai",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Kanyakumari"
                     }]
             },
             {
@@ -400,11 +392,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Hyderabad",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Warangal"
                     }]
             },
             {
@@ -413,11 +405,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Agartala",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Dharamanagar"
                     }]
             },
             {
@@ -426,11 +418,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Mumbai",
+                      name: "Dehradun",
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Haridwar"
                     }]
             },
             {

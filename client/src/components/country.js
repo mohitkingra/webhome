@@ -11,24 +11,28 @@ let styles = {
     alignItems: 'flex-start',
     justifyContent: 'center',
     flexDirection: 'row',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
   },
   states: {
     display: 'flex',
     flex: 1,
     alignItems: 'flex-start',
+    alignContent: 'flex-start',
     justifyContent: 'center',
     flexDirection: 'column',
     flexWrap: 'wrap',
-    height: 250,
+    height: 350,
+    marginLeft: 20,
   },
   cities: {
     display: 'flex',
     flex:1,
     alignItems: 'center',
     justifyContent: 'center',
+    alignContent: 'center',
     flexDirection: 'column',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    margin: 20,
   },
   button: {
     borderColor: 'gray',

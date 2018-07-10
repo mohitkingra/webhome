@@ -19,7 +19,8 @@ let styles = {
     alignItems: 'flex-start',
     justifyContent: 'center',
     flexDirection: 'column',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    margin: 20,
   },
   countries: {
     display: 'flex',
@@ -28,6 +29,7 @@ let styles = {
     justifyContent: 'center',
     flexDirection: 'column',
     flexWrap: 'wrap',
+    margin: 20,
   },
   cities: {
     display: 'flex',
@@ -35,7 +37,8 @@ let styles = {
     alignItems: 'flex-start',
     justifyContent: 'center',
     flexDirection: 'column',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    margin :20,
   },
   button: {
     borderColor: 'gray',
