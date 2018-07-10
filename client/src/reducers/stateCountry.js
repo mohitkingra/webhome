@@ -89,12 +89,7 @@ export const initialState = {
             {
                   select: 0, 
                   name: "Daman and Diu", 
-                  cities:[
-                    {
-                      select: 0,
-                      name: "Daman",
-                    },
-                    {
+                  cities:[{
                       select: 0,
                       name: "Diu"
                     }]
@@ -106,10 +101,6 @@ export const initialState = {
                     {
                       select: 0,
                       name: "Silvassa",
-                    },
-                    {
-                      select: 0,
-                      name: "Amli"
                     }]
             },
             {

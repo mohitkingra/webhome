@@ -53,6 +53,7 @@ import ContinentList  from './src/containers/continent.js';
 import CountryList  from './src/containers/country.js';
 
 import imgWorldUrl from './../server/public/img/world-whale.jpg';
+import imgWorldBackgroundUrl from './../server/public/img/world-whale1.jpg';
 
 let continentCount = 0;
 let countryCount = 0;
@@ -210,9 +211,9 @@ class IndiaMap extends React.Component {
   }
 
   onSaveMap = () => {
-    domtoimage.toBlob(this.refs.saveImage)
+    domtoimage.toBlob(this.refs.saveImage, { width: 1280, height: 960, style : { "background" : 'url(' + imgWorldBackgroundUrl + ') no-repeat center'}})
     .then(function (blob) {
-        fileSaver.saveAs(blob, 'my-node.png');
+        fileSaver.saveAs(blob, 'mytravelmap.png');
     });
   }
 
@@ -234,8 +235,8 @@ class IndiaMap extends React.Component {
             }
           </svg>
           <div style={{"textAlign" : "center"}}>
-            <h1> You have traveled: </h1>
-            <h3> {ciityCount} out of total 65 cities listed!</h3>
+            <h1> You have traveled to... </h1>
+            <h3> {ciityCount} out of total 66 cities listed!</h3>
             <h3> {stateCount} out of total 29 states and 7 Union Territories!</h3>
             <h1> Congratulations!, that is {Number((stateCount/36)*100).toFixed(2)}% of India!</h1>
           </div>
@@ -318,7 +319,6 @@ class WorldMap extends React.Component {
 
         this.setState({
           renderState: renderData,
-          //imageURL: this.svg.toDataURL("image/png"),
         })
       })
     })  
@@ -376,7 +376,7 @@ class Home extends React.Component {
       return(
           <div style={{background: 'url(' + imgWorldUrl + ') no-repeat center', backgroundSize : "100% 100%"}}>
             <label style={{"display" : "block", "textAlign" : "center"}}>
-              Create Travel Map for:
+              Create Travel Map for
               <select value={this.state.value} onChange={this.handleChange}>
                 <option value="india">India</option>
                 <option value="world">World</option>
