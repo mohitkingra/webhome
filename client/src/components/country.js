@@ -22,7 +22,7 @@ let styles = {
     flexDirection: 'column',
     flexWrap: 'wrap',
     height: 350,
-    marginLeft: 20,
+    marginLeft: 18,
   },
   cities: {
     display: 'flex',
@@ -32,7 +32,7 @@ let styles = {
     alignContent: 'center',
     flexDirection: 'column',
     flexWrap: 'wrap',
-    margin: 20,
+    margin: 18,
   },
   button: {
     borderColor: 'gray',
