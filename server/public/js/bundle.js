@@ -2645,7 +2645,7 @@ var IndiaMap = function (_React$Component) {
             _react2.default.createElement(
               'h1',
               null,
-              ' You have traveled to... '
+              ' You have traveled... '
             ),
             _react2.default.createElement(
               'h3',
@@ -2861,11 +2861,11 @@ var Home = function (_React$Component3) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { style: { background: 'url(' + _worldWhale2.default + ') no-repeat center', backgroundSize: "100% 100%" } },
+        { style: { background: 'url(' + _worldWhale2.default + ') no-repeat center', backgroundSize: "100% auto" } },
         _react2.default.createElement(
           'label',
           { style: { "display": "block", "textAlign": "center", "fontSize": 24 } },
-          'Create Travel Map for INDIA'
+          'Create your Travel Map in INDIA'
         ),
         _react2.default.createElement(
           'div',
@@ -2873,7 +2873,7 @@ var Home = function (_React$Component3) {
           _react2.default.createElement(
             'label',
             { style: { "display": "block", "marginLeft": 20, "textAlign": "left" } },
-            'Select the State/City you have been/slept a night...'
+            'Select the State/City you have been...'
           ),
           _react2.default.createElement(_country4.default, null),
           _react2.default.createElement(IndiaMap, null)
