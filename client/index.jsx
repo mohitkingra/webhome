@@ -280,11 +280,11 @@ class Home extends React.Component {
       return(
           <div style={{background: 'url(' + imgWorldUrl + ') no-repeat center', backgroundSize : "100% 100%"}}>
             <label style={{"display" : "block", "textAlign" : "center", "fontSize" : 24}}>
-              Create your Travel Map in INDIA
+              Where all have you been? in INDIA!
             </label>
             <div style={this.state.value === 'india' ? {"display": "block"} : {"display": "none"}} >
               <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>
-                Select the State/City you have been...
+                Select the State/City...
               </label>
               <CountryList />
               <IndiaMap />

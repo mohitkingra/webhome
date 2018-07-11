@@ -27,7 +27,7 @@ let styles = {
   cities: {
     display: 'flex',
     flex:1,
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'center',
     alignContent: 'center',
     flexDirection: 'column',

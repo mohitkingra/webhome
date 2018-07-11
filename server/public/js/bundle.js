@@ -2861,11 +2861,11 @@ var Home = function (_React$Component3) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { style: { background: 'url(' + _worldWhale2.default + ') no-repeat center', backgroundSize: "100% auto" } },
+        { style: { background: 'url(' + _worldWhale2.default + ') no-repeat center', backgroundSize: "100% 100%" } },
         _react2.default.createElement(
           'label',
           { style: { "display": "block", "textAlign": "center", "fontSize": 24 } },
-          'Create your Travel Map in INDIA'
+          'Where all have you been? in INDIA!'
         ),
         _react2.default.createElement(
           'div',
@@ -2873,7 +2873,7 @@ var Home = function (_React$Component3) {
           _react2.default.createElement(
             'label',
             { style: { "display": "block", "marginLeft": 20, "textAlign": "left" } },
-            'Select the State/City you have been...'
+            'Select the State/City...'
           ),
           _react2.default.createElement(_country4.default, null),
           _react2.default.createElement(IndiaMap, null)
@@ -5894,7 +5894,7 @@ var styles = {
   cities: {
     display: 'flex',
     flex: 1,
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'center',
     alignContent: 'center',
     flexDirection: 'column',
