@@ -1,13 +1,44 @@
 var webpack = require('webpack');
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 var path = require('path');
 
 module.exports = {
   // Since webpack 4 we will need to set in what mode webpack is running
-  mode: 'development',
+  mode: 'production',
 	// This will be the entry file for all of our React code
 	entry: [
 		'./client/index.jsx',
 	],
+  optimization: {
+   minimizer:[
+	new UglifyJsPlugin({
+	include: /\.min\.js$/,
+        cache: true,
+        parallel: true,
+        uglifyOptions: {
+          compress: false,
+          ecma: 6,
+          mangle: true
+        },
+        sourceMap: true
+      })
+   ],
+   splitChunks:{
+	chunks: 'all'
+	}
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        // This has effect on the react lib size
+        'NODE_ENV': JSON.stringify('production'),
+      }
+    }),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new BundleAnalyzerPlugin(),
+  ],
 	// This will be where the final bundle file will be outputed
 	output: {
 		path: path.join(__dirname, '/server/public/js/'),
@@ -21,7 +52,7 @@ module.exports = {
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				use: {
-					loader: 'babel-loader',
+					loader: 'babel-loader?cacheDirectory',
 					options: {
 						presets: [
 							'stage-0',
@@ -29,7 +60,6 @@ module.exports = {
 							'env',
 						],
 						plugins: [
-							'react-hot-loader/babel',
 							'transform-class-properties',
 						],
 					},

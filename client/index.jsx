@@ -19,36 +19,6 @@ import worlddata from './../server/public/data/world-110m.json';
 import domtoimage from 'dom-to-image';
 import fileSaver from 'file-saver';
 
-import {
-  FacebookShareButton,
-  GooglePlusShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-  TelegramShareButton,
-  WhatsappShareButton,
-  VKShareButton,
-  RedditShareButton,
-} from 'react-share';
-
-import {
-  FacebookIcon,
-  TwitterIcon,
-  TelegramIcon,
-  WhatsappIcon,
-  GooglePlusIcon,
-  LinkedinIcon,
-  VKIcon,
-  RedditIcon,
-} from 'react-share';
-
-import {
-  FacebookShareCount,
-  GooglePlusShareCount,
-  LinkedinShareCount,
-  VKShareCount,
-  RedditShareCount,
-} from 'react-share';
-
 import ContinentList  from './src/containers/continent.js';
 import CountryList  from './src/containers/country.js';
 
