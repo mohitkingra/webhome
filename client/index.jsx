@@ -280,8 +280,8 @@ class Home extends React.Component {
             <label style={{"display" : "block", "textAlign" : "center", "fontSize" : 24}}>
               Where all have you been? in INDIA!
             </label>
-            <label style={window.navigator.userAgent.toLowerCase().includes("mobi") ? {"display" : "block", "textAlign" : "center", "fontSize" : 36} : {"display" : "none"}} >
-              Sorry, this webpage may not be as responsive as it must. I will appreciate if you view this webpage on desktop or laptop! :)
+            <label style={window.navigator.userAgent.toLowerCase().includes("mobi") ? {"display" : "block", "textAlign" : "center", "fontSize" : 32} : {"display" : "none"}} >
+              Sorry, this webpage may not be as responsive yet as it must :(. For better experience please view this webpage on desktop or laptop! :)
             </label>
             <div style={this.state.value === 'india' ? {"display": "block"} : {"display": "none"}} >
               <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>
