@@ -17,7 +17,7 @@
     "pug": "2.0.0-beta11",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-google-tag-manager": "^2.2.1",
+    "react-ga": "^2.5.3",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "topojson-client": "^3.0.0",
