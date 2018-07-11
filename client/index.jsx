@@ -59,15 +59,13 @@ class IndiaMap extends React.Component {
     this.state={
       indiadata: feature(indiadata, indiadata.objects.states).features,
       renderState: [],
-      width : (window.innerWidth > 0) ? window.innerWidth : screen.width,
     }
-
   }
 
   projection() {
     return geoMercator()
       .scale(1000)
-      .translate([- (this.state.width)*0.6, 800])
+      .translate([-780, 800])
   }
 
  componentDidMount() {
@@ -115,7 +113,7 @@ class IndiaMap extends React.Component {
   }
 
   onSaveMap = () => {
-    domtoimage.toBlob(this.refs.saveImage, { width: 1280, height: 960, style : { "background" : 'url(' + imgWorldUrl + ') no-repeat center', "textAlign" : "center"}})
+    domtoimage.toBlob(this.refs.saveImage, { width: 1280, height: 960, style : { "background" : 'url(' + imgWorldUrl + ') no-repeat center'}})
     .then(function (blob) {
         fileSaver.saveAs(blob, 'mytravelmap.png');
     });
@@ -282,8 +280,8 @@ class Home extends React.Component {
             <label style={{"display" : "block", "textAlign" : "center", "fontSize" : 24}}>
               Where all have you been? in INDIA!
             </label>
-            <label style={window.navigator.userAgent.toLowerCase().includes("mobi") ? {"display" : "block", "textAlign" : "center", "fontSize" : 32} : {"display" : "none"}} >
-              Sorry, this webpage may not be as responsive as it must. I would appreciate if you view this webpage on desktop or laptop! :)
+            <label style={window.navigator.userAgent.toLowerCase().includes("mobi") ? {"display" : "block", "textAlign" : "center", "fontSize" : 36} : {"display" : "none"}} >
+              Sorry, this webpage may not be as responsive as it must. I will appreciate if you view this webpage on desktop or laptop! :)
             </label>
             <div style={this.state.value === 'india' ? {"display": "block"} : {"display": "none"}} >
               <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>
