@@ -14,7 +14,7 @@ class Background extends React.Component{
 	componentDidMount(){
 		ReactGA.initialize('XXX');
 		ReactGA.pageview(window.location.pathname + window.location.search);
-		console.log(window.location.pathname);
+		ReactGA.ga('send', 'pageview', '/mytravelmap');
 	}
 
 	render(){
