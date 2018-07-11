@@ -2518,8 +2518,6 @@ var stateCount = 0;
 var cityCount = 0;
 var ciityCount = 0;
 
-var indiaMap = new Image();
-
 var styles = {
   container: {
     flex: 1,
@@ -2551,22 +2549,24 @@ var IndiaMap = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (IndiaMap.__proto__ || Object.getPrototypeOf(IndiaMap)).call(this));
 
     _this.onSaveMap = function () {
-      _domToImage2.default.toBlob(_this.refs.saveImage, { width: 1280, height: 960, style: { "background": 'url(' + _worldWhale2.default + ') no-repeat center' } }).then(function (blob) {
+      _domToImage2.default.toBlob(_this.refs.saveImage, { width: 1280, height: 960, style: { "background": 'url(' + _worldWhale2.default + ') no-repeat center', "textAlign": "center" } }).then(function (blob) {
         _fileSaver2.default.saveAs(blob, 'mytravelmap.png');
       });
     };
 
     _this.state = {
       indiadata: (0, _topojsonClient.feature)(_indiaStates2.default, _indiaStates2.default.objects.states).features,
-      renderState: []
+      renderState: [],
+      width: window.innerWidth > 0 ? window.innerWidth : screen.width
     };
+
     return _this;
   }
 
   _createClass(IndiaMap, [{
     key: 'projection',
     value: function projection() {
-      return (0, _d3Geo.geoMercator)().scale(1000).translate([-780, 800]);
+      return (0, _d3Geo.geoMercator)().scale(1000).translate([-this.state.width * 0.6, 800]);
     }
   }, {
     key: 'componentDidMount',
@@ -2869,8 +2869,8 @@ var Home = function (_React$Component3) {
         ),
         _react2.default.createElement(
           'label',
-          { style: !window.navigator.userAgent.toLowerCase().includes("mobi") ? { "display": "block", "textAlign": "center", "fontSize": 36 } : { "display": "none" } },
-          'Sorry, the mobile Version is still not ready, Please use your laptop or desktop!'
+          { style: window.navigator.userAgent.toLowerCase().includes("mobi") ? { "display": "block", "textAlign": "center", "fontSize": 36 } : { "display": "none" } },
+          'Sorry, this webpage may not be as responsive as it must. I would appreciate if you view this webpage on desktop or laptop! :)'
         ),
         _react2.default.createElement(
           'div',
