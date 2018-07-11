@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { toggleState, toggleCiity } from '../actions/indexCountry.js';
-import CountryList  from '../components/country.js';
+import { toggleState, toggleCiity } from '../actions/country.js';
+import CountryList  from '../components/world.js';
 
 function mapStateToProps(state) {
 	return {

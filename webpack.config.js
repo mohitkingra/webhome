@@ -7,32 +7,23 @@ var CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   // Since webpack 4 we will need to set in what mode webpack is running
-  mode: 'production',
+  mode: 'development',
 	// This will be the entry file for all of our React code
 	entry: [
 		'./client/index.jsx',
 	],
   optimization: {
    minimizer:[
-	new UglifyJsPlugin({
-	include: /\.min\.js$/,
-        cache: true,
-        parallel: true,
-        uglifyOptions: {
-          compress: false,
-          ecma: 6,
-          mangle: true
-        },
-        sourceMap: false
-      }),
-    new CompressionPlugin({
-    	test: /\.(js|jsx|jpg|json)$/
-    }),
+	//new UglifyJsPlugin(),
+    //new CompressionPlugin({
+    //	test: /\.(js|jsx|jpg|json)$/
+    //}),
    ],
   },
   plugins: [
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
+    //new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/);
     //new BundleAnalyzerPlugin(),
 
   ],

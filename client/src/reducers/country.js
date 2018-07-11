@@ -1,6 +1,6 @@
-import { TOGGLE_STATE, TOGGLE_CIITY } from '../actions/indexCountry.js';
+import { TOGGLE_STATE, TOGGLE_CIITY } from '../actions/country.js';
 
-import { initialState } from './stateCountry.js';
+import { initialState } from './stateIndia.js';
 
 export default function countryReducer(state = initialState, action) {
   switch (action.type) {

@@ -1,4 +1,4 @@
-import { TOGGLE_CONTINENT, TOGGLE_COUNTRY, TOGGLE_CITY } from '../actions/indexWorld.js';
+import { TOGGLE_CONTINENT, TOGGLE_COUNTRY, TOGGLE_CITY } from '../actions/world.js';
 
 import { initialState } from './stateWorld.js';
 

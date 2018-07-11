@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types'
 
-import Item from './item.js';
+import Item from './iota.js';
 
 let styles = {
   container: {
