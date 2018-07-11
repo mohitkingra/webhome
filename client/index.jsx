@@ -23,7 +23,6 @@ import ContinentList  from './src/containers/continent.js';
 import CountryList  from './src/containers/country.js';
 
 import imgWorldUrl from './../server/public/img/world-whale.jpg';
-import imgWorldBackgroundUrl from './../server/public/img/world-whale1.jpg';
 
 let continentCount = 0;
 let countryCount = 0;
@@ -54,71 +53,6 @@ let styles = {
     flexDirection: "row",
   }
 };
-
-class SocialMediaShare extends React.Component {
-  constructor() {
-    super();
-  }
-  
-  render(){
-    return(
-      <div style={styles.sharebutton}>
-        <FacebookShareButton url={indiaMap}> 
-          <FacebookIcon size={32} round={true} />
-          <FacebookShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
-            {shareCount => (
-              <span className="myShareCountWrapper">{shareCount}</span>
-            )}
-          </FacebookShareCount>
-        </FacebookShareButton>
-        <GooglePlusShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
-          <GooglePlusIcon size={32} round={true} />
-          <GooglePlusShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
-            {shareCount => (
-              <span className="myShareCountWrapper">{shareCount}</span>
-            )}
-          </GooglePlusShareCount>
-        </GooglePlusShareButton>
-        <LinkedinShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
-          <LinkedinIcon size={32} round={true} />
-          <LinkedinShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
-            {shareCount => (
-              <span className="myShareCountWrapper">{shareCount}</span>
-            )}
-          </LinkedinShareCount>
-        </LinkedinShareButton>
-        <TwitterShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
-          <TwitterIcon size={32} round={true} />
-          <span className="myShareCountWrapper">{0}</span>
-        </TwitterShareButton>
-        <VKShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
-        <VKIcon size={32} round={true} />
-          <VKShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
-            {shareCount => (
-              <span className="myShareCountWrapper">{shareCount}</span>
-            )}
-          </VKShareCount>
-        </VKShareButton>
-        <RedditShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
-        <RedditIcon size={32} round={true} />
-          <RedditShareCount url={'http://mohitkingra.com/yourtravelmap'}> 
-            {shareCount => (
-              <span className="myShareCountWrapper">{shareCount}</span>
-            )}
-          </RedditShareCount>
-        </RedditShareButton>
-        <WhatsappShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
-          <WhatsappIcon size={32} round={true} />
-          <span className="myShareCountWrapper">{0}</span>  
-        </WhatsappShareButton> 
-        <TelegramShareButton url={'http://mohitkingra.com/yourtravelmap'}> 
-          <TelegramIcon size={32} round={true} />
-          <span className="myShareCountWrapper">{0}</span>
-        </TelegramShareButton>  
-    </div>
-    );
-  }
-}
 
 class IndiaMap extends React.Component {
   constructor() {
@@ -181,7 +115,7 @@ class IndiaMap extends React.Component {
   }
 
   onSaveMap = () => {
-    domtoimage.toBlob(this.refs.saveImage, { width: 1280, height: 960, style : { "background" : 'url(' + imgWorldBackgroundUrl + ') no-repeat center'}})
+    domtoimage.toBlob(this.refs.saveImage, { width: 1280, height: 960, style : { "background" : 'url(' + imgWorldUrl + ') no-repeat center'}})
     .then(function (blob) {
         fileSaver.saveAs(blob, 'mytravelmap.png');
     });
