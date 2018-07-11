@@ -65,7 +65,7 @@ class IndiaMap extends React.Component {
   projection() {
     return geoMercator()
       .scale(1000)
-      .translate([-780, 800])
+      .translate([-750, 800])
   }
 
  componentDidMount() {
@@ -123,7 +123,7 @@ class IndiaMap extends React.Component {
     return(
       <div>
         <div ref="saveImage">
-          <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
+          <svg style={{"textAlign" : "center"}} width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
             {
               this.state.indiadata.map((d,i) => (
                 <path
