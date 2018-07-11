@@ -283,7 +283,7 @@ class Home extends React.Component {
               Where all have you been? in INDIA!
             </label>
             <label style={window.navigator.userAgent.toLowerCase().includes("mobi") ? {"display" : "block", "textAlign" : "center", "fontSize" : 48} : {"display" : "none"}} >
-              Sorry, the mobile Version is still not ready, Please use your laptop or desktop!
+              Sirry, this webpage is still not as responsive as it must. I would appreciate if you view this webpage on desktop or laptop! :)
             </label>
             <div style={this.state.value === 'india' ? {"display": "block"} : {"display": "none"}} >
               <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>
