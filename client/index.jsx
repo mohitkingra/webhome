@@ -67,7 +67,7 @@ class IndiaMap extends React.Component {
   projection() {
     return geoMercator()
       .scale(1000)
-      .translate([-750, 800])
+      .translate([-780, 800])
   }
 
  componentDidMount() {
@@ -281,6 +281,9 @@ class Home extends React.Component {
           <div style={{background: 'url(' + imgWorldUrl + ') no-repeat center', backgroundSize : "100% 100%"}}>
             <label style={{"display" : "block", "textAlign" : "center", "fontSize" : 24}}>
               Where all have you been? in INDIA!
+            </label>
+            <label style={window.navigator.userAgent.toLowerCase().includes("mobi") ? {"display" : "block", "textAlign" : "center", "fontSize" : 48} : {"display" : "none"}} >
+              Sorry, the mobile Version is still not ready, Please use your laptop or desktop!
             </label>
             <div style={this.state.value === 'india' ? {"display": "block"} : {"display": "none"}} >
               <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>

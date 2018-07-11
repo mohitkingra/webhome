@@ -2566,7 +2566,7 @@ var IndiaMap = function (_React$Component) {
   _createClass(IndiaMap, [{
     key: 'projection',
     value: function projection() {
-      return (0, _d3Geo.geoMercator)().scale(1000).translate([-750, 800]);
+      return (0, _d3Geo.geoMercator)().scale(1000).translate([-780, 800]);
     }
   }, {
     key: 'componentDidMount',
@@ -2866,6 +2866,11 @@ var Home = function (_React$Component3) {
           'label',
           { style: { "display": "block", "textAlign": "center", "fontSize": 24 } },
           'Where all have you been? in INDIA!'
+        ),
+        _react2.default.createElement(
+          'label',
+          { style: !window.navigator.userAgent.toLowerCase().includes("mobi") ? { "display": "block", "textAlign": "center", "fontSize": 36 } : { "display": "none" } },
+          'Sorry, the mobile Version is still not ready, Please use your laptop or desktop!'
         ),
         _react2.default.createElement(
           'div',
