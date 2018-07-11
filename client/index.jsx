@@ -22,6 +22,9 @@ import fileSaver from 'file-saver';
 //import ContinentList  from './src/containers/continent.js';
 import CountryList  from './src/containers/country.js';
 
+import imgWorldUrl from './../server/public/img/world-whale.jpg';
+import ReactGA from 'react-ga';
+
 let continentCount = 0;
 let countryCount = 0;
 let stateCount = 0;
@@ -168,6 +171,7 @@ class WorldMap extends React.Component {
 
   componentDidMount() {
 
+
       var travelState = [];
 
       store.subscribe(() => {
@@ -263,9 +267,14 @@ class Home extends React.Component {
     super(props);
 
     this.state = {value: 'india'};
-
     this.handleChange = this.handleChange.bind(this);
 
+  }
+
+  componentDidMount(){
+    ReactGA.initialize('XXX');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.ga('send', 'pageview', '/mytravelmap');
   }
 
   handleChange(event) {
@@ -274,7 +283,7 @@ class Home extends React.Component {
 
   render() {      
       return(
-          <div>
+          <div style={{background: 'url(' + imgWorldUrl + ') no-repeat center', backgroundSize : "100% 100%"}}>
             <label style={{"display" : "block", "textAlign" : "center", "fontSize" : 24}}>
               Where all have you been? in INDIA!
             </label>
