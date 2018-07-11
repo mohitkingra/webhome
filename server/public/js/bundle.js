@@ -2566,7 +2566,7 @@ var IndiaMap = function (_React$Component) {
   _createClass(IndiaMap, [{
     key: 'projection',
     value: function projection() {
-      return (0, _d3Geo.geoMercator)().scale(1000).translate([-800, 800]);
+      return (0, _d3Geo.geoMercator)().scale(1000).translate([-750, 800]);
     }
   }, {
     key: 'componentDidMount',

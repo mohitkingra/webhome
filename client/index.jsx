@@ -67,7 +67,7 @@ class IndiaMap extends React.Component {
   projection() {
     return geoMercator()
       .scale(1000)
-      .translate([-800, 800])
+      .translate([-750, 800])
   }
 
  componentDidMount() {
