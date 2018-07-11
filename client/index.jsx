@@ -123,7 +123,7 @@ class IndiaMap extends React.Component {
     return(
       <div>
         <div ref="saveImage">
-          <svg style={{"textAlign" : "center"}} width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
+          <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
             {
               this.state.indiadata.map((d,i) => (
                 <path

@@ -14,21 +14,14 @@ module.exports = {
 	],
   optimization: {
    minimizer:[
-	new UglifyJsPlugin({
-	include: /\.min\.js$/,
-        cache: true,
-        parallel: true,
-        uglifyOptions: {
-          compress: false,
-          ecma: 6,
-          mangle: true
-        },
-        sourceMap: false
-      }),
-    new CompressionPlugin({
-    	test: /\.(js|jsx|jpg|json)$/
-    }),
+	new UglifyJsPlugin(),
+    	new CompressionPlugin({
+    		test: /\.(js|jsx|jpg|json)$/
+    	}),
    ],
+   splitChunks: {
+	chunks: 'async'
+	}
   },
   plugins: [
     new webpack.optimize.AggressiveMergingPlugin(),
