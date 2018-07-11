@@ -22,8 +22,6 @@ import fileSaver from 'file-saver';
 //import ContinentList  from './src/containers/continent.js';
 import CountryList  from './src/containers/country.js';
 
-import imgWorldUrl from './../server/public/img/world-whale.jpg';
-
 let continentCount = 0;
 let countryCount = 0;
 let stateCount = 0;
@@ -276,7 +274,7 @@ class Home extends React.Component {
 
   render() {      
       return(
-          <div style={{background: 'url(' + imgWorldUrl + ') no-repeat center', backgroundSize : "100% 100%"}}>
+          <div>
             <label style={{"display" : "block", "textAlign" : "center", "fontSize" : 24}}>
               Where all have you been? in INDIA!
             </label>
