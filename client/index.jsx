@@ -1,25 +1,25 @@
-import React, { Button, ImageBackground } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 
-import continentReducer from './src/reducers/indexWorld.js';
+//import continentReducer from './src/reducers/indexWorld.js';
 import countryReducer from './src/reducers/indexCountry.js';
 
-let store = createStore(combineReducers({continentReducer, countryReducer}));
+let store = createStore(combineReducers({/*continentReducer,*/ countryReducer}));
 
 import { geoMercator, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 
 import indiadata from './../server/public/data/india-states.json';
-import countrydata from './../server/public/data/country.json';
-import worlddata from './../server/public/data/world-110m.json';
+//import countrydata from './../server/public/data/country.json';
+//import worlddata from './../server/public/data/world-110m.json';
 
 import domtoimage from 'dom-to-image';
 import fileSaver from 'file-saver';
 
-import ContinentList  from './src/containers/continent.js';
+//import ContinentList  from './src/containers/continent.js';
 import CountryList  from './src/containers/country.js';
 
 import imgWorldUrl from './../server/public/img/world-whale.jpg';
@@ -151,8 +151,7 @@ class IndiaMap extends React.Component {
   }
 }
 
-
-
+/*
 class WorldMap extends React.Component {
   constructor() {
       super()
@@ -259,6 +258,7 @@ class WorldMap extends React.Component {
     );
   }
 }
+*/
 
 class Home extends React.Component {
   constructor(props) {
@@ -294,8 +294,6 @@ class Home extends React.Component {
               <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>
                 Select the Continent/Country/City you have been...
               </label>
-              <ContinentList />
-              <WorldMap />
             </div>
           </div>
       );
