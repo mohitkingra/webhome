@@ -114,17 +114,34 @@ class IndiaMap extends React.Component {
   }
 
   onSaveMap = () => {
-    domtoimage.toBlob(this.refs.saveImage, { width: 1280, height: 960, style : { "background" : 'url(' + imgWorldUrl + ') no-repeat center'}})
+    domtoimage.toBlob(this.refs.saveImage, { width: window.navigator.userAgent.toLowerCase().includes("mobi") ? 960 : 1280, 
+    height: window.navigator.userAgent.toLowerCase().includes("mobi") ? 1020 : 960, 
+    style : { "background" : 'url(' + imgWorldUrl + ') no-repeat center'}})
     .then(function (blob) {
         fileSaver.saveAs(blob, 'mytravelmap.png');
     });
+  }
+
+  message = (stateCount) => {
+    if(stateCount === 0)
+      return "ummmm...";
+    else if(stateCount <= 9 )
+      return "Nice";
+    else if(stateCount >= 10 && stateCount <= 18)
+      return "Cool";
+    else if(stateCount >= 19 && stateCount <= 27)
+      return "Awesome";
+    else if(stateCount >= 28 && stateCount < 36)
+      return "Super Awesome";
+    else
+      return "Congratulations ";
   }
 
   render(){
     return(
       <div>
         <div ref="saveImage">
-          <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
+          <svg width={window.navigator.userAgent.toLowerCase().includes("mobi") ? 960 : 1280 } height={ 720 } viewBox="0 0 1280 720">
             {
               this.state.indiadata.map((d,i) => (
                 <path
@@ -141,10 +158,10 @@ class IndiaMap extends React.Component {
             <h1> You have traveled... </h1>
             <h3> {ciityCount} out of total 184 cities listed!</h3>
             <h3> {stateCount} out of total 29 states and 7 Union Territories!</h3>
-            <h1> Congratulations!, that is {Number((stateCount/36)*100).toFixed(2)}% of India!</h1>
-          </div>
-        </div>
-        <div style={{"textAlign" : "center"}}>
+            <h1> {this.message(stateCount)}!, that is {Number((stateCount/36)*100).toFixed(2)}% of India!</h1>
+                      </div>
+                    </div>
+                    <div style={{"textAlign" : "center"}}>
           <button style={styles.button} onClick={this.onSaveMap}>Download your Map</button>
         </div>
       </div>

@@ -15,7 +15,7 @@ let styles = {
   },
   states: {
     display: 'flex',
-    flex: 1,
+    flex: '1 1 20%',
     alignItems: 'flex-start',
     alignContent: 'flex-start',
     justifyContent: 'center',
