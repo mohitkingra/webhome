@@ -5,7 +5,7 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Dispur"
+                      name: "Dispur",
                     },
                     {
                       select: 0,
@@ -17,15 +17,15 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Jorhat"
+                      name: "Jorhat",
                     },
                     {
                       select: 0,
-                      name: "Silchar"
+                      name: "Silchar",
                     },
                     {
                       select: 0,
-                      name: "Tezpur"
+                      name: "Tezpur",
                     }]
             },
             {
@@ -34,11 +34,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Bomdila"
+                      name: "Bomdila",
                     },
                     {
                       select: 0,
-                      name: "Bhalukpong"
+                      name: "Bhalukpong",
                     },
                     {
                       select: 0,
@@ -54,7 +54,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Ziro"
+                      name: "Ziro",
                     }]
             },
             {
@@ -71,19 +71,19 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Neil Island"
+                      name: "Neil Island",
                     },
                     {
                       select: 0,
-                      name: "Little Andaman"
+                      name: "Little Andaman",
                     },
                     {
                       select: 0,
-                      name: "Ross Island"
+                      name: "Ross Island",
                     },
                     {
                       select: 0,
-                      name: "Mayabunder"
+                      name: "Mayabunder",
                     }]
             },
             {
@@ -92,11 +92,11 @@ export const initialState = {
                   cities:[
                     {
                       select: 0,
-                      name: "Amaravati"
+                      name: "Amaravati",
                     },
                     {
                       select: 0,
-                      name: "Puttaparthi"
+                      name: "Puttaparthi",
                     },
                     {
                       select: 0,
@@ -108,11 +108,11 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Tirupati"
+                      name: "Tirupati",
                     },
                     {
                       select: 0,
-                      name: "Vijayawada"
+                      name: "Vijayawada",
                     }]
             },
             {
@@ -218,7 +218,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Morjim"
+                      name: "Morjim",
                     },
                     {
                       select: 0,
@@ -247,11 +247,11 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Surat"
+                      name: "Surat",
                     },
                     {
                       select: 0,
-                      name: "Vadodara"
+                      name: "Vadodara",
                     },
                     {
                       select: 0,
@@ -309,7 +309,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Faridabad"
+                      name: "Faridabad",
                     },
                     {
                       select: 0,
@@ -338,11 +338,11 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Kargil"
+                      name: "Kargil",
                     },
                     {
                       select: 0,
-                      name: "Leh"
+                      name: "Leh",
                     },
                     {
                       select: 0,
@@ -392,11 +392,11 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Mysore"
+                      name: "Mysore",
                     },
                     {
                       select: 0,
-                      name: "Mangalore"
+                      name: "Mangalore",
                     },
                     {
                       select: 0,
@@ -459,19 +459,19 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Gwalior"
+                      name: "Gwalior",
                     },
                     {
                       select: 0,
-                      name: "Indore"
+                      name: "Indore",
                     },
                     {
                       select: 0,
-                      name: "Jabalpur"
+                      name: "Jabalpur",
                     },
                     {
                       select: 0,
-                      name: "Ujjain"
+                      name: "Ujjain",
                     },
                     {
                       select: 0,
@@ -488,19 +488,19 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Pune"
+                      name: "Pune",
                     },
                     {
                       select: 0,
-                      name: "Nagpur"
+                      name: "Nagpur",
                     },
                     {
                       select: 0,
-                      name: "Nashik"
+                      name: "Nashik",
                     },
                     {
                       select: 0,
-                      name: "Aurungabad"
+                      name: "Aurungabad",
                     },
                     {
                       select: 0,
@@ -517,7 +517,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Ukhrul"
+                      name: "Ukhrul",
                     },
                     {
                       select: 0,
@@ -546,7 +546,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Tura"
+                      name: "Tura",
                     },
                     {
                       select: 0,
@@ -604,7 +604,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Dimapur"
+                      name: "Dimapur",
                     },
                     {
                       select: 0,
@@ -671,15 +671,15 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Bhatinda"
+                      name: "Bhatinda",
                     },
                      {
                       select: 0,
-                      name: "Ludhiana"
+                      name: "Ludhiana",
                     },
                     {
                       select: 0,
-                      name: "Jalandhar"
+                      name: "Jalandhar",
                     },
                     {
                       select: 0,
@@ -700,23 +700,23 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Jodhpur"
+                      name: "Jodhpur",
                     },
                     {
                       select: 0,
-                      name: "Bikaner"
+                      name: "Bikaner",
                     },
                     {
                       select: 0,
-                      name: "Jaisalmer"
+                      name: "Jaisalmer",
                     },
                     {
                       select: 0,
-                      name: "Udaipur"
+                      name: "Udaipur",
                     },
                     {
                       select: 0,
-                      name: "Pushkar"
+                      name: "Pushkar",
                     }]
             },
             {
@@ -729,7 +729,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Namchi"
+                      name: "Namchi",
                     },
                     {
                       select: 0,
@@ -759,11 +759,11 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Madurai"
+                      name: "Madurai",
                     },
                     {
                       select: 0,
-                      name: "Kanyakumari"
+                      name: "Kanyakumari",
                     },
                     {
                       select: 0,
@@ -788,7 +788,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Warangal"
+                      name: "Warangal",
                     },
                     {
                       select: 0,
@@ -817,7 +817,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Dharamanagar"
+                      name: "Dharamanagar",
                     },
                     {
                       select: 0,
@@ -846,7 +846,7 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Haridwar"
+                      name: "Haridwar",
                     },
                     {
                       select: 0,
@@ -883,11 +883,11 @@ export const initialState = {
                     },
                     {
                       select: 0,
-                      name: "Agra"
+                      name: "Agra",
                     },
                     {
                       select: 0,
-                      name: "Mathura"
+                      name: "Mathura",
                     },
                     {
                       select: 0,
