@@ -20,7 +20,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Luanda'
           }
         ]
       },
@@ -30,7 +30,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Porto-Novo'
           }
         ]
       },
@@ -40,7 +40,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Gaborone'
           }
         ]
       },
@@ -50,7 +50,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Ouagadougou'
           }
         ]
       },
@@ -60,7 +60,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bujumbura'
           }
         ]
       },
@@ -70,7 +70,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Yaounde'
           }
         ]
       },
@@ -80,7 +80,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Praia'
           }
         ]
       },
@@ -90,7 +90,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bangui'
           }
         ]
       },
@@ -100,7 +100,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'N\'Djamena'
           }
         ]
       },
@@ -110,7 +110,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Moroni'
           }
         ]
       },
@@ -120,7 +120,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Brazzaville'
           }
         ]
       },
@@ -130,7 +130,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Kinshasa'
           }
         ]
       },
@@ -140,7 +140,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Yamoussoukro'
           }
         ]
       },
@@ -150,7 +150,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Djibouti City'
           }
         ]
       },
@@ -160,7 +160,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Cairo'
           }
         ]
       },
@@ -170,7 +170,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Malabo/Oyala'
           }
         ]
       },
@@ -180,7 +180,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Asmara'
           }
         ]
       },
@@ -190,7 +190,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Addis Ababa'
           }
         ]
       },
@@ -200,7 +200,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Libreville'
           }
         ]
       },
@@ -210,7 +210,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Banjul'
           }
         ]
       },
@@ -220,7 +220,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Accra'
           }
         ]
       },
@@ -230,7 +230,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Conakry'
           }
         ]
       },
@@ -240,7 +240,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bissau'
           }
         ]
       },
@@ -250,7 +250,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Nairobi'
           }
         ]
       },
@@ -260,7 +260,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Maseru'
           }
         ]
       },
@@ -270,7 +270,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Monrovia'
           }
         ]
       },
@@ -280,7 +280,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tripoli'
           }
         ]
       },
@@ -290,7 +290,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Antananarivo'
           }
         ]
       },
@@ -300,7 +300,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Lilongwe'
           }
         ]
       },
@@ -310,7 +310,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bamako'
           }
         ]
       },
@@ -320,7 +320,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Nouakchott'
           }
         ]
       },
@@ -330,17 +330,17 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Port Louis'
           }
         ]
       },
       {
         select: 0,
-        name: 'Mayotte',
+        name: 'France/Mayotte',
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Mayotte'
           }
         ]
       },
@@ -350,7 +350,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Rabat'
           }
         ]
       },
@@ -360,7 +360,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Maputo'
           }
         ]
       },
@@ -370,7 +370,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Windhoek'
           }
         ]
       },
@@ -380,7 +380,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Niamey'
           }
         ]
       },
@@ -390,17 +390,17 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Abuja'
           }
         ]
       },
       {
         select: 0,
-        name: 'Réunion',
+        name: 'France/Réunion',
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Reunion'
           }
         ]
       },
@@ -410,17 +410,17 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Kigali'
           }
         ]
       },
       {
         select: 0,
-        name: 'Saint Helena, Ascension and Tristan da Cunha',
+        name: 'UK/Saint Helena, Ascension and Tristan da Cunha',
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Saint Helena, Ascension and Tristan da Cunha'
           }
         ]
       },
@@ -430,7 +430,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Sao Tome'
           }
         ]
       },
@@ -440,7 +440,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Dakar'
           }
         ]
       },
@@ -450,7 +450,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Victoria'
           }
         ]
       },
@@ -460,7 +460,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Freetown'
           }
         ]
       },
@@ -470,7 +470,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Mogadishu'
           }
         ]
       },
@@ -480,7 +480,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Cape Town'
           }
         ]
       },
@@ -490,7 +490,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Juba'
           }
         ]
       },
@@ -500,17 +500,17 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Khartoum'
           }
         ]
       },
       {
         select: 0,
-        name: 'Swaziland',
+        name: 'Swaziland/Eswatini',
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Mbabane/Lobamba'
           }
         ]
       },
@@ -520,7 +520,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Dodoma'
           }
         ]
       },
@@ -530,7 +530,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Lome'
           }
         ]
       },
@@ -540,7 +540,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tunis'
           }
         ]
       },
@@ -550,7 +550,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Kampala'
           }
         ]
       },
@@ -560,7 +560,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Western Sahara'
           }
         ]
       },
@@ -570,7 +570,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Lusaka'
           }
         ]
       },
@@ -580,7 +580,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Harare'
           }
         ]
       }
@@ -596,7 +596,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Kabul'
           }
         ]
       },
@@ -606,7 +606,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Yerevan'
           }
         ]
       },
@@ -616,7 +616,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Baku'
           }
         ]
       },
@@ -626,7 +626,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Manama'
           }
         ]
       },
@@ -636,7 +636,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Dhaka'
           }
         ]
       },
@@ -646,7 +646,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Thimpu'
           }
         ]
       },
@@ -656,7 +656,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bandar Seri Begawan'
           }
         ]
       },
@@ -666,7 +666,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Phnom Penh'
           }
         ]
       },
@@ -676,7 +676,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Beijing'
           }
         ]
       },
@@ -686,7 +686,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Nicosia'
           }
         ]
       },
@@ -696,7 +696,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tbilisi'
           }
         ]
       },
@@ -706,7 +706,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Hong Kong'
           }
         ]
       },
@@ -716,7 +716,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'New Delhi'
           }
         ]
       },
@@ -726,7 +726,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Jakarta'
           }
         ]
       },
@@ -736,7 +736,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tehran'
           }
         ]
       },
@@ -746,7 +746,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Baghdad'
           }
         ]
       },
@@ -756,7 +756,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Jerusalem'
           }
         ]
       },
@@ -766,7 +766,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tokyo'
           }
         ]
       },
@@ -776,7 +776,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Amman'
           }
         ]
       },
@@ -786,7 +786,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Astana'
           }
         ]
       },
@@ -796,7 +796,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Seoul'
           }
         ]
       },
@@ -806,7 +806,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Pyongyang'
           }
         ]
       },
@@ -816,7 +816,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Kuwait City'
           }
         ]
       },
@@ -826,7 +826,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bishkek'
           }
         ]
       },
@@ -836,7 +836,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Vientiane'
           }
         ]
       },
@@ -846,7 +846,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Beirut'
           }
         ]
       },
@@ -856,7 +856,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Macao'
           }
         ]
       },
@@ -866,7 +866,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Kuala Lumpur'
           }
         ]
       },
@@ -876,7 +876,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Male'
           }
         ]
       },
@@ -886,7 +886,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Ulaanbaatar'
           }
         ]
       },
@@ -896,7 +896,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Naypyidaw'
           }
         ]
       },
@@ -906,7 +906,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Kathmandu'
           }
         ]
       },
@@ -916,7 +916,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Muscat'
           }
         ]
       },
@@ -926,7 +926,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Islamabad'
           }
         ]
       },
@@ -936,7 +936,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Jerusalem (East)'
           }
         ]
       },
@@ -946,7 +946,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Manila'
           }
         ]
       },
@@ -956,7 +956,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Doha'
           }
         ]
       },
@@ -966,7 +966,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Riyadh'
           }
         ]
       },
@@ -976,7 +976,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Singapore'
           }
         ]
       },
@@ -986,7 +986,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Sri Jayawardenepura Kotte'
           }
         ]
       },
@@ -996,7 +996,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Damascus'
           }
         ]
       },
@@ -1006,7 +1006,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Taipei'
           }
         ]
       },
@@ -1016,7 +1016,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Dushanbe'
           }
         ]
       },
@@ -1026,7 +1026,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bangkok'
           }
         ]
       },
@@ -1036,7 +1036,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Dili'
           }
         ]
       },
@@ -1046,7 +1046,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Ankara'
           }
         ]
       },
@@ -1056,7 +1056,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Ashgabat'
           }
         ]
       },
@@ -1066,7 +1066,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Abu Dhabhi'
           }
         ]
       },
@@ -1076,7 +1076,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tashkent'
           }
         ]
       },
@@ -1086,7 +1086,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Hanoi'
           }
         ]
       },
@@ -1096,7 +1096,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Sana\'a'
           }
         ]
       }
@@ -1112,7 +1112,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Mariehamn'
           }
         ]
       },
@@ -1122,7 +1122,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tirana'
           }
         ]
       },
@@ -1132,7 +1132,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Andorra la Vella'
           }
         ]
       },
@@ -1142,7 +1142,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Vienna'
           }
         ]
       },
@@ -1152,7 +1152,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Minsk'
           }
         ]
       },
@@ -1162,7 +1162,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Brussels'
           }
         ]
       },
@@ -1172,7 +1172,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Sarajevo'
           }
         ]
       },
@@ -1182,7 +1182,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Sofia'
           }
         ]
       },
@@ -1192,7 +1192,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Zagreb'
           }
         ]
       },
@@ -1202,7 +1202,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Prague'
           }
         ]
       },
@@ -1212,7 +1212,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Copenhagen'
           }
         ]
       },
@@ -1222,7 +1222,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tallinn'
           }
         ]
       },
@@ -1232,7 +1232,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Torshavn'
           }
         ]
       },
@@ -1242,7 +1242,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Helsinki'
           }
         ]
       },
@@ -1252,7 +1252,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Paris'
           }
         ]
       },
@@ -1262,17 +1262,17 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Berlin'
           }
         ]
       },
       {
         select: 0,
-        name: 'Gibraltar',
+        name: 'UK/Gibraltar',
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Gibraltar'
           }
         ]
       },
@@ -1282,7 +1282,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Athens'
           }
         ]
       },
@@ -1292,17 +1292,17 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'St. Peter Port'
           }
         ]
       },
       {
         select: 0,
-        name: 'Holy See',
+        name: 'Vatican City/Holy See',
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Holy See'
           }
         ]
       },
@@ -1312,7 +1312,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Budapest'
           }
         ]
       },
@@ -1322,7 +1322,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Reykjavik'
           }
         ]
       },
@@ -1332,7 +1332,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Dublin'
           }
         ]
       },
@@ -1342,7 +1342,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Douglas'
           }
         ]
       },
@@ -1352,7 +1352,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Rome'
           }
         ]
       },
@@ -1362,7 +1362,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Saint Helier'
           }
         ]
       },
@@ -1372,7 +1372,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Riga'
           }
         ]
       },
@@ -1382,7 +1382,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Vaduz'
           }
         ]
       },
@@ -1392,7 +1392,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Vlinius'
           }
         ]
       },
@@ -1402,7 +1402,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Luxembourg City'
           }
         ]
       },
@@ -1412,7 +1412,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Skopje'
           }
         ]
       },
@@ -1422,7 +1422,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Valletta'
           }
         ]
       },
@@ -1432,7 +1432,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Chissinau'
           }
         ]
       },
@@ -1442,7 +1442,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Monaco'
           }
         ]
       },
@@ -1452,7 +1452,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Podgorica'
           }
         ]
       },
@@ -1462,7 +1462,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Amsterdam'
           }
         ]
       },
@@ -1472,7 +1472,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Oslo'
           }
         ]
       },
@@ -1482,7 +1482,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Warsaw'
           }
         ]
       },
@@ -1492,7 +1492,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Lisbon'
           }
         ]
       },
@@ -1502,7 +1502,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bucharest'
           }
         ]
       },
@@ -1512,7 +1512,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Moscow'
           }
         ]
       },
@@ -1522,7 +1522,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'San Marino'
           }
         ]
       },
@@ -1532,7 +1532,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Belgrade'
           }
         ]
       },
@@ -1542,7 +1542,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bratislava'
           }
         ]
       },
@@ -1552,7 +1552,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Ljubljana'
           }
         ]
       },
@@ -1562,7 +1562,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Madrid'
           }
         ]
       },
@@ -1572,7 +1572,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Svalbard and Jan Mayen'
           }
         ]
       },
@@ -1582,7 +1582,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Stockholm'
           }
         ]
       },
@@ -1592,7 +1592,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bern'
           }
         ]
       },
@@ -1602,7 +1602,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Kyiv'
           }
         ]
       },
@@ -1612,7 +1612,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'London'
           }
         ]
       }
@@ -1628,7 +1628,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Pago Pago'
           }
         ]
       },
@@ -1638,7 +1638,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Canberra'
           }
         ]
       },
@@ -1648,7 +1648,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Avarua'
           }
         ]
       },
@@ -1658,7 +1658,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Suva'
           }
         ]
       },
@@ -1668,7 +1668,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Papeete'
           }
         ]
       },
@@ -1678,7 +1678,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Hagatna'
           }
         ]
       },
@@ -1688,7 +1688,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tarawa'
           }
         ]
       },
@@ -1698,7 +1698,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Majuro'
           }
         ]
       },
@@ -1708,7 +1708,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Palikir'
           }
         ]
       },
@@ -1718,7 +1718,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Yaren'
           }
         ]
       },
@@ -1728,7 +1728,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Noumea'
           }
         ]
       },
@@ -1738,7 +1738,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Wellington'
           }
         ]
       },
@@ -1748,7 +1748,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Alofi'
           }
         ]
       },
@@ -1758,7 +1758,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Kingston'
           }
         ]
       },
@@ -1768,7 +1768,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Saipan'
           }
         ]
       },
@@ -1778,7 +1778,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Ngerulmud'
           }
         ]
       },
@@ -1788,7 +1788,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Port Moresby'
           }
         ]
       },
@@ -1808,7 +1808,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Apia'
           }
         ]
       },
@@ -1818,7 +1818,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Honiara'
           }
         ]
       },
@@ -1828,7 +1828,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Atafi'
           }
         ]
       },
@@ -1838,7 +1838,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Nuku\'alofa'
           }
         ]
       },
@@ -1848,7 +1848,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Funafuti'
           }
         ]
       },
@@ -1858,7 +1858,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Port Vila'
           }
         ]
       },
@@ -1868,7 +1868,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Mata Utu'
           }
         ]
       }
@@ -1884,7 +1884,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Belmopan'
           }
         ]
       },
@@ -1894,7 +1894,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Hamilton'
           }
         ]
       },
@@ -1904,7 +1904,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Ottawa'
           }
         ]
       },
@@ -1914,7 +1914,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'San Jose'
           }
         ]
       },
@@ -1924,7 +1924,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'San Salvador'
           }
         ]
       },
@@ -1934,7 +1934,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Nuuk'
           }
         ]
       },
@@ -1944,7 +1944,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Guatemala City'
           }
         ]
       },
@@ -1954,7 +1954,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Tegucigalpa'
           }
         ]
       },
@@ -1964,7 +1964,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Mexico City'
           }
         ]
       },
@@ -1974,7 +1974,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Managua'
           }
         ]
       },
@@ -1984,7 +1984,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Panama City'
           }
         ]
       },
@@ -1994,7 +1994,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Saint Pierre'
           }
         ]
       },
@@ -2004,7 +2004,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Washington, D.C.'
           }
         ]
       }
@@ -2020,7 +2020,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Buenos Aires'
           }
         ]
       },
@@ -2030,7 +2030,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Sucre/La Paz'
           }
         ]
       },
@@ -2040,7 +2040,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Brasilia'
           }
         ]
       },
@@ -2050,7 +2050,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Santiago'
           }
         ]
       },
@@ -2060,7 +2060,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Bogota'
           }
         ]
       },
@@ -2070,7 +2070,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Quito'
           }
         ]
       },
@@ -2080,7 +2080,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Stanley'
           }
         ]
       },
@@ -2090,7 +2090,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Cayenne'
           }
         ]
       },
@@ -2100,7 +2100,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Georgetown'
           }
         ]
       },
@@ -2110,7 +2110,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Asuncion'
           }
         ]
       },
@@ -2120,7 +2120,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Lima'
           }
         ]
       },
@@ -2130,7 +2130,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Paramaribo'
           }
         ]
       },
@@ -2140,7 +2140,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Montevideo'
           }
         ]
       },
@@ -2150,7 +2150,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'fill'
+            name: 'Caracas'
           }
         ]
       }
