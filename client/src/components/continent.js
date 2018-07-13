@@ -15,21 +15,35 @@ let styles = {
   },
   continents: {
     display: 'flex',
-    flex: 1,
+    flex: '1 1 -10%',
     alignItems: 'flex-start',
     justifyContent: 'center',
     flexDirection: 'column',
     flexWrap: 'wrap',
-    margin: 20,
+    marginLeft: 18,
+    marginTop: 18,
   },
   countries: {
     display: 'flex',
-    flex:1,
+    flex:'1 1 -10%',
     alignItems: 'flex-start',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     flexDirection: 'column',
     flexWrap: 'wrap',
-    margin: 20,
+    height: 500,
+    marginLeft: 18,
+    marginTop: 18,
+  },
+  countriesDefault: {
+    display: 'flex',
+    flex:'1 1 -10%',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    flexDirection: 'column',
+    flexWrap: 'wrap',
+    height: 400,
+    marginLeft: 18,
+    marginTop: 18,
   },
   cities: {
     display: 'flex',
@@ -38,7 +52,7 @@ let styles = {
     justifyContent: 'center',
     flexDirection: 'column',
     flexWrap: 'wrap',
-    margin :20,
+    margin :18,
   },
   button: {
     borderColor: 'gray',
@@ -94,7 +108,7 @@ export default class ContinentList extends React.Component {
               <div style={styles.continents}>
                 {continents}
               </div>
-              <div style={styles.countries}>
+              <div style={countries.length > 25 ? styles.countries : styles.countriesDefault} >
                 {countries}
               </div>
               <div style={styles.cities}>

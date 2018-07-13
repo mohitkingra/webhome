@@ -1,6 +1,6 @@
 export const initialState = {
 	states: [{
-									select: 0, 
+								select: 0, 
 									name: "Assam", 
 									cities:[
 										{

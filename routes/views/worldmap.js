@@ -10,7 +10,7 @@ exports = module.exports = function (req, res) {
 			<body>
         		<div class="react-container">
         		</div>
-				<script src="index.bundle.js"></script>
+				<script src="world.bundle.js"></script>
 			</body>
 		</html>
 		`;
