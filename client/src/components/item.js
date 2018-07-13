@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 
 let styles = {
   buttonDefault: {
-    width: 120,
-    height: 50,
+    width: 100,
+    minHeight: 50,
+    height: 'auto',
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 10,
@@ -13,8 +14,9 @@ let styles = {
     margin: 1,
   },
   buttonClicked: {
-    width: 120,
-    height: 50,
+    width: 100,
+    minHeight: 50,
+    height: 'auto',
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 10,

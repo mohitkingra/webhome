@@ -48,8 +48,8 @@ class WorldMap extends React.Component {
   
   projection() {
       return geoMercator()
-        .scale(175)
-        .translate([1280/2, 720/2])
+        .scale(150)
+        .translate([1280/2, 450])
     }
 
   componentDidMount() {
@@ -123,11 +123,30 @@ class WorldMap extends React.Component {
     });
   }
 
+
+  message = (countryCount) => {
+    if(countryCount === 0)
+      return "ummmm...";
+    else if(countryCount <= 10 )
+      return "Nice";
+    else if(countryCount >= 10 && countryCount <= 50)
+      return "Cool";
+    else if(countryCount >= 50 && countryCount <= 100)
+      return "Awesome";
+    else if(countryCount >= 100 && countryCount < 200)
+      return "Super Awesome";
+    else if(countryCount >=200 && countryCount < 212)
+      return "Super Super Awesome";
+    else if(countryCount ==200)
+      return "Congratulations";
+  }
+
+
   render() {
     return (
     <div>
       <div ref= "saveImage">
-        <svg width={ 1280 } height={ 720 } viewBox="0 0 1280 720">
+        <svg width={ '100%' } height={ 720 } viewBox="0 0 1280 720">
           <g className="countries">
             {
               this.state.worlddata.map((d,i) => (
@@ -144,10 +163,11 @@ class WorldMap extends React.Component {
           </g>
         </svg>
         <div style={{"textAlign" : "center"}}>
-          <h1>You have traveled : {(countryCount/206)*100}% of the World! </h1>
+          <h1>You have traveled...</h1>
           <h3>{continentCount} out of total 7 Continents!</h3>
-          <h3>{countryCount} out of total 206 Countries!</h3>
-          <h3>{cityCount} out of total Cities listed!</h3>
+          <h3>{countryCount} out of total 212 Countries!</h3>
+          <h3>{cityCount} out of total 500 Cities listed!</h3>
+          <h1>{this.message(countryCount)}!, that is {Number((countryCount/212)*100).toFixed(2)}% of World! </h1>
         </div>
       </div>
       <div style={{"textAlign" : "center"}}>

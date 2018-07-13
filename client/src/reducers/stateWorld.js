@@ -7,292 +7,582 @@ export const initialState = {
       {
         select: 0,
         name: 'Algeria',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'Algiers'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Angola',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Benin',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Botswana',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Burkina Faso',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Burundi',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Cameroon',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Cabo Verde',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Central African Republic',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Chad',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Comoros',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Congo',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Congo (Democratic Republic of the)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Côte d\'Ivoire',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Djibouti',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Egypt',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Equatorial Guinea',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Eritrea',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Ethiopia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Gabon',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Gambia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Ghana',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Guinea',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Guinea-Bissau',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Kenya',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Lesotho',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Liberia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Libya',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Madagascar',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Malawi',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Mali',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Mauritania',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Mauritius',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Mayotte',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Morocco',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Mozambique',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Namibia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Niger',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Nigeria',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Réunion',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Rwanda',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Saint Helena, Ascension and Tristan da Cunha',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Sao Tome and Principe',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Senegal',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Seychelles',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Sierra Leone',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Somalia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'South Africa',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'South Sudan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Sudan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Swaziland',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Tanzania, United Republic of',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Togo',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Tunisia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Uganda',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Western Sahara',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Zambia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Zimbabwe',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       }
     ]
   },
@@ -303,257 +593,512 @@ export const initialState = {
       {
         select: 0,
         name: 'Afghanistan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Armenia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Azerbaijan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Bahrain',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Bangladesh',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Bhutan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Brunei Darussalam',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Cambodia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'China',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Cyprus',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Georgia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Hong Kong',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'India',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Indonesia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Iran (Islamic Republic of)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Iraq',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Israel',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Japan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Jordan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Kazakhstan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Korea (Democratic People\'s Republic of)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Korea (Republic of)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Kuwait',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Kyrgyzstan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Lao People\'s Democratic Republic',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Lebanon',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Macao',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Malaysia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Maldives',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Mongolia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Myanmar',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Nepal',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Oman',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Pakistan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Palestine, State of',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Philippines',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Qatar',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Saudi Arabia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Singapore',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Sri Lanka',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Syrian Arab Republic',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Taiwan, Province of China',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Tajikistan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Thailand',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Timor-Leste',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Turkey',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Turkmenistan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'United Arab Emirates',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Uzbekistan',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Viet Nam',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Yemen',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       }
     ]
   },
@@ -564,257 +1109,512 @@ export const initialState = {
       {
         select: 0,
         name: 'Åland Islands',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Albania',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Andorra',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Austria',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Belarus',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Belgium',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Bosnia and Herzegovina',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Bulgaria',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Croatia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Czech Republic',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Denmark',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Estonia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Faroe Islands',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Finland',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'France',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Germany',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Gibraltar',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Greece',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Guernsey',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Holy See',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Hungary',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Iceland',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Ireland',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Isle of Man',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Italy',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Jersey',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Latvia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Liechtenstein',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Lithuania',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Luxembourg',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Macedonia (the former Yugoslav Republic of)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Malta',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Moldova (Republic of)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Monaco',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Montenegro',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Netherlands',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Norway',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Poland',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Portugal',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Romania',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Russian Federation',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'San Marino',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Serbia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Slovakia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Slovenia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Spain',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Svalbard and Jan Mayen',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Sweden',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Switzerland',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Ukraine',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'United Kingdom of Great Britain and Northern Ireland',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       }
     ]
   },
@@ -825,127 +1625,252 @@ export const initialState = {
       {
         select: 0,
         name: 'American Samoa',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Australia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Cook Islands',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Fiji',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'French Polynesia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Guam',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Kiribati',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Marshall Islands',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Micronesia (Federated States of)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Nauru',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'New Caledonia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'New Zealand',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Niue',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Norfolk Island',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Northern Mariana Islands',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Palau',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Papua New Guinea',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Pitcairn',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Samoa',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Solomon Islands',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Tokelau',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Tonga',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Tuvalu',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Vanuatu',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Wallis and Futuna',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       }
     ]
   },
@@ -956,67 +1881,132 @@ export const initialState = {
       {
         select: 0,
         name: 'Belize',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Bermuda',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Canada',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Costa Rica',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'El Salvador',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Greenland',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Guatemala',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Honduras',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Mexico',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Nicaragua',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Panama',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Saint Pierre and Miquelon',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'United States of America',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       }
     ]
   },
@@ -1027,72 +2017,142 @@ export const initialState = {
       {
         select: 0,
         name: 'Argentina',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Bolivia (Plurinational State of)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Brazil',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Chile',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Colombia',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Ecuador',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Falkland Islands (Malvinas)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'French Guiana',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Guyana',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Paraguay',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Peru',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Suriname',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Uruguay',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       },
       {
         select: 0,
         name: 'Venezuela (Bolivarian Republic of)',
-        cities: []
+        cities: [
+          {
+            select: 0,
+            name: 'fill'
+          }
+        ]
       }
     ]
   },
