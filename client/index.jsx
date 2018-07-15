@@ -123,7 +123,7 @@ class IndiaMap extends React.Component {
     return(
       <div>
         <div ref="saveImage">
-          <svg width={window.navigator.userAgent.toLowerCase().includes("mobi") ? 960 : 1280 } height={ 720 } viewBox="0 0 1280 720">
+          <svg width={'100%'} height={ 720 } viewBox="0 0 1280 720">
             {
               this.state.indiadata.map((d,i) => (
                 <path
