@@ -39,13 +39,13 @@ let styles = {
 
 const continentColor = [
   'honeydew',
-  'forestgreen',
-  'red',
-  'blue',
-  'yellow',
-  'purple',
-  'orange',
-  'white']
+  'sandybrown',
+  'mediumspringgreen',
+  'deepskyblue',
+  'gold',
+  'turquoise',
+  'violet',
+  'snow']
 
 class WorldMap extends React.Component {
   constructor() {
@@ -116,7 +116,7 @@ class WorldMap extends React.Component {
                       renderData[index]=5;
                     else if(countryData["region"] === "Oceania")
                       renderData[index]=6;
-                    else if(countryData["region"] === "Antartica")
+                    else if(countryData["region"] === "")
                       renderData[index]=7;
                   }
                 });
