@@ -193,8 +193,8 @@ class WorldMap extends React.Component {
         </svg>
         <div style={styles.container}>
           <div>
-            <img src={imgworldQR} width={100} height={100} />
-          <h4>MyWorldMap</h4>
+            <img src={imgtravelQR} width={100} height={100} />
+          <h4>MyIndiaMap</h4>
           </div>
           <div style={{"textAlign" : "center"}}>
             <h1>You have traveled...</h1>
