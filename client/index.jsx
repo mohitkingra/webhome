@@ -148,7 +148,7 @@ class IndiaMap extends React.Component {
           </svg>
           <div  style={styles.container}>
             <div>
-              <img src={imgtravelQR} width={100} height={100} />
+              <img width={100} height={100} />
             </div>
             <div style={{"textAlign" : "center"}}>
               <h1> You have traveled... </h1>
@@ -157,7 +157,7 @@ class IndiaMap extends React.Component {
               <h1> {this.message(stateCount)}!, that is {Number((stateCount/36)*100).toFixed(2)}% of India!</h1>
             </div>
             <div>
-              <img src={imgworldQR} width={100} height={100} />
+              <img src={imgtravelQR} width={100} height={100} />
             </div>
           </div>
         </div>
