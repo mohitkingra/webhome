@@ -144,7 +144,7 @@ class WorldMap extends React.Component {
   }
 
   onSaveMap = () => {
-    domtoimage.toBlob(this.refs.saveImage, { width: window.navigator.userAgent.toLowerCase().includes("mobi") ? 960 : 1280, 
+    domtoimage.toBlob(this.refs.saveImage, { width: window.navigator.userAgent.toLowerCase().includes("mobi") ? 960 : window.screenWidth, 
     height: window.navigator.userAgent.toLowerCase().includes("mobi") ? 1020 : 960, 
     style : { "background" : 'url(' + imgWorldUrl + ') no-repeat center'}})
     .then(function (blob) {
@@ -193,7 +193,7 @@ class WorldMap extends React.Component {
         </svg>
         <div style={styles.container}>
           <div>
-            <img width={100} height={100} />
+            <img src={imgtravelQR} width={100} height={100} />
           </div>
           <div style={{"textAlign" : "center"}}>
             <h1>You have traveled...</h1>
