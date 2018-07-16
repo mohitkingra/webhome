@@ -251,6 +251,22 @@ export const initialState = {
           {
             select: 0,
             name: 'Nairobi'
+          },
+          {
+            select: 0,
+            name: 'Nakuru'
+          },
+          {
+            select: 0,
+            name: 'Lake Naivasha'
+          },
+          {
+            select: 0,
+            name: 'Lake Baringo'
+          },
+          {
+            select: 0,
+            name: 'Lake Turkana'
           }
         ]
       },
@@ -301,7 +317,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Lilongwe'
-          }
+          },
+          {
+            select: 0,
+            name: 'Blantyre'
+          },
         ]
       },
       {
@@ -521,7 +541,23 @@ export const initialState = {
           {
             select: 0,
             name: 'Dodoma'
-          }
+          },
+          {
+            select: 0,
+            name: 'Moshi'
+          },
+          {
+            select: 0,
+            name: 'Arusha'
+          },
+          {
+            select: 0,
+            name: 'Pangani'
+          },
+          {
+            select: 0,
+            name: 'Zanzibar'
+          },
         ]
       },
       {
@@ -647,7 +683,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Thimpu'
-          }
+          },
+          {
+            select: 0,
+            name: 'Paro'
+          },
         ]
       },
       {
@@ -667,7 +707,23 @@ export const initialState = {
           {
             select: 0,
             name: 'Phnom Penh'
-          }
+          },
+          {
+            select: 0,
+            name: 'Siem Reap'
+          },
+          {
+            select: 0,
+            name: 'Battambang'
+          },
+          {
+            select: 0,
+            name: 'Kampot'
+          },
+          {
+            select: 0,
+            name: 'Sihanoukville'
+          },
         ]
       },
       {
@@ -677,7 +733,35 @@ export const initialState = {
           {
             select: 0,
             name: 'Beijing'
-          }
+          },
+          {
+            select: 0,
+            name: 'Shanghai'
+          },
+          {
+            select: 0,
+            name: 'Yangzhou'
+          },
+          {
+            select: 0,
+            name: 'Chengdu'
+          },
+          {
+            select: 0,
+            name: 'Lhasa'
+          },
+          {
+            select: 0,
+            name: 'Xian'
+          },
+          {
+            select: 0,
+            name: 'Dunhuang'
+          },
+          {
+            select: 0,
+            name: 'Guangzhou'
+          },
         ]
       },
       {
@@ -717,6 +801,34 @@ export const initialState = {
           {
             select: 0,
             name: 'New Delhi'
+          },
+          {
+            select: 0,
+            name: 'Agra'
+          },
+          {
+            select: 0,
+            name: 'Manali'
+          },
+          {
+            select: 0,
+            name: 'Mumbai'
+          },
+          {
+            select: 0,
+            name: 'Goa'
+          },
+          {
+            select: 0,
+            name: 'Kolkata'
+          },
+          {
+            select: 0,
+            name: 'Rishikesh'
+          },
+          {
+            select: 0,
+            name: 'Varanasi'
           }
         ]
       },
@@ -727,6 +839,14 @@ export const initialState = {
           {
             select: 0,
             name: 'Jakarta'
+          },
+          {
+            select: 0,
+            name: 'Bali'
+          },
+          {
+            select: 0,
+            name: 'Gili Islands'
           }
         ]
       },
@@ -757,6 +877,10 @@ export const initialState = {
           {
             select: 0,
             name: 'Jerusalem'
+          },
+          {
+            select: 0,
+            name: 'Tel Aviv'
           }
         ]
       },
@@ -767,6 +891,10 @@ export const initialState = {
           {
             select: 0,
             name: 'Tokyo'
+          },
+          {
+            select: 0,
+            name: 'Kyoto'
           }
         ]
       },
@@ -797,6 +925,10 @@ export const initialState = {
           {
             select: 0,
             name: 'Seoul'
+          },
+          {
+            select: 0,
+            name: 'Busan'
           }
         ]
       },
@@ -887,6 +1019,10 @@ export const initialState = {
           {
             select: 0,
             name: 'Ulaanbaatar'
+          },
+          {
+            select: 0,
+            name: 'Kharkhorin'
           }
         ]
       },
@@ -907,7 +1043,19 @@ export const initialState = {
           {
             select: 0,
             name: 'Kathmandu'
-          }
+          },
+          {
+            select: 0,
+            name: 'Pokhara'
+          },
+                    {
+            select: 0,
+            name: 'Namche Bazaar'
+          },
+          {
+            select: 0,
+            name: 'Muktinath'
+          },
         ]
       },
       {
@@ -927,7 +1075,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Islamabad'
-          }
+          },
+          {
+            select: 0,
+            name: 'Lahore'
+          },
         ]
       },
       {
@@ -947,7 +1099,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Manila'
-          }
+          },
+          {
+            select: 0,
+            name: 'Cebu'
+          },
         ]
       },
       {
@@ -1027,7 +1183,35 @@ export const initialState = {
           {
             select: 0,
             name: 'Bangkok'
-          }
+          },
+          {
+            select: 0,
+            name: 'Krabi'
+          },
+          {
+            select: 0,
+            name: 'Chiang Mai'
+          },
+          {
+            select: 0,
+            name: 'Chiang Rai'
+          },
+          {
+            select: 0,
+            name: 'Koh Samui'
+          },
+          {
+            select: 0,
+            name: 'Koh Tao'
+          },
+          {
+            select: 0,
+            name: 'Koh Phangan'
+          },
+          {
+            select: 0,
+            name: 'Koh Phi Phi'
+          },
         ]
       },
       {
@@ -1087,7 +1271,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Hanoi'
-          }
+          },
+          {
+            select: 0,
+            name: 'Ho Chi Minh City'
+          },
         ]
       },
       {
@@ -1143,7 +1331,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Vienna'
-          }
+          },
+          {
+            select: 0,
+            name: 'Innsbursk'
+          },
         ]
       },
       {
@@ -1253,7 +1445,19 @@ export const initialState = {
           {
             select: 0,
             name: 'Paris'
-          }
+          },
+          {
+            select: 0,
+            name: 'Lyon'
+          },
+          {
+            select: 0,
+            name: 'Chamonix'
+          },
+          {
+            select: 0,
+            name: 'Nice'
+          },
         ]
       },
       {
@@ -1263,12 +1467,16 @@ export const initialState = {
           {
             select: 0,
             name: 'Berlin'
-          }
+          },
+          {
+            select: 0,
+            name: 'Munich'
+          },
         ]
       },
       {
         select: 0,
-        name: 'UK/Gibraltar',
+        name: 'Gibraltar',
         cities: [
           {
             select: 0,
@@ -1283,7 +1491,15 @@ export const initialState = {
           {
             select: 0,
             name: 'Athens'
-          }
+          },
+          {
+            select: 0,
+            name: 'Santorini'
+          },
+          {
+            select: 0,
+            name: 'Mykonos'
+          },
         ]
       },
       {
@@ -1353,7 +1569,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Rome'
-          }
+          },
+          {
+            select: 0,
+            name: 'Naples'
+          },
         ]
       },
       {
@@ -1463,7 +1683,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Amsterdam'
-          }
+          },
+          {
+            select: 0,
+            name: 'Rotterdam'
+          },
         ]
       },
       {
@@ -1483,7 +1707,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Warsaw'
-          }
+          },
+          {
+            select: 0,
+            name: 'Krakow'
+          },
         ]
       },
       {
@@ -1513,6 +1741,34 @@ export const initialState = {
           {
             select: 0,
             name: 'Moscow'
+          },
+          {
+            select: 0,
+            name: 'Saint Petersburg'
+          },
+          {
+            select: 0,
+            name: 'Ekaterinburg'
+          },
+          {
+            select: 0,
+            name: 'Novosibirsk'
+          },
+          {
+            select: 0,
+            name: 'Irkutsk'
+          },
+          {
+            select: 0,
+            name: 'Kazan'
+          },
+          {
+            select: 0,
+            name: 'Sochi'
+          },
+          {
+            select: 0,
+            name: 'Vladivostok'
           }
         ]
       },
@@ -1563,6 +1819,22 @@ export const initialState = {
           {
             select: 0,
             name: 'Madrid'
+          },
+          {
+            select: 0,
+            name: 'Barcelona'
+          },
+           {
+            select: 0,
+            name: 'Pampalona'
+          },
+          {
+            select: 0,
+            name: 'Sevilla'
+          },
+          {
+            select: 0,
+            name: 'Valencia'
           }
         ]
       },
@@ -1603,7 +1875,15 @@ export const initialState = {
           {
             select: 0,
             name: 'Kyiv'
-          }
+          },
+          {
+            select: 0,
+            name: 'Lviv'
+          },
+          {
+            select: 0,
+            name: 'Odesza'
+          },
         ]
       },
       {
@@ -1613,6 +1893,34 @@ export const initialState = {
           {
             select: 0,
             name: 'London'
+          },
+          {
+            select: 0,
+            name: 'Manchester'
+          },
+          {
+            select: 0,
+            name: 'Glasgow'
+          },
+          {
+            select: 0,
+            name: 'Cambridge'
+          },
+          {
+            select: 0,
+            name: 'Oxford'
+          },
+          {
+            select: 0,
+            name: 'Birmingham'
+          },
+          {
+            select: 0,
+            name: 'Liverpool'
+          },
+          {
+            select: 0,
+            name: 'Edinburgh'
           }
         ]
       }
@@ -1639,7 +1947,15 @@ export const initialState = {
           {
             select: 0,
             name: 'Canberra'
-          }
+          },
+          {
+            select: 0,
+            name: 'Sydney'
+          },
+          {
+            select: 0,
+            name: 'Melbourne'
+          },
         ]
       },
       {
@@ -1739,7 +2055,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Wellington'
-          }
+          },
+          {
+            select: 0,
+            name: 'Auckland'
+          },
         ]
       },
       {
@@ -1905,7 +2225,15 @@ export const initialState = {
           {
             select: 0,
             name: 'Ottawa'
-          }
+          },
+          {
+            select: 0,
+            name: 'Toronto'
+          },
+          {
+            select: 0,
+            name: 'Vancouver'
+          },
         ]
       },
       {
@@ -2005,6 +2333,34 @@ export const initialState = {
           {
             select: 0,
             name: 'Washington, D.C.'
+          },
+          {
+            select: 0,
+            name: 'New York'
+          },
+          {
+            select: 0,
+            name: 'Los Angeles'
+          },
+          {
+            select: 0,
+            name: 'Seattle'
+          },
+          {
+            select: 0,
+            name: 'Miami'
+          },
+          {
+            select: 0,
+            name: 'Las Vegas'
+          },
+          {
+            select: 0,
+            name: 'Chicago'
+          },
+          {
+            select: 0,
+            name: 'Austin'
           }
         ]
       }
@@ -2061,7 +2417,11 @@ export const initialState = {
           {
             select: 0,
             name: 'Bogota'
-          }
+          },
+          {
+            select: 0,
+            name: 'Cartegena'
+          },
         ]
       },
       {
