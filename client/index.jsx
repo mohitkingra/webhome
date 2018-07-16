@@ -15,6 +15,10 @@ import fileSaver from 'file-saver';
 import CountryList  from './src/containers/country.js';
 
 import imgWorldUrl from './../server/public/img/world-whale.jpg';
+
+import imgtravelQR from './../server/public/img/mytravelmapqr.png';
+import imgworldQR from './../server/public/img/myworldmapqr.png';
+
 import ReactGA from 'react-ga';
 
 let stateCount = 0;
@@ -22,9 +26,11 @@ let ciityCount = 0;
 
 let styles = {
   container: {
+   display: 'flex',
    flex: 1,
    alignItems: 'center',
-   justifyContent: 'center',
+   justifyContent: 'space-between',
+   flexDirection : 'row'
   },
   button: {
     borderColor: 'gray',
@@ -95,6 +101,10 @@ class IndiaMap extends React.Component {
     //store.unsubsribe();
   }
 
+  filter = () => {
+
+  }
+
   onSaveMap = () => {
     domtoimage.toBlob(this.refs.saveImage, { width: window.navigator.userAgent.toLowerCase().includes("mobi") ? 960 : 1280, 
     height: window.navigator.userAgent.toLowerCase().includes("mobi") ? 1020 : 960, 
@@ -136,14 +146,24 @@ class IndiaMap extends React.Component {
               ))
             }
           </svg>
-          <div style={{"textAlign" : "center"}}>
-            <h1> You have traveled... </h1>
-            <h3> {ciityCount} out of total 184 cities listed!</h3>
-            <h3> {stateCount} out of total 29 states and 7 Union Territories!</h3>
-            <h1> {this.message(stateCount)}!, that is {Number((stateCount/36)*100).toFixed(2)}% of India!</h1>
-                      </div>
-                    </div>
-                    <div style={{"textAlign" : "center"}}>
+          <div  style={styles.container}>
+            <div>
+              <img src={imgtravelQR} width={100} height={100} />
+              <h4>MyTravelMap</h4>
+            </div>
+            <div style={{"textAlign" : "center"}}>
+              <h1> You have traveled... </h1>
+              <h3> {ciityCount} out of total 184 cities listed!</h3>
+              <h3> {stateCount} out of total 29 states and 7 Union Territories!</h3>
+              <h1> {this.message(stateCount)}!, that is {Number((stateCount/36)*100).toFixed(2)}% of India!</h1>
+            </div>
+            <div>
+              <img src={imgworldQR} width={100} height={100} />
+              <h4>MyWorldMap</h4>
+            </div>
+          </div>
+        </div>
+        <div style={{"textAlign" : "center"}}>
           <button style={styles.button} onClick={this.onSaveMap}>Download your Map</button>
         </div>
       </div>
@@ -154,20 +174,12 @@ class IndiaMap extends React.Component {
 class Home extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {value: 'india'};
-    this.handleChange = this.handleChange.bind(this);
-
   }
 
   componentDidMount(){
     ReactGA.initialize('XXX');
     ReactGA.pageview(window.location.pathname + window.location.search);
     ReactGA.ga('send', 'pageview', '/mytravelmap');
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
   }
 
   render() {      

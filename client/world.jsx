@@ -16,6 +16,10 @@ import fileSaver from 'file-saver';
 import ContinentList  from './src/containers/continent.js';
 
 import imgWorldUrl from './../server/public/img/world-whale.jpg';
+
+import imgtravelQR from './../server/public/img/mytravelmapqr.png';
+import imgworldQR from './../server/public/img/myworldmapqr.png';
+
 import ReactGA from 'react-ga';
 
 let continentCount = 0;
@@ -24,9 +28,11 @@ let cityCount = 0;
 
 let styles = {
   container: {
+   display: 'flex',
    flex: 1,
    alignItems: 'center',
-   justifyContent: 'center',
+   justifyContent: 'space-between',
+   flexDirection : 'row'
   },
   button: {
     borderColor: 'gray',
@@ -185,12 +191,22 @@ class WorldMap extends React.Component {
             }
           </g>
         </svg>
-        <div style={{"textAlign" : "center"}}>
-          <h1>You have traveled...</h1>
-          <h3>{continentCount} out of total 7 Continents!</h3>
-          <h3>{countryCount} out of total 212 Countries!</h3>
-          <h3>{cityCount} out of total 500 Cities listed!</h3>
-          <h1>{this.message(countryCount)}!, that is {Number((countryCount/212)*100).toFixed(2)}% of World! </h1>
+        <div style={styles.container}>
+          <div>
+            <img src={imgworldQR} width={100} height={100} />
+          <h4>MyWorldMap</h4>
+          </div>
+          <div style={{"textAlign" : "center"}}>
+            <h1>You have traveled...</h1>
+            <h3>{continentCount} out of total 7 Continents!</h3>
+            <h3>{countryCount} out of total 212 Countries!</h3>
+            <h3>{cityCount} out of total 500 Cities listed!</h3>
+            <h1>{this.message(countryCount)}!, that is {Number((countryCount/212)*100).toFixed(2)}% of World! </h1>
+          </div>
+          <div>
+            <img src={imgworldQR} width={100} height={100} />
+            <h4>MyWorldMap</h4>
+          </div>
         </div>
       </div>
       <div style={{"textAlign" : "center"}}>
