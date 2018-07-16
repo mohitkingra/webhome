@@ -2518,7 +2518,15 @@ export const initialState = {
   },
   {
     select: 0,
-    name: 'Antartica',
-    countries: []
+    name: 'Antarctica',
+    countries: [{
+      select: 0,
+      name: 'Antarctica',
+      cities: [
+        {
+          select: 0,
+          name: 'Antarctica'
+        }]
+    }]
   }]
 }

@@ -37,6 +37,16 @@ let styles = {
   }
 };
 
+const continentColor = [
+  'honeydew',
+  'sandybrown',
+  'mediumspringgreen',
+  'deepskyblue',
+  'gold',
+  'turquoise',
+  'violet',
+  'snow']
+
 class WorldMap extends React.Component {
   constructor() {
       super()
@@ -94,7 +104,20 @@ class WorldMap extends React.Component {
                   if(geometry.id == countryData["country-code"]) {
  
                     // Update fillstyle
-                    renderData[index]=1;
+                    if(countryData["region"] === "Africa")
+                      renderData[index]=1;
+                    else if(countryData["region"] === "Asia")
+                      renderData[index]=2;
+                    else if(countryData["region"] === "Europe")
+                      renderData[index]=3;
+                    else if(countryData["sub-region"] === "Northern America" || countryData["sub-region"] === "Central America")
+                      renderData[index]=4;
+                    else if(countryData["sub-region"] === "South America")
+                      renderData[index]=5;
+                    else if(countryData["region"] === "Oceania")
+                      renderData[index]=6;
+                    else if(countryData["region"] === "")
+                      renderData[index]=7;
                   }
                 });
               }
@@ -154,7 +177,7 @@ class WorldMap extends React.Component {
                   className="country"
                   stroke="gray" 
                   strokeWidth="1"
-                  fill={ this.state.renderState[i] ? 'forestgreen' : 'honeydew' }
+                  fill={ this.state.renderState[i] ? continentColor[this.state.renderState[i]] : 'honeydew'}
                   key={ `path-${ i }` }
                   d={ geoPath().projection(this.projection())(d) }
                 />

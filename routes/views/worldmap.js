@@ -7,6 +7,9 @@ exports = module.exports = function (req, res) {
       return `
 		<!doctype html>
 		<html>
+            <head>
+                <title>My World Map</title>
+            </head>
 			<body>
         		<div class="react-container">
         		</div>
