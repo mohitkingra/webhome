@@ -136,8 +136,6 @@ class WorldMap extends React.Component {
           renderState: renderData,
         })
       })
-            console.log(cityycount);
-
     })  
   }
 
