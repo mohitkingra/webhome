@@ -197,9 +197,9 @@ class WorldMap extends React.Component {
           </div>
           <div style={{"textAlign" : "center"}}>
             <h1>You have traveled...</h1>
-            <h3>{continentCount} out of total 7 Continents!</h3>
-            <h3>{countryCount} out of total 213 Countries!</h3>
             <h3>{cityCount} out of total 493 Cities listed!</h3>
+            <h3>{countryCount} out of total 213 Countries!</h3>
+            <h3>{continentCount} out of total 7 Continents!</h3>
             <h1>{this.message(countryCount)}!, that is {Number((countryCount/212)*100).toFixed(2)}% of World! </h1>
           </div>
           <div>
@@ -208,7 +208,7 @@ class WorldMap extends React.Component {
         </div>
       </div>
       <div style={{"textAlign" : "center"}}>
-        <button style={styles.button} onClick={this.onSaveMap}>Download your Map</button>
+        <button style={styles.button} onClick={this.onSaveMap}>Save your Map</button>
       </div>
     </div>
     );

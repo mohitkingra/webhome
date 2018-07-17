@@ -162,7 +162,7 @@ class IndiaMap extends React.Component {
           </div>
         </div>
         <div style={{"textAlign" : "center"}}>
-          <button style={styles.button} onClick={this.onSaveMap}>Download your Map</button>
+          <button style={styles.button} onClick={this.onSaveMap}>Save your Map</button>
         </div>
       </div>
     );

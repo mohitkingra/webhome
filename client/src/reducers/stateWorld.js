@@ -11,6 +11,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Algiers'
+          },
+          {
+            select: 0,
+            name: 'Oran'
+          },
+          {
+            select: 0,
+            name: 'Constantine'
+          },
+          {
+            select: 0,
+            name: 'Annaba'
           }
         ]
       },
@@ -43,6 +55,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Porto-Novo'
+          },
+             {
+            select: 0,
+            name: 'Cotonou'
+          },
+          {
+            select: 0,
+            name: 'Parakou'
+          },
+          {
+            select: 0,
+            name: 'Djougou'
           }
         ]
       },
@@ -53,6 +77,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Gaborone'
+          },
+          {
+            select: 0,
+            name: 'Francistown'
+          },
+          {
+            select: 0,
+            name: 'Molepolole'
+          },
+          {
+            select: 0,
+            name: 'Serowe'
           }
         ]
       },
@@ -63,6 +99,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Ouagadougou'
+          },
+          {
+            select: 0,
+            name: 'Bobo Dioulasso'
+          },
+          {
+            select: 0,
+            name: 'Kaya'
+          },
+          {
+            select: 0,
+            name: 'Banfora'
           }
         ]
       },
@@ -73,6 +121,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Bujumbura'
+          },
+          {
+            select: 0,
+            name: 'Gitega'
+          },
+          {
+            select: 0,
+            name: 'Buyinga'
+          },
+          {
+            select: 0,
+            name: 'Bubanza'
           }
         ]
       },
@@ -83,6 +143,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Yaounde'
+          },
+          {
+            select: 0,
+            name: 'Douala'
+          },
+          {
+            select: 0,
+            name: 'Limbe'
+          },
+          {
+            select: 0,
+            name: 'Bamenda'
           }
         ]
       },
@@ -93,6 +165,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Praia'
+          },
+          {
+            select: 0,
+            name: 'Mindelo'
+          },
+          {
+            select: 0,
+            name: 'Santa Maria'
+          },
+          {
+            select: 0,
+            name: 'Fontainhas'
           }
         ]
       },
@@ -103,6 +187,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Bangui'
+          },
+          {
+            select: 0,
+            name: 'Bangassou'
+          },
+          {
+            select: 0,
+            name: 'Bimbo'
+          },
+          {
+            select: 0,
+            name: 'Berberati'
           }
         ]
       },
@@ -113,6 +209,18 @@ export const initialState = {
           {
             select: 0,
             name: 'N\'Djamena'
+          },
+          {
+            select: 0,
+            name: 'Abeche'
+          },
+          {
+            select: 0,
+            name: 'Moundou'
+          },
+          {
+            select: 0,
+            name: 'Sarh'
           }
         ]
       },
@@ -123,6 +231,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Moroni'
+          },
+          {
+            select: 0,
+            name: 'Mutsamudu'
+          },
+          {
+            select: 0,
+            name: 'Fomboni'
+          },
+          {
+            select: 0,
+            name: 'Domoni'
           }
         ]
       },
@@ -133,6 +253,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Brazzaville'
+          },
+          {
+            select: 0,
+            name: 'Pointe Noire'
+          },
+          {
+            select: 0,
+            name: 'Dolisie'
+          },
+          {
+            select: 0,
+            name: 'Nkayi'
           }
         ]
       },
@@ -143,6 +275,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Kinshasa'
+          },
+          {
+            select: 0,
+            name: 'Lumbumbashi'
+          },
+          {
+            select: 0,
+            name: 'Kisangani'
+          },
+          {
+            select: 0,
+            name: 'Bukavu'
           }
         ]
       },
@@ -153,6 +297,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Yamoussoukro'
+          },
+          {
+            select: 0,
+            name: 'Abidjan'
+          },
+          {
+            select: 0,
+            name: 'Bouake'
+          },
+          {
+            select: 0,
+            name: 'San Pedro'
           }
         ]
       },
@@ -163,6 +319,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Djibouti City'
+          },
+          {
+            select: 0,
+            name: 'Tadjoura'
+          },
+          {
+            select: 0,
+            name: 'Obock'
+          },
+          {
+            select: 0,
+            name: 'Al Sabieh'
           }
         ]
       },
@@ -177,6 +345,14 @@ export const initialState = {
           {
             select: 0,
             name: 'Alexandria'
+          },
+          {
+            select: 0,
+            name: 'Luxor'
+          },
+          {
+            select: 0,
+            name: 'Giza'
           }
         ]
       },
@@ -186,7 +362,19 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'Malabo/Oyala'
+            name: 'Malabo'
+          },
+          {
+            select: 0,
+            name: 'Mongomo'
+          },
+          {
+            select: 0,
+            name: 'Bata'
+          },
+          {
+            select: 0,
+            name: 'Ebibeyin'
           }
         ]
       },
@@ -197,6 +385,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Asmara'
+          },
+          {
+            select: 0,
+            name: 'Massawa'
+          },
+          {
+            select: 0,
+            name: 'Kerren'
+          },
+          {
+            select: 0,
+            name: 'Assab'
           }
         ]
       },
@@ -229,6 +429,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Libreville'
+          },
+          {
+            select: 0,
+            name: 'Port Gentil'
+          },
+          {
+            select: 0,
+            name: 'Masuku'
+          },
+          {
+            select: 0,
+            name: 'Oyem'
           }
         ]
       },
@@ -239,6 +451,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Banjul'
+          },
+          {
+            select: 0,
+            name: 'Bakau'
+          },
+          {
+            select: 0,
+            name: 'Serekunda'
+          },
+          {
+            select: 0,
+            name: 'Brikama'
           }
         ]
       },
@@ -249,6 +473,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Accra'
+          },
+          {
+            select: 0,
+            name: 'Kumasi'
+          },
+          {
+            select: 0,
+            name: 'Tamale'
+          },
+          {
+            select: 0,
+            name: 'Tema'
           }
         ]
       },
@@ -259,6 +495,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Conakry'
+          },
+          {
+            select: 0,
+            name: 'Kindia'
+          },
+          {
+            select: 0,
+            name: 'Camayenne'
+          },
+          {
+            select: 0,
+            name: 'Nzerekere'
           }
         ]
       },
@@ -269,6 +517,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Bissau'
+          },
+          {
+            select: 0,
+            name: 'Gabu'
+          },
+          {
+            select: 0,
+            name: 'Bafata'
+          },
+          {
+            select: 0,
+            name: 'Bolama'
           }
         ]
       },
@@ -286,11 +546,7 @@ export const initialState = {
           },
           {
             select: 0,
-            name: 'Lake Naivasha'
-          },
-          {
-            select: 0,
-            name: 'Lake Baringo'
+            name: 'Maralal'
           },
           {
             select: 0,
@@ -305,6 +561,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Maseru'
+          },
+          {
+            select: 0,
+            name: 'Mafeteng'
+          },
+          {
+            select: 0,
+            name: 'Leribe'
+          },
+          {
+            select: 0,
+            name: 'Maputsoe'
           }
         ]
       },
@@ -315,6 +583,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Monrovia'
+          },
+          {
+            select: 0,
+            name: 'Gbarnga'
+          },
+          {
+            select: 0,
+            name: 'Voinzwama'
+          },
+          {
+            select: 0,
+            name: 'Zwedru'
           }
         ]
       },
@@ -325,6 +605,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Tripoli'
+          },
+          {
+            select: 0,
+            name: 'Benghazi'
+          },
+          {
+            select: 0,
+            name: 'Misurata'
+          },
+          {
+            select: 0,
+            name: 'Tobruk'
           }
         ]
       },
@@ -335,6 +627,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Antananarivo'
+          },
+          {
+            select: 0,
+            name: 'Toamasina'
+          },
+          {
+            select: 0,
+            name: 'Antsirabe'
+          },
+          {
+            select: 0,
+            name: 'Mahajanga'
           }
         ]
       },
@@ -350,6 +654,14 @@ export const initialState = {
             select: 0,
             name: 'Blantyre'
           },
+          {
+            select: 0,
+            name: 'Mzuzu'
+          },
+          {
+            select: 0,
+            name: 'Mangochi'
+          }
         ]
       },
       {
@@ -359,6 +671,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Bamako'
+          },
+              {
+            select: 0,
+            name: 'Gao'
+          },
+          {
+            select: 0,
+            name: 'Timbaktu'
+          },
+          {
+            select: 0,
+            name: 'Mopti'
           }
         ]
       },
@@ -369,6 +693,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Nouakchott'
+          },
+          {
+            select: 0,
+            name: 'Kaedi'
+          },
+          {
+            select: 0,
+            name: 'Nema'
+          },
+          {
+            select: 0,
+            name: 'Rosso'
           }
         ]
       },
@@ -379,6 +715,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Port Louis'
+          },
+          {
+            select: 0,
+            name: 'Curepipe'
+          },
+          {
+            select: 0,
+            name: 'Quatre Bornes'
+          },
+          {
+            select: 0,
+            name: 'Grand Baie'
           }
         ]
       },
@@ -388,7 +736,7 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'Mayotte'
+            name: 'Mamoudzou'
           }
         ]
       },
