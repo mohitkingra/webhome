@@ -47,7 +47,7 @@ const continentColor = [
   'honeydew',
   'sandybrown',
   'mediumspringgreen',
-  'deepskyblue',
+  'salmon',
   'gold',
   'turquoise',
   'violet',
@@ -136,6 +136,8 @@ class WorldMap extends React.Component {
           renderState: renderData,
         })
       })
+            console.log(cityycount);
+
     })  
   }
 
@@ -198,8 +200,8 @@ class WorldMap extends React.Component {
           <div style={{"textAlign" : "center"}}>
             <h1>You have traveled...</h1>
             <h3>{continentCount} out of total 7 Continents!</h3>
-            <h3>{countryCount} out of total 212 Countries!</h3>
-            <h3>{cityCount} out of total 500 Cities listed!</h3>
+            <h3>{countryCount} out of total 213 Countries!</h3>
+            <h3>{cityCount} out of total 493 Cities listed!</h3>
             <h1>{this.message(countryCount)}!, that is {Number((countryCount/212)*100).toFixed(2)}% of World! </h1>
           </div>
           <div>
