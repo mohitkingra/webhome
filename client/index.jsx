@@ -80,12 +80,15 @@ class IndiaMap extends React.Component {
           if(state.cities.some((city => city.select === 1))){
             stateCount++;
 
-            travelArea += stateArea[state.name];
-
+            let count = 0;
             state.cities.forEach((city, index) => {
-              if(city.select === 1)
+              if(city.select === 1){
                 ciityCount++;
+                count++;
+              }
             })
+
+            travelArea += stateArea[state.name]*(count/state.cities.length);
 
             //get country id from name    
             

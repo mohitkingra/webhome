@@ -51,10 +51,10 @@ const continentColor = [
   'honeydew',
   'sandybrown',
   'mediumspringgreen',
-  'salmon',
+  'crimson',
   'gold',
   'turquoise',
-  'violet',
+  'lightcoral',
   'snow']
 
 class WorldMap extends React.Component {
@@ -99,13 +99,18 @@ class WorldMap extends React.Component {
           if(country.cities.some(city => city.select === 1)){
 
             countryCount++;
-
-            travelArea += countryArea[country.name];
-
+            
+            let count=0;
             country.cities.forEach((city, index) => {
-              if(city.select ===1)
+              
+              if(city.select ===1){
                 cityCount++;
+                count++;
+              }
+
             })
+
+            travelArea += countryArea[country.name] * (count/country.cities.length);
 
             //get country id from name    
             countrydata.forEach((countryData, index) => {
