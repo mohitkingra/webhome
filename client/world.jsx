@@ -197,10 +197,10 @@ class WorldMap extends React.Component {
           </div>
           <div style={{"textAlign" : "center"}}>
             <h1>You have traveled...</h1>
-            <h3>{cityCount} out of total 493 Cities listed!</h3>
-            <h3>{countryCount} out of total 213 Countries!</h3>
+            <h3>{cityCount} out of total 732 Cities listed!</h3>
+            <h3>{countryCount} out of total 213 Territories (includes 195 UN countries)!</h3>
             <h3>{continentCount} out of total 7 Continents!</h3>
-            <h1>{this.message(countryCount)}!, that is {Number((countryCount/212)*100).toFixed(2)}% of World! </h1>
+            <h1>{this.message(countryCount)}!, that is {Number((countryCount/213)*100).toFixed(2)}% of World! </h1>
           </div>
           <div>
             <img src={imgworldQR} width={100} height={100} />
@@ -233,7 +233,7 @@ class Home extends React.Component {
               Where all have you been? in World!
             </label>
             <label style={{"display" : "block", "marginLeft": 20, "textAlign" : "left"}}>
-                Select the Continent/Country/City you have been...
+                Select the Continent/Country|Territory/City you have been...
             </label>
             <ContinentList />
             <WorldMap />

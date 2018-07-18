@@ -3185,7 +3185,7 @@ export const initialState = {
           {
             select: 0,
             name: 'Zemun'
-          }
+          },
           {
             select: 0,
             name: 'Cacak'
