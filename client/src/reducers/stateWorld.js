@@ -1089,6 +1089,10 @@ export const initialState = {
           {
             select: 0,
             name: 'Zanzibar'
+          },
+          {
+            select: 0,
+            name: 'Dar -E- Salaam'
           }
         ]
       },
@@ -1396,6 +1400,10 @@ export const initialState = {
             select: 0,
             name: 'Sihanoukville'
           },
+          {
+            select: 0,
+            name: 'Koh Rong'
+          }
         ]
       },
       {
@@ -1428,11 +1436,11 @@ export const initialState = {
           },
           {
             select: 0,
-            name: 'Dunhuang'
+            name: 'Zhangjiajie'
           },
           {
             select: 0,
-            name: 'Guangzhou'
+            name: 'ShangriLa'
           },
         ]
       },
@@ -1504,7 +1512,7 @@ export const initialState = {
           },
           {
             select: 0,
-            name: 'Manali'
+            name: 'Jaipur'
           },
           {
             select: 0,
@@ -1516,7 +1524,7 @@ export const initialState = {
           },
           {
             select: 0,
-            name: 'Kolkata'
+            name: 'Hampi'
           },
           {
             select: 0,
@@ -2431,10 +2439,6 @@ export const initialState = {
           {
             select: 0,
             name: 'Bruges'
-          },
-          {
-            select: 0,
-            name: 'Liege'
           }
         ]
       },
@@ -2612,6 +2616,10 @@ export const initialState = {
             select: 0,
             name: 'Tampere'
           },
+          {
+            select: 0,
+            name: 'Vanta'
+          }
         ]
       },
       {
@@ -2650,10 +2658,6 @@ export const initialState = {
           },
           {
             select: 0,
-            name: 'Cologne'
-          },
-          {
-            select: 0,
             name: 'Hamburg'
           },
           {
@@ -2687,10 +2691,6 @@ export const initialState = {
           {
             select: 0,
             name: 'Mykonos'
-          },
-          {
-            select: 0,
-            name: 'Delphi'
           },
           {
             select: 0,
@@ -2821,10 +2821,6 @@ export const initialState = {
           {
             select: 0,
             name: 'Venice'
-          },
-          {
-            select: 0,
-            name: 'Verona'
           }
         ]
       },
@@ -3018,10 +3014,6 @@ export const initialState = {
           },
           {
             select: 0,
-            name: 'Leiden'
-          },
-          {
-            select: 0,
             name: 'Eindhoven'
           },
         ]
@@ -3126,10 +3118,6 @@ export const initialState = {
           },
           {
             select: 0,
-            name: 'Sibiu'
-          },
-          {
-            select: 0,
             name: 'Timisoara'
           }
         ]
@@ -3197,11 +3185,7 @@ export const initialState = {
           {
             select: 0,
             name: 'Zemun'
-          },
-          {
-            select: 0,
-            name: 'Nis'
-          },
+          }
           {
             select: 0,
             name: 'Cacak'
@@ -3263,10 +3247,6 @@ export const initialState = {
           {
             select: 0,
             name: 'Barcelona'
-          },
-           {
-            select: 0,
-            name: 'Pampalona'
           },
           {
             select: 0,
@@ -3443,11 +3423,7 @@ export const initialState = {
           {
             select: 0,
             name: 'Perth'
-          },
-          {
-            select: 0,
-            name: 'Adelaide'
-          },
+          }
         ]
       },
       {
@@ -3551,6 +3527,14 @@ export const initialState = {
           {
             select: 0,
             name: 'Auckland'
+          },
+          {
+            select: 0,
+            name: 'Christchurch'
+          },
+          {
+            select: 0,
+            name: 'Dunedin'
           }
         ]
       },
@@ -3696,7 +3680,19 @@ export const initialState = {
         cities: [
           {
             select: 0,
+            name: 'Belize City'
+          },
+          {
+            select: 0,
+            name: 'San Pedro Town'
+          },
+          {
+            select: 0,
             name: 'Belmopan'
+          },
+          {
+            select: 0,
+            name: 'Ladyville'
           }
         ]
       },
@@ -3725,6 +3721,10 @@ export const initialState = {
           {
             select: 0,
             name: 'Vancouver'
+          },
+          {
+            select: 0,
+            name: 'Montreal'
           }
         ]
       },
@@ -3757,6 +3757,18 @@ export const initialState = {
           {
             select: 0,
             name: 'San Salvador'
+          },
+          {
+            select: 0,
+            name: 'San Miguel'
+          },
+          {
+            select: 0,
+            name: 'Santa Ana'
+          },
+          {
+            select: 0,
+            name: 'Santa Tecla'
           }
         ]
       },
@@ -3777,6 +3789,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Guatemala City'
+          },
+          {
+            select: 0,
+            name: 'Antigua Guatemala'
+          },
+          {
+            select: 0,
+            name: 'Esquintla'
+          },
+          {
+            select: 0,
+            name: 'Coban'
           }
         ]
       },
@@ -3787,6 +3811,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Tegucigalpa'
+          },
+          {
+            select: 0,
+            name: 'San Pedro Sula'
+          },
+          {
+            select: 0,
+            name: 'Choloma'
+          },
+          {
+            select: 0,
+            name: 'La Ceiba'
           }
         ]
       },
@@ -3827,6 +3863,10 @@ export const initialState = {
           {
             select: 0,
             name: 'Leon'
+          },
+          {
+            select: 0,
+            name: 'Masaya'
           }
         ]
       },
@@ -3930,10 +3970,6 @@ export const initialState = {
           },
           {
             select: 0,
-            name: 'Sucre'
-          },
-          {
-            select: 0,
             name: 'Cochabamba'
           },
           {
@@ -3974,19 +4010,15 @@ export const initialState = {
           },
           {
             select: 0,
-            name: 'Arico'
+            name: 'Puente Alto'
           },
           {
             select: 0,
-            name: 'ValParaiso'
+            name: 'Antofagasta'
           },
           {
             select: 0,
-            name: 'Punta Arenas'
-          },
-          {
-            select: 0,
-            name: 'Concepcion'
+            name: 'Vina del Mar'
           }
         ]
       },
@@ -4051,6 +4083,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Cayenne'
+          },
+          {
+            select: 0,
+            name: 'Matoury'
+          },
+          {
+            select: 0,
+            name: ' Saint-Laurent-du-Maroni'
+          },
+          {
+            select: 0,
+            name: 'Kourou'
           }
         ]
       },
@@ -4061,6 +4105,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Georgetown'
+          },
+          {
+            select: 0,
+            name: 'New Amsterdam'
+          },
+          {
+            select: 0,
+            name: 'Linden'
+          },
+          {
+            select: 0,
+            name: 'Anna Regina'
           }
         ]
       },
@@ -4105,10 +4161,6 @@ export const initialState = {
           {
             select: 0,
             name: 'Trujilo'
-          },
-          {
-            select: 0,
-            name: 'Chiclayo'
           }
         ]
       },
@@ -4119,6 +4171,18 @@ export const initialState = {
           {
             select: 0,
             name: 'Paramaribo'
+          },
+          {
+            select: 0,
+            name: 'Lelidorp'
+          },
+          {
+            select: 0,
+            name: 'Marienburg'
+          },
+          {
+            select: 0,
+            name: 'Meerzorg'
           }
         ]
       },
