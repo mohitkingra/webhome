@@ -50,12 +50,13 @@ let styles = {
 const continentColor = [
   'honeydew',
   'sandybrown',
-  'mediumspringgreen',
-  'crimson',
+  'lightgreen',
+  'tomato',
   'gold',
   'turquoise',
-  'lightcoral',
-  'snow']
+  'aquamarine',
+  'snow',
+  'cornflowerblue']
 
 class WorldMap extends React.Component {
   constructor() {
@@ -116,27 +117,32 @@ class WorldMap extends React.Component {
             countrydata.forEach((countryData, index) => {
 
               //update arr for matched countries
-              if(country.name === countryData["name"] ){
+              if(country.name === countryData["name"]){
 
                 worlddata.objects.countries.geometries.forEach(function(geometry, index) {
  
                   if(geometry.id == countryData["country-code"]) {
  
-                    // Update fillstyle
-                    if(countryData["region"] === "Africa")
-                      renderData[index]=1;
-                    else if(countryData["region"] === "Asia")
-                      renderData[index]=2;
-                    else if(countryData["region"] === "Europe")
-                      renderData[index]=3;
-                    else if(countryData["sub-region"] === "Northern America" || countryData["sub-region"] === "Central America" || countryData["sub-region" === "Caribbean"])
-                      renderData[index]=4;
-                    else if(countryData["sub-region"] === "South America")
-                      renderData[index]=5;
-                    else if(countryData["region"] === "Oceania")
-                      renderData[index]=6;
-                    else if(countryData["region"] === "")
-                      renderData[index]=7;
+                    if(country.name === "Russian Federation") {
+                      renderData[index]=8;
+                    }
+                    else {
+                      // Update fillstyle
+                      if(countryData["region"] === "Africa")
+                        renderData[index]=1;
+                      else if(countryData["region"] === "Asia")
+                        renderData[index]=2;
+                      else if(countryData["region"] === "Europe")
+                        renderData[index]=3;
+                      else if(countryData["sub-region"] === "Northern America" || countryData["sub-region"] === "Central America" || countryData["sub-region" === "Caribbean"])
+                        renderData[index]=4;
+                      else if(countryData["sub-region"] === "South America")
+                        renderData[index]=5;
+                      else if(countryData["region"] === "Oceania")
+                        renderData[index]=6;
+                      else if(countryData["region"] === "")
+                        renderData[index]=7;
+                    }
                   }
                 });
               }
@@ -148,8 +154,8 @@ class WorldMap extends React.Component {
           renderState: renderData,
         })
       })
-    })  
-  }
+  })  
+}
 
   componentWillUnmount(){
     //store.unsubsribe();
