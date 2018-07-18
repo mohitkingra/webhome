@@ -19,10 +19,14 @@ import imgWorldUrl from './../server/public/img/world-whale.jpg';
 import imgtravelQR from './../server/public/img/mytravelmapqr.png';
 import imgworldQR from './../server/public/img/myworldmapqr.png';
 
+import stateArea from './src/reducers/areaIndia.js';
+
 import ReactGA from 'react-ga';
 
 let stateCount = 0;
 let ciityCount = 0;
+
+let travelArea = 0;
 
 let styles = {
   container: {
@@ -69,10 +73,14 @@ class IndiaMap extends React.Component {
         stateCount = 0;
         ciityCount = 0;
 
+        travelArea = 0;
+
         travelState.forEach((state, index) => {
 
           if(state.cities.some((city => city.select === 1))){
             stateCount++;
+
+            travelArea += stateArea[state.name];
 
             state.cities.forEach((city, index) => {
               if(city.select === 1)
@@ -154,7 +162,7 @@ class IndiaMap extends React.Component {
               <h1> You have traveled... </h1>
               <h3> {ciityCount} out of total 184 cities listed!</h3>
               <h3> {stateCount} out of total 29 states and 7 Union Territories!</h3>
-              <h1> {this.message(stateCount)}!, that is {Number((stateCount/36)*100).toFixed(2)}% of India!</h1>
+              <h1> {this.message(stateCount)}!, that is {Number((travelArea/3287232)*100).toFixed(2)}% of India (Area)!</h1>
             </div>
             <div>
               <img src={imgtravelQR} width={100} height={100} />

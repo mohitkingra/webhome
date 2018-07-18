@@ -94,6 +94,16 @@ export const initialState = {
       },
       {
         select: 0,
+        name: 'British Indian Ocean Territory',
+        cities: [
+        {
+          select: 0,
+          name: 'British Indian Ocean Territory'
+        }
+        ]
+      },
+      {
+        select: 0,
         name: 'Burkina Faso',
         cities: [
           {
@@ -1403,6 +1413,16 @@ export const initialState = {
           {
             select: 0,
             name: 'Koh Rong'
+          }
+        ]
+      },
+      {
+        select :0,
+        name : "Cocos (Keeling) Islands",
+        cities: [
+          {
+            select: 0,
+            name: "Cocos (Keeling) Islands"
           }
         ]
       },
@@ -3428,6 +3448,16 @@ export const initialState = {
       },
       {
         select: 0,
+        name: "Christmas Island",
+        cities: [
+          {
+            select: 0,
+            name: "Christmas Island"
+          }
+        ]
+      },
+      {
+        select: 0,
         name: 'Cook Islands',
         cities: [
           {
@@ -3676,6 +3706,46 @@ export const initialState = {
     countries: [
       {
         select: 0,
+        name: "Anguilla",
+        cities: [
+          {
+            select: 0,
+            name: "Anguilla"
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "Antigua and Barbuda",
+        cities: [
+          {
+            select: 0,
+            name: "Antigua and Barbuda"
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "Aruba",
+        cities: [
+          {
+            select: 0,
+            name: "Aruba"
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "Barbados",
+        cities: [
+          {
+            select: 0,
+            name: "Barbados"
+          }
+        ]
+      },
+      {
+        select: 0,
         name: 'Belize',
         cities: [
           {
@@ -3730,6 +3800,16 @@ export const initialState = {
       },
       {
         select: 0,
+        name: "Cayman Islands",
+        cities: [
+          {
+            select: 0,
+            name: "Cayman Islands"
+          }
+        ]
+      },
+      {
+        select: 0,
         name: 'Costa Rica',
         cities: [
           {
@@ -3747,6 +3827,26 @@ export const initialState = {
           {
             select: 0,
             name: 'Puriscal'
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "Dominica",
+        cities: [
+          {
+            select: 0,
+            name: "Dominica"
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "Dominican Republic",
+        cities: [
+          {
+            select: 0,
+            name: "Dominican Republic"
           }
         ]
       },
@@ -3784,6 +3884,26 @@ export const initialState = {
       },
       {
         select: 0,
+        name: "Grenada",
+        cities: [
+          {
+            select: 0,
+            name: "Grenada"
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "Guadeloupe",
+        cities: [
+          {
+            select: 0,
+            name: "Guadeloupe"
+          }
+        ]
+      },
+      {
+        select: 0,
         name: 'Guatemala',
         cities: [
           {
@@ -3801,6 +3921,16 @@ export const initialState = {
           {
             select: 0,
             name: 'Coban'
+          }
+        ]
+      },
+      {
+        select:0,
+        name: "Haiti",
+        cities: [
+          {
+            select: 0,
+            name: "Haiti"
           }
         ]
       },
@@ -3823,6 +3953,16 @@ export const initialState = {
           {
             select: 0,
             name: 'La Ceiba'
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "Martinique",
+        cities: [
+          {
+            select: 0,
+            name: "Martinique"
           }
         ]
       },
@@ -3892,6 +4032,26 @@ export const initialState = {
       },
       {
         select: 0,
+        name: "Saint Kitts and Nevis",
+        cities: [
+          {
+            select:0,
+            name: "Saint Kitts and Nevis"
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "Saint Lucia",
+        cities: [
+          {
+            select:0,
+            name: "Saint Lucia"
+          }
+        ]
+      },
+      {
+        select: 0,
         name: 'United States of America',
         cities: [
           {
@@ -3925,6 +4085,26 @@ export const initialState = {
           {
             select: 0,
             name: 'Houston'
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: 'U.S. Virgin Islands',
+        cities: [
+          {
+            select: 0,
+            name: 'U.S. Virgin Islands'
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: 'Saint Vincent and the Grenadines',
+        cities: [
+          {
+            select: 0,
+            name: 'Saint Vincent and the Grenadines'
           }
         ]
       }
@@ -4235,14 +4415,57 @@ export const initialState = {
   {
     select: 0,
     name: 'Antarctica',
-    countries: [{
-      select: 0,
-      name: 'Antarctica',
-      cities: [
-        {
-          select: 0,
-          name: 'Antarctica'
-        }]
-    }]
+    countries: [
+      {
+        select: 0,
+        name: 'Antarctica',
+        cities: [
+          {
+            select: 0,
+            name: 'Antarctica'
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "Bouvet Island",
+        cities: [
+          {
+            select:0,
+            name: "Bouvet Island"
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: "French Southern Territories",
+        cities: [
+          {
+            select: 0,
+            name: "French Southern Territories"
+          }
+        ]
+      },
+      {
+        select:0,
+        name: "Heard Island and McDonald Islands",
+        cities: [
+          {
+            select: 0,
+            name: "Heard Island and McDonald Islands"
+          }
+        ]
+      },
+      {
+        select:0,
+        name: "South Georgia and the South Sandwich Islands",
+        cities: [
+          {
+            select:0,
+            name: "South Georgia and the South Sandwich Islands"
+          }
+        ]
+      }
+    ]
   }]
 }

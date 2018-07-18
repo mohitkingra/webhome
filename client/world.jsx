@@ -20,11 +20,15 @@ import imgWorldUrl from './../server/public/img/world-whale.jpg';
 import imgtravelQR from './../server/public/img/mytravelmapqr.png';
 import imgworldQR from './../server/public/img/myworldmapqr.png';
 
+import countryArea from './src/reducers/areaWorld.js';
+
 import ReactGA from 'react-ga';
 
 let continentCount = 0;
 let countryCount = 0;
 let cityCount = 0;
+
+let travelArea = 0;
 
 let styles = {
   container: {
@@ -82,6 +86,8 @@ class WorldMap extends React.Component {
         countryCount = 0;
         cityCount = 0;
 
+        travelArea=0;
+
         travelState.forEach((continent, index) => {
 
           if(continent.countries.some(country => country.cities.some(city => city.select === 1)))
@@ -93,6 +99,8 @@ class WorldMap extends React.Component {
           if(country.cities.some(city => city.select === 1)){
 
             countryCount++;
+
+            travelArea += countryArea[country.name];
 
             country.cities.forEach((city, index) => {
               if(city.select ===1)
@@ -116,7 +124,7 @@ class WorldMap extends React.Component {
                       renderData[index]=2;
                     else if(countryData["region"] === "Europe")
                       renderData[index]=3;
-                    else if(countryData["sub-region"] === "Northern America" || countryData["sub-region"] === "Central America")
+                    else if(countryData["sub-region"] === "Northern America" || countryData["sub-region"] === "Central America" || countryData["sub-region" === "Caribbean"])
                       renderData[index]=4;
                     else if(countryData["sub-region"] === "South America")
                       renderData[index]=5;
@@ -129,7 +137,6 @@ class WorldMap extends React.Component {
               }
             })
           }
-        
         })
 
         this.setState({
@@ -197,10 +204,10 @@ class WorldMap extends React.Component {
           </div>
           <div style={{"textAlign" : "center"}}>
             <h1>You have traveled...</h1>
-            <h3>{cityCount} out of total 732 Cities listed!</h3>
-            <h3>{countryCount} out of total 213 Territories (includes 195 UN countries)!</h3>
+            <h3>{cityCount} out of total 754 Cities listed!</h3>
+            <h3>{countryCount} out of total 235 Territories (includes 195 UN countries)!</h3>
             <h3>{continentCount} out of total 7 Continents!</h3>
-            <h1>{this.message(countryCount)}!, that is {Number((countryCount/213)*100).toFixed(2)}% of World! </h1>
+            <h1>{this.message(countryCount)}!, that is {Number((travelArea/148807409.1)*100).toFixed(2)}% of World! (Area) </h1>
           </div>
           <div>
             <img src={imgworldQR} width={100} height={100} />
