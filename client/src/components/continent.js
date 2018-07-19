@@ -15,7 +15,7 @@ let styles = {
   },
   continents: {
     display: 'flex',
-    flex: '1 1 -10%',
+    flex: 0,
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     flexDirection: 'column',
@@ -26,8 +26,9 @@ let styles = {
   },
   countries: {
     display: 'flex',
-    flex:'1 1 -10%',
-    alignItems: 'flex-start',
+    flex:'1 1 20%',
+    alignItems: 'center',
+    alignContent: 'flex-start',
     justifyContent: 'flex-start',
     flexDirection: 'column',
     flexWrap: 'wrap',
@@ -37,8 +38,9 @@ let styles = {
   },
   countriesDefault: {
     display: 'flex',
-    flex:'1 1 -10%',
-    alignItems: 'flex-start',
+    flex:'1 1 20%',
+    alignItems: 'center',
+    alignContent: 'flex-start',
     justifyContent: 'flex-start',
     flexDirection: 'column',
     flexWrap: 'wrap',
@@ -48,7 +50,7 @@ let styles = {
   },
   cities: {
     display: 'flex',
-    flex:1,
+    flex:'1 1 10%',
     alignItems: 'flex-end',
     justifyContent: 'flex-start',
     flexDirection: 'column',

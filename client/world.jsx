@@ -163,7 +163,7 @@ class WorldMap extends React.Component {
 
   onSaveMap = () => {
     domtoimage.toBlob(this.refs.saveImage, { width: window.navigator.userAgent.toLowerCase().includes("mobi") ? 960 : window.screenWidth, 
-    height: window.navigator.userAgent.toLowerCase().includes("mobi") ? 1020 : 960, 
+    height: window.navigator.userAgent.toLowerCase().includes("mobi") ? 1020 : window.screenHeight, 
     style : { "background" : 'url(' + imgWorldUrl + ') no-repeat center'}})
     .then(function (blob) {
         fileSaver.saveAs(blob, 'myworldmap.png');
