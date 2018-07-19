@@ -26,7 +26,7 @@ let styles = {
   },
   countries: {
     display: 'flex',
-    flex:'1 1 20%',
+    flex:'1 1 40%',
     alignItems: 'center',
     alignContent: 'flex-start',
     justifyContent: 'flex-start',
@@ -38,7 +38,7 @@ let styles = {
   },
   countriesDefault: {
     display: 'flex',
-    flex:'1 1 20%',
+    flex:'1 1 40%',
     alignItems: 'center',
     alignContent: 'flex-start',
     justifyContent: 'flex-start',
