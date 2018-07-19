@@ -50,13 +50,13 @@ let styles = {
 const continentColor = [
   'honeydew',
   'sandybrown',
-  'lightgreen',
-  'tomato',
+  'chartreuse',
+  'salmon',
   'gold',
-  'turquoise',
-  'aquamarine',
-  'snow',
-  'cornflowerblue']
+  'darkturquoise',
+  'aqua',
+  'mistyrose',
+  'teal']
 
 class WorldMap extends React.Component {
   constructor() {

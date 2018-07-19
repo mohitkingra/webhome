@@ -94,16 +94,6 @@ export const initialState = {
       },
       {
         select: 0,
-        name: 'British Indian Ocean Territory',
-        cities: [
-        {
-          select: 0,
-          name: 'British Indian Ocean Territory'
-        }
-        ]
-      },
-      {
-        select: 0,
         name: 'Burkina Faso',
         cities: [
           {
@@ -1366,6 +1356,16 @@ export const initialState = {
       },
       {
         select: 0,
+        name: 'British Indian Ocean Territory',
+        cities: [
+          {
+            select: 0,
+            name: 'British Indian Ocean Territory'
+          }
+        ]
+      },
+      {
+        select: 0,
         name: 'Brunei Darussalam',
         cities: [
           {
@@ -1716,28 +1716,6 @@ export const initialState = {
         cities: [
           {
             select: 0,
-            name: 'Seoul'
-          },
-          {
-            select: 0,
-            name: 'Busan'
-          },
-          {
-            select: 0,
-            name: 'Suwon'
-          },
-          {
-            select: 0,
-            name: 'Ansan'
-          }
-        ]
-      },
-      {
-        select: 0,
-        name: 'Korea (Republic of)',
-        cities: [
-          {
-            select: 0,
             name: 'Pyongyang'
           },
           {
@@ -1751,6 +1729,28 @@ export const initialState = {
           {
             select: 0,
             name: 'Hamhung'
+          }
+        ]
+      },
+      {
+        select: 0,
+        name: 'Korea (Republic of)',
+        cities: [
+          {
+            select: 0,
+            name: 'Seoul'
+          },
+          {
+            select: 0,
+            name: 'Busan'
+          },
+          {
+            select: 0,
+            name: 'Suwon'
+          },
+          {
+            select: 0,
+            name: 'Ansan'
           }
         ]
       },
