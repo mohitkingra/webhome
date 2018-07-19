@@ -123,10 +123,7 @@ class WorldMap extends React.Component {
  
                   if(geometry.id == countryData["country-code"]) {
  
-                    if(country.name === "Russian Federation") {
-                      renderData[index]=8;
-                    }
-                    else {
+              
                       // Update fillstyle
                       if(countryData["region"] === "Africa")
                         renderData[index]=1;
@@ -142,7 +139,7 @@ class WorldMap extends React.Component {
                         renderData[index]=6;
                       else if(countryData["region"] === "")
                         renderData[index]=7;
-                    }
+                        
                   }
                 });
               }
@@ -216,7 +213,7 @@ class WorldMap extends React.Component {
           <div style={{"textAlign" : "center"}}>
             <h1>You have traveled...</h1>
             <h3>{cityCount} out of total 754 Cities listed!</h3>
-            <h3>{countryCount} out of total 235 Territories (includes 195 UN countries)!</h3>
+            <h3>{countryCount} out of total 235 Territories (includes 193 UN member states)!</h3>
             <h3>{continentCount} out of total 7 Continents!</h3>
             <h1>{this.message(countryCount)}!, that is {Number((travelArea/148807409.1)*100).toFixed(2)}% of World! (Area) </h1>
           </div>
