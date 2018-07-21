@@ -7,7 +7,7 @@
  "Gujarat" :	196021,
  "Karnataka" :	191791,
  "Andhra Pradesh" : 160205,
- "Orissa" :	155707,
+ "Odisha" :	155707,
  "Chhattisgarh" :	135191,
  "Tamil Nadu" :	130058,
  "Telangana" :	114840,

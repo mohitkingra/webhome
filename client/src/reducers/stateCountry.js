@@ -625,7 +625,7 @@ export const initialState = {
 						},
 						{
 									select: 0, 
-									name: "Orissa", 
+									name: "Odisha", 
 									cities:[
 										{
 											select: 0,
