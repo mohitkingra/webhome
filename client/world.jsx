@@ -44,8 +44,111 @@ let styles = {
     borderRadius: 10,
     width:200,
     height:50,
+  },
+
+  sharebutton:{
+    display: 'flex',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: "row",
   }
 };
+
+import {
+  FacebookShareButton,
+  GooglePlusShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  VKShareButton,
+  RedditShareButton,
+} from 'react-share';
+
+import {
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  GooglePlusIcon,
+  LinkedinIcon,
+  VKIcon,
+  RedditIcon,
+} from 'react-share';
+
+import {
+  FacebookShareCount,
+  GooglePlusShareCount,
+  LinkedinShareCount,
+  VKShareCount,
+  RedditShareCount,
+} from 'react-share';
+
+class SocialMediaShare extends React.Component {
+  constructor() {
+    super();
+  }
+
+  render(){
+    return(
+    <div style={styles.sharebutton}>
+        <FacebookShareButton url={'http://mohitkingra.com/myworldmap'}> 
+          <FacebookIcon size={32} round={true} />
+          <FacebookShareCount url={'http://mohitkingra.com/myworldmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </FacebookShareCount>
+        </FacebookShareButton>
+        <GooglePlusShareButton url={'http://mohitkingra.com/myworldmap'}> 
+          <GooglePlusIcon size={32} round={true} />
+          <GooglePlusShareCount url={'http://mohitkingra.com/myworldmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </GooglePlusShareCount>
+        </GooglePlusShareButton>
+        <LinkedinShareButton url={'http://mohitkingra.com/myworldmap'}> 
+          <LinkedinIcon size={32} round={true} />
+          <LinkedinShareCount url={'http://mohitkingra.com/myworldmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </LinkedinShareCount>
+        </LinkedinShareButton>
+        <TwitterShareButton url={'http://mohitkingra.com/myworldmap'}> 
+          <TwitterIcon size={32} round={true} />
+          <span className="myShareCountWrapper">{0}</span>
+        </TwitterShareButton>
+        <VKShareButton url={'http://mohitkingra.com/myworldmap'}> 
+        <VKIcon size={32} round={true} />
+          <VKShareCount url={'http://mohitkingra.com/myworldmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </VKShareCount>
+        </VKShareButton>
+        <RedditShareButton url={'http://mohitkingra.com/myworldmap'}> 
+        <RedditIcon size={32} round={true} />
+          <RedditShareCount url={'http://mohitkingra.com/myworldmap'}> 
+            {shareCount => (
+              <span className="myShareCountWrapper">{shareCount}</span>
+            )}
+          </RedditShareCount>
+        </RedditShareButton>
+        <WhatsappShareButton url={'http://mohitkingra.com/myworldmap'}> 
+          <WhatsappIcon size={32} round={true} />
+          <span className="myShareCountWrapper">{0}</span>  
+        </WhatsappShareButton> 
+        <TelegramShareButton url={'http://mohitkingra.com/myworldmap'}> 
+          <TelegramIcon size={32} round={true} />
+          <span className="myShareCountWrapper">{0}</span>
+        </TelegramShareButton>  
+    </div>
+    );
+  }
+}
 
 const continentColor = [
   'honeydew',
@@ -222,6 +325,7 @@ class WorldMap extends React.Component {
           </div>
         </div>
       </div>
+      <SocialMediaShare />
       <div style={{"textAlign" : "center"}}>
         <button style={styles.button} onClick={this.onSaveMap}>Save your Map</button>
       </div>
