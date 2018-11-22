@@ -45,6 +45,8 @@ exports = module.exports = function(app) {
 
 	app.all('/mytravelmap', routes.views.travelmap); //react
 	app.all('/myworldmap', routes.views.worldmap); //react
+	app.all('/yourtravelguy', routes.views.yourtravelguy); //react
+	app.all('/yourtravelerguy', routes.views.yourtravelerguy); //react
 
 	app.all('/join', routes.views.session.join);
 	app.all('/signin', routes.views.session.signin);

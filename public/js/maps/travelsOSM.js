@@ -160,7 +160,16 @@ var homeOSM = {
       src:'images/south-korea.png'
       })
   });
-		
+               var iconStyleAustralia = new ol.style.Style({
+      image: new ol.style.Icon({
+      anchor:[0.5, 46],
+      anchorXUnits: 'fraction',
+      anchorYUnits: 'pixels',
+      opacity: 0.75,
+      src:'images/australia.png'
+      })
+ });
+
 var travelsOSM = [
 			["New Delhi", 28.614, 77.202],
 			["Rishikesh", 30.107, 78.304],
@@ -276,7 +285,19 @@ var travelsOSM = [
 			["Phnom Penh", 11.579, 104.923],
 			["Siem Reap", 13.361, 103.849],
 			["Battambang", 13.103, 103.193],
-			["Kampot", 10.620, 104.175]
+			["Kampot", 10.620, 104.175],
+			["Melbourne", -37.812, 144.962],
+			["Hobart", -42.882, 147.3275],
+			["Sydney", -33.847, 151.202],
+			["Tarneit", -37.835, 144.665],
+			["Lorne", -38.540, 143.973],
+			["Twelve Apostles", -38.662, 143.104],
+			["Port Fairy", -38.387, 142.236],
+			["Philip Island", -38.476, 145.229],
+			["Port Arthur", -43.141, 147.852],
+			["EagleHawk Neck", -43.018, 147.926],
+			["Manly", -33.804, 151.290],
+			["Bondi", -33.892, 151.263]
 	];
 
 var locationsM = [[travelsOSM[102][2], travelsOSM[102][1]], [travelsOSM[103][2], travelsOSM[103][1]], [travelsOSM[104][2], travelsOSM[104][1]], [travelsOSM[105][2], travelsOSM[105][1]], [travelsOSM[106][2], travelsOSM[106][1]], [travelsOSM[109][2], travelsOSM[109][1]], [travelsOSM[95][2], travelsOSM[95][1]], [travelsOSM[87][2], travelsOSM[87][1]]];
@@ -290,6 +311,8 @@ var locationsL = [[travelsOSM[0][2], travelsOSM[0][1]], [travelsOSM[30][2], trav
 var locationsR = [[travelsOSM[0][2], travelsOSM[0][1]], [travelsOSM[14][2], travelsOSM[14][1]], [travelsOSM[15][2], travelsOSM[15][1]], [travelsOSM[35][2], travelsOSM[35][1]], [travelsOSM[15][2], travelsOSM[15][1]], [travelsOSM[16][2], travelsOSM[16][1]], [travelsOSM[17][2], travelsOSM[17][1]], [travelsOSM[0][2], travelsOSM[0][1]]];
 var locationsY = [[travelsOSM[91][2], travelsOSM[91][1]], [travelsOSM[92][2], travelsOSM[92][1]], [travelsOSM[93][2], travelsOSM[93][1]]];
 var locationsC = [[travelsOSM[111][2], travelsOSM[111][1]], [travelsOSM[112][2], travelsOSM[112][1]], [travelsOSM[113][2], travelsOSM[113][1]], [travelsOSM[114][2], travelsOSM[114][1]], [travelsOSM[111][2], travelsOSM[111][1]]];
+
+var locationsA = [[travelsOSM[118][2], travelsOSM[118][1]],[travelsOSM[119][2], travelsOSM[119][1]],[travelsOSM[120][2], travelsOSM[120][1]],[travelsOSM[121][2], travelsOSM[121][1]],[travelsOSM[118][2], travelsOSM[118][1]]];
 
 var flightsData = [ 
                     [[travelsOSM[0][1], travelsOSM[0][2]], [travelsOSM[55][1], travelsOSM[55][2]]], //Delhi to Paris
@@ -313,5 +336,9 @@ var flightsData = [
                     [[23.1202,113.2745], [travelsOSM[103][1], travelsOSM[103][2]]], //Guangzhou to Moscow
                     [[travelsOSM[103][1], travelsOSM[103][2]], [travelsOSM[102][1], travelsOSM[102][2]]], //Moscow to St. Petersburg
                     [[travelsOSM[87][1], travelsOSM[87][2]], [travelsOSM[111][1], travelsOSM[111][2]]], //Shenzhen to Phnom Penh
+                    [[travelsOSM[98][1], travelsOSM[98][2]],[travelsOSM[115][1], travelsOSM[115][2]]], //HongKong to Melbourne
+		    [[travelsOSM[115][1], travelsOSM[115][2]],[travelsOSM[116][1], travelsOSM[116][2]]], //Melbourne to Hobart
+	            [[travelsOSM[116][1], travelsOSM[116][2]],[travelsOSM[117][1], travelsOSM[117][2]]], //Hobart to Sydney
+		    [[travelsOSM[117][1], travelsOSM[117][2]],[travelsOSM[98][1], travelsOSM[98][2]]], //Sydney to HongKong
                   ];
 

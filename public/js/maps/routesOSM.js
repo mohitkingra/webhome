@@ -104,8 +104,10 @@ var moveFeature = function(event) {
       openMap.getView().setZoom(5);
     else if(id === 'yunnan') 
       openMap.getView().setZoom(5);
-   	else if(id === 'cambodia') 
+    else if(id === 'cambodia') 
       openMap.getView().setZoom(6);
+    else if(id === 'thegreatoceanroad') 
+      openMap.getView().setZoom(7);
     
     var elapsedTime = frameState.time - now;
     var index = Math.round(1 * elapsedTime / 1000);

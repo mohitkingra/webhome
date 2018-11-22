@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		title=title || 'Mohit Kingra'
+
+	body
+	
+		iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSfP1VpQ8ZFXyvHDFNl_KPg8rzk15DL4-OgPrWbklSsIlBkCaw/viewform" width="1280" height="2440" frameborder="0" marginheight="0" marginwidth="0")
+
+		block js
+			script(async src="https://www.googletagmanager.com/gtag/js?id=UA-116421007-1")
+			script.
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'UA-116421007-1', {
+					'page_title' : 'travelpage',
+					'page_path': '/yourtravelguy'
+				});

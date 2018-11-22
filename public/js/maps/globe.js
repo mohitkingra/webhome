@@ -43,7 +43,7 @@
   var i=0;
   setInterval(function() {
 
-    if(i<114) {
+    if(i<126) {
       var lat = travelsOSM[i++][1];
       var lng = travelsOSM[i++][2];
       var color = colors[Math.floor(Math.random() * colors.length)];

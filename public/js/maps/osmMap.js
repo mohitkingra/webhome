@@ -11,6 +11,7 @@ function initOpenMap(){
   var routeDataR = initRoutes(locationsR);
   var routeDataY = initRoutes(locationsY);
   var routeDataC = initRoutes(locationsC);
+  var routeDataA = initRoutes(locationsA);
 
   var flightsData = initFlights();
 
@@ -72,6 +73,8 @@ function initOpenMap(){
       markers[i].setStyle(iconStyleMongolia);
 	  else if(i>=111 && i<=114)
       markers[i].setStyle(iconStyleCambodia);
+	  else if(i>=115 && i<=126)
+      markers[i].setStyle(iconStyleAustralia);
   }
 
   var vectorSource = new ol.source.Vector();
@@ -85,7 +88,7 @@ function initOpenMap(){
         layers: [ 
           new ol.layer.Tile({
             source: new ol.source.Stamen({layer: 'watercolor'})
-          }), vectorLayer, routeDataM[3], routeDataT[3], routeDataE[3], routeDataN[3], routeDataP[3], routeDataD[3], routeDataH[3], routeDataL[3], routeDataR[3], routeDataY[3], routeDataC[3], flightsData[1]
+          }), vectorLayer, routeDataM[3], routeDataT[3], routeDataE[3], routeDataN[3], routeDataP[3], routeDataD[3], routeDataH[3], routeDataL[3], routeDataR[3], routeDataY[3], routeDataC[3], routeDataA[3], flightsData[1]
         ],
         target: 'map',
         controls: ol.control.defaults({
@@ -181,6 +184,7 @@ function initOpenMap(){
   var centerR = new ol.proj.fromLonLat([73.314, 28.010]);
   var centerY = new ol.proj.fromLonLat([102.349, 28.845]);
   var centerC = new ol.proj.fromLonLat([104.175, 10.620]);
+  var centerA = new ol.proj.fromLonLat([143.5175, -38.8568]);
 
   animateRoutes('trans-mongolian', centerM, routeDataM, openMap);
   animateRoutes('tibet-railway', centerT, routeDataT, openMap); 
@@ -193,6 +197,7 @@ function initOpenMap(){
   animateRoutes('rajasthan', centerR, routeDataR, openMap);
   animateRoutes('yunnan', centerY, routeDataY, openMap);
   animateRoutes('cambodia', centerC, routeDataC, openMap);
+  animateRoutes('thegreatoceanroad', centerA, routeDataA, openMap);
   animateFlights('flight-animation', flightsData, openMap);
 }
 

@@ -340,7 +340,7 @@ class Home extends React.Component {
   }
 
   componentDidMount(){
-    ReactGA.initialize('XXX');
+    ReactGA.initialize('UA-116421007-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
     ReactGA.ga('send', 'pageview', '/myworldmap');
   }
